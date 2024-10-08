@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 
 //Import Icon
-import { BiWinkSmile, BiWinkTongue } from "react-icons/bi";
+//import { BiWinkSmile, BiWinkTongue } from "react-icons/bi";
 
 //Variants
 

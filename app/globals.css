@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,6 +46,8 @@ body {
 
     --fill-name-logo: #2662ec;
     --delayAnimation: 0.5s;
+
+    --quantitySkills: 11;
   }
 
   .dark {
@@ -80,7 +85,7 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
 }
 
@@ -212,38 +217,7 @@ body {
   }
 }
 
-.tl_section {
-}
-
-.t_container {
-  padding-top: 13rem;
-}
-
-.t_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  gap: 2rem;
-}
-.t_head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  max-width: 50rem;
-  padding: 0px 30px;
-}
-
-.t_tag {
-}
-
-.t_title {
-}
-
-.t_desc {
-}
-
+/* Slider */
 .slick-slider {
   margin-top: 2rem;
 }
@@ -288,3 +262,32 @@ body {
   transition: all 1000ms ease-in-out;
 }
 
+.skills-list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: calc(100px * var(--quantitySkills));
+}
+
+.skills-items {
+  position: absolute;
+  width: 100px;
+  margin: 20px 0px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 100%;
+  animation: autoSkills 15s linear infinite;
+  animation-delay: calc((15s / var(--quantitySkills)) * (var(--position) - 1));
+}
+
+@keyframes autoSkills {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: calc(100px * -1);
+  }
+}

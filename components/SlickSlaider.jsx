@@ -5,8 +5,6 @@ import Image from "next/image";
 
 //Import React Slick
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 //Import React Awesome Reveal
 import { Fade } from "react-awesome-reveal";
