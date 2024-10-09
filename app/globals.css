@@ -47,7 +47,8 @@ body {
     --fill-name-logo: #2662ec;
     --delayAnimation: 0.5s;
 
-    --quantitySkills: 11;
+    --fillGit: #ffffff;
+    --quantitySkills: 7;
   }
 
   .dark {
@@ -77,6 +78,8 @@ body {
     --chart-5: 340 75% 55%;
 
     --fill-name-logo: #2662ec;
+
+    --fillGit: #000000;
   }
 }
 
@@ -269,7 +272,7 @@ body {
   min-width: calc(100px * var(--quantitySkills));
 }
 
-.skills-items {
+.skills-items-1 {
   position: absolute;
   width: 100px;
   margin: 20px 0px;
@@ -279,8 +282,22 @@ body {
   justify-content: center;
   align-items: center;
   left: 100%;
-  animation: autoSkills 15s linear infinite;
-  animation-delay: calc((15s / var(--quantitySkills)) * (var(--position) - 1));
+  animation: autoSkills 50s linear infinite;
+  animation-delay: calc((50s / var(--quantitySkills)) * (var(--position) - 1));
+}
+
+.skills-items-2 {
+  position: absolute;
+  width: 100px;
+  margin: 20px 0px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 100%;
+  animation: autoSkillsReverse 50s linear infinite;
+  animation-delay: calc((50s / var(--quantitySkills)) * (var(--position) - 1));
 }
 
 @keyframes autoSkills {
@@ -289,5 +306,14 @@ body {
   }
   100% {
     left: calc(100px * -1);
+  }
+}
+
+@keyframes autoSkillsReverse {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: calc(100px * -1);
   }
 }

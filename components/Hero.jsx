@@ -22,6 +22,7 @@ import HeroImg from "./HeroImg";
 
 //Import React Awesome Reveal
 import { Fade } from "react-awesome-reveal";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -38,10 +39,26 @@ const Hero = () => {
               <h1 className="h1">Hi, I'm Pablo</h1>
             </Fade>
             <Fade direction="up" triggerOnce delay={700} cascade damping={1e-1}>
-              <p className="subtitle max-w-[590px] mt-4 mx-auto xl:mx-0">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-                perspiciatis hic inventore ratione ullam, atque, provident.
-              </p>
+              <div className="subtitle max-w-[590px] mt-4 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
+                <span>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque perspiciatis hic inventore ratione ullam, atque,
+                </span>
+                <TypeAnimation
+                  sequence={[
+                    "Frontend Developer",
+                    2000,
+                    "Backend Developer",
+                    2000,
+                    "Full Stack Developer",
+                    2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                  className="text-base uppercase font-semibold tracking-[2px] text-primary"
+                />
+              </div>
             </Fade>
             <Fade direction="up" triggerOnce delay={900} cascade damping={1e-1}>
               <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-8 mt-8">
