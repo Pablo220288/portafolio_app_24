@@ -46,9 +46,9 @@ const Hero = () => {
             <Fade direction="up" triggerOnce delay={900} cascade damping={1e-1}>
               <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-8 mt-8">
                 <div className="flex items-center w-full gap-x-4">
-                  <lable htmlFor="email" className="sr-only">
+                  <label htmlFor="email" className="sr-only">
                     Email Address
-                  </lable>
+                  </label>
                   <Input
                     type="email"
                     id="email"

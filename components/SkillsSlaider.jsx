@@ -190,7 +190,7 @@ const skills = [
 const SkillsSlaider = () => {
   return (
     <div className="w-full mt-20 overflow-x-hidden">
-      <div className="skills-list h-[90px]">
+      <div className="skills-list h-[90px] overflow-hidden">
         {skills.map((skill, index) => (
           <div
             key={index}

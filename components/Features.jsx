@@ -61,7 +61,7 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl px-8 xl-px-0 sm:mt-20 lg:mt-24 lg:max-w-4xl ">
+        <div className="mx-auto mt-16 max-w-2xl px-8 lg:px-10 xl-px-0 sm:mt-20 lg:mt-24 lg:max-w-4xl overflow-hidden">
           <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-20 lg:gap-x-20">
             {features.map((feature, key) => (
               <Zoom cascade delay={100} duration={600} triggerOnce key={key}>
@@ -99,7 +99,7 @@ const Features = () => {
                       transition: { duration: 0.5, delay: 0.5, type: "easeIn" },
                     }}
                     viewport={{ once: true }}
-                    className="absolute -right-[40px] top-1/2 -translate-y-1/2 text-5xl text-white flex flex-col items-center justify-center w-[100px] h-[100px] bg-primary rounded-full mb-4"
+                    className="absolute text-[40px] lg:text-[50px] -right-[30px] lg:-right-[40px] top-1/2 -translate-y-1/2 text-5xl text-white flex flex-col items-center justify-center w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] bg-primary rounded-full mb-4"
                   >
                     {feature.icon}
                   </motion.div>

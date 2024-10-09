@@ -7,7 +7,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 const Testimonials = () => {
   return (
-    <div className="pt-[13rem]">
+    <div className="pt-[8rem]">
       <div className="flex flex-col items-center flex-1 gap-8">
         <div className="flex flex-col items-center gap-4 max-w-[50rem] px-[30px]">
           <Fade direction="up" triggerOnce cascade damping={1e-1} delay={200}>

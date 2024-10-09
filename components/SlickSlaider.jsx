@@ -90,7 +90,7 @@ const SlickSlaider = () => {
   };
 
   return (
-    <div className="w-full px-20">
+    <div className="w-full px-5 md:px-10 lg:px-20">
       <Fade direction="up" triggerOnce cascade damping={1e-1} delay={800}>
         <Slider {...settings}>
           {testimonial.map((item, index) => (

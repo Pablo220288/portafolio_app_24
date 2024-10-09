@@ -44,7 +44,7 @@ const Projects = () => {
 
 
   return (
-    <div className="pt-[13rem]">
+    <div className="pt-[8rem]">
       <div className="container mx-auto px-8 xl:px-0">
         <Fade direction="up" triggerOnce cascade damping={1e-1} delay={200}>
           <h2 className="section-title mb-2 xl:mb-3 text-center mx-auto">
