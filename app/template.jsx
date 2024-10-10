@@ -41,7 +41,6 @@ const template = ({ children }) => {
           <BiWinkTongue className="text-2xl absolute bottom-0 right-2" />
         )} */}
       </span>
-      <div className="h-[3500px]"></div>
     </>
   );
 };

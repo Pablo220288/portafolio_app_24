@@ -27,7 +27,6 @@ body {
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    --tertiary: 327 64% 97%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     --accent: 210 40% 96.1%;
@@ -48,7 +47,7 @@ body {
     --delayAnimation: 0.5s;
 
     --fillGit: #ffffff;
-    --quantitySkills: 7;
+    --quantitySkills: 8;
   }
 
   .dark {
@@ -113,7 +112,7 @@ body {
 }
 
 .section-title {
-  @apply text-4xl text-primary font-bold relative w-max flex items-center justify-between gap-x-3;
+  @apply text-4xl text-primary font-bold relative flex items-center justify-center gap-x-3;
 }
 
 .badge {
@@ -281,7 +280,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  left: 100%;
+  left: 105%;
   animation: autoSkills 50s linear infinite;
   animation-delay: calc((50s / var(--quantitySkills)) * (var(--position) - 1));
 }
@@ -300,9 +299,18 @@ body {
   animation-delay: calc((50s / var(--quantitySkills)) * (var(--position) - 1));
 }
 
+/* Stop animation on hover */
+/* .container-skills-1:hover .skills-items-1 {
+  animation-play-state: paused !important;
+}
+
+.container-skills-2:hover .skills-items-2 {
+  animation-play-state: paused !important;
+} */
+
 @keyframes autoSkills {
   0% {
-    left: 100%;
+    left: 105%;
   }
   100% {
     left: calc(100px * -1);

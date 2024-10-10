@@ -26,7 +26,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[auto] bg-bottom">
+    <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
       <div className="container mx-auto">
         <div className="flex justify-evenly gap-x-8 sm:py-12 px-8 xl:px-0">
           <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">

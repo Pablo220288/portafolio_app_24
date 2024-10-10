@@ -1,5 +1,7 @@
+import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Newsletter from "@/components/Newsletter";
 import Projects from "@/components/Projects";
 import SkillsSlaider from "@/components/SkillsSlaider";
 //import Services from "@/components/Services";
@@ -13,6 +15,8 @@ export default function Home() {
       <SkillsSlaider />
       <Projects />
       <Testimonials />
+      <Faq />
+      <Newsletter />
     </main>
   );
 }
