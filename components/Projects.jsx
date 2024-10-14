@@ -5,7 +5,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { Fade } from "react-awesome-reveal";
 
-const projects = [
+export const projects = [
   {
     title: "Cabanas Mahalo",
     description:
@@ -13,6 +13,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: "/mahalo.png",
     link: "https://www.google.com",
+    category: "Webside",
   },
   {
     title: "Budget App",
@@ -21,6 +22,7 @@ const projects = [
     tags: ["React", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: "/image2.png",
     link: "https://www.google.com",
+    category: "Web App",
   },
   {
     title: "Storage App",
@@ -29,6 +31,7 @@ const projects = [
     tags: ["React", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: "/image3.png",
     link: "https://www.google.com",
+    category: "Web App",
   },
   {
     title: "Mission Theme",
@@ -37,12 +40,11 @@ const projects = [
     tags: ["Next.js", "Node.js", "Express", "MongoDB", "Tailwind"],
     imageUrl: "/image4.png",
     link: "https://www.google.com",
+    category: "Backend",
   },
 ];
 
 const Projects = () => {
-
-
   return (
     <div className="pt-[8rem]">
       <div className="container mx-auto px-8 xl:px-0">

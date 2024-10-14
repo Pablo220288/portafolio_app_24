@@ -54,9 +54,9 @@ const Footer = () => {
               </p>
               <ul>
                 {link.links.map((link, index) => (
-                  <li className="mb-2" key={index}>
+                  <li className="mb-1" key={index}>
                     <Link
-                      className="text-black dark:text-white text-lg leading-9"
+                      className="text-black dark:text-white text-base leading-9"
                       href={`${link.path}`}
                     >
                       {link.name}

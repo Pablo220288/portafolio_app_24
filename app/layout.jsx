@@ -8,6 +8,9 @@ import { Outfit } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+//Add Toast Message
+import { Toaster } from "@/components/ui/toaster";
+
 //Import themes
 import { ThemeProvider } from "@/components/ThemesProvider";
 
@@ -49,6 +52,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
