@@ -19,7 +19,7 @@ const Projects = () => {
       ? project
       : project.category === activeCategory;
   });
-  console.log(filteredProjects);
+
   return (
     <section className="pt-12">
       <div className="px-8 mx-auto">

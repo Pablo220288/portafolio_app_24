@@ -9,6 +9,7 @@ import MobileNav from "./MobileNav";
 
 //Import Path
 import { usePathname } from "next/navigation";
+import LanguageToggler from "./LanguageToggler";
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -31,12 +32,14 @@ const Header = () => {
         header
           ? "py-3 bg-white shadow-lg dark:bg-accent"
           : " py-6 dark:bg-transparent "
-      } sticky px-3 top-0 z-30 transition-all duration-300 ${path === "/" && "bg-white"}`}
+      } sticky px-3 top-0 z-30 transition-all duration-300 ${
+        path === "/" && "bg-white"
+      }`}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
-          <div className="flex items-center gap-x-6">
+          <div className="flex items-center gap-x-4">
             <Nav
               containerStyles={"hidden md:flex gap-x-8 items-center"}
               linksStyles={
@@ -47,6 +50,7 @@ const Header = () => {
               }
             />
             <ThemesToggler />
+            <LanguageToggler />
             <div className="md:hidden">
               <MobileNav />
             </div>

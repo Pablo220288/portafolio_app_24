@@ -61,7 +61,7 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl px-8 lg:px-10 xl-px-0 sm:mt-20 lg:mt-24 lg:max-w-4xl overflow-hidden">
+        <div className="mx-auto mt-16 max-w-2xl px-8 lg:px-10 xl-px-0 sm:mt-20 lg:mt-24 lg:max-w-4xl overflow-hidden py-5">
           <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-20 lg:gap-x-20">
             {features.map((feature, key) => (
               <Zoom cascade delay={100} duration={600} triggerOnce key={key}>

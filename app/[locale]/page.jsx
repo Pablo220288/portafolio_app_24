@@ -7,9 +7,13 @@ import SkillsSlaider from "@/components/SkillsSlaider";
 //import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 
+import { useTranslations } from "next-intl";
+
 export default function Home() {
+  const t = useTranslations("Home");
   return (
     <main>
+      <p>{t("title")}</p>
       <Hero />
       <Features />
       <SkillsSlaider />
