@@ -24,7 +24,12 @@ import HeroImg from "./HeroImg";
 import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 
+//Import Next Intl
+import { useTranslations } from "next-intl";
+
+
 const Hero = () => {
+  const t = useTranslations("Hero");
   return (
     <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
       <div className="container mx-auto">
@@ -36,7 +41,7 @@ const Hero = () => {
               </div>
             </Fade>
             <Fade direction="up" triggerOnce delay={500} cascade damping={1e-1}>
-              <h1 className="h1">Hi, I'm Pablo</h1>
+              <h1 className="h1">{t("greeting")}</h1>
             </Fade>
             <Fade direction="up" triggerOnce delay={700} cascade damping={1e-1}>
               <div className="subtitle max-w-[590px] mt-4 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">

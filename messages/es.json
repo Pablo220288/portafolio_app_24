@@ -1,5 +1,5 @@
 {
-  "Home": {
-    "title": "Bienvenido a la página de inicio"
+  "Hero": {
+    "greeting": "Hola, Soy Pablo"
   }
 }
