@@ -39,7 +39,7 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
-          <div className="flex items-center gap-x-4">
+          <div className="flex items-center gap-x-6">
             <Nav
               containerStyles={"hidden md:flex gap-x-8 items-center"}
               linksStyles={
@@ -49,8 +49,10 @@ const Header = () => {
                 "absolute left-0 top-full h-[2px] w-full bg-primary"
               }
             />
-            <ThemesToggler />
-            <LanguageToggler />
+            <div className="inline-flex">
+              <ThemesToggler />
+              <LanguageToggler />
+            </div>
             <div className="md:hidden">
               <MobileNav />
             </div>
