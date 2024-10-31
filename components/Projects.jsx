@@ -47,7 +47,7 @@ export const projects = [
 const Projects = () => {
   return (
     <div className="pt-[8rem]">
-      <div className="container mx-auto px-8 xl:px-0">
+      <div className="w-full max-w-[1400px] mx-auto px-8 xl:px-0">
         <Fade direction="up" triggerOnce cascade damping={1e-1} delay={200}>
           <h2 className="section-title mb-2 xl:mb-3 text-center mx-auto">
             Projects
@@ -68,7 +68,7 @@ const Projects = () => {
             </Fade>
           </div>
         </div>
-        <div className="flex flex-wrap gap-8 items-center justify-center mt-20">
+        <div className="flex flex-wrap gap-8 xl:gap-10 items-center justify-center mt-20">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

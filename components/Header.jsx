@@ -32,11 +32,11 @@ const Header = () => {
         header
           ? "py-3 bg-white shadow-lg dark:bg-accent"
           : " py-6 dark:bg-transparent "
-      } sticky px-3 top-0 z-30 transition-all duration-300 ${
+      } sticky top-0 z-30 transition-all duration-300 ${
         path === "/" && "bg-white"
       }`}
     >
-      <div className="container mx-auto">
+      <div className="w-full max-w-[1440px] px-8 mx-auto">
         <div className="flex justify-between items-center">
           <Logo />
           <div className="flex items-center gap-x-6">

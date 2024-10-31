@@ -22,11 +22,15 @@ const Projects = () => {
 
   return (
     <section className="pt-12">
-      <div className="px-8 mx-auto">
-        <h2 className="section-title !justify-start mb-8 lg:mb-16 ">
-          Projects
-        </h2>
-        <Tabs defaultValue={activeCategory} className="mb-24 xl:mb-48">
+      <div className="w-full max-w-[1400px] px-8 mx-auto">
+        <div className="mx-auto text-center">
+          <h2 className="section-title mb-4 lg:mb-8 ">Projects</h2>
+          <p className="text-lg leading-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            harum dolor libero, eaque.
+          </p>
+        </div>
+        <Tabs defaultValue={activeCategory} className="my-24 xl:mb-48">
           <TabsList className="w-full grid h-full grid-cols-2 sm:grid-cols-4 lg:max-w-[740px] mb-12 mx-auto md:border dark:border-none">
             {catagories.map((catagory) => (
               <TabsTrigger

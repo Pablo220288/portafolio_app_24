@@ -31,7 +31,7 @@ const linksFooter = [
 const Footer = () => {
   return (
     <div className="w-full px-10 sm:px-6 bg-primary/5" id="first-section">
-      <div className="mx-auto max-w-2xl pt-4 pb-16 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl pt-4 pb-16 sm:px-6 lg:max-w-[1440px] lg:px-8">
         <div className="mt-12 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           <div className="col-span-4">
             <div className="pb-4">

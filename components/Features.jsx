@@ -45,23 +45,29 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-8 xl:py-12">
-      <div className="container mx-auto px-8 xl:px-0">
-        <h2 className="section-title mb-2 xl:mb-3 text-center mx-auto">
-          Features
-        </h2>
+    <section>
+      <div className="w-full max-w-[1440px] mx-auto px-8 xl:px-0">
+        <Fade direction="up" triggerOnce cascade damping={1e-1} delay={200}>
+          <h2 className="section-title mb-2 xl:mb-3 text-center mx-auto">
+            Features
+          </h2>
+        </Fade>
         <div className="flex flex-col">
           <div className="mx-auto max-w-7xl text-center">
-            <p className="mt-2 text-2xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
-              Everything you need to build an amazing website
-            </p>
-            <p className="mt-3 text-lg leading-8 text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              ullamcorper, dui nec blandit feugiat, nunc nisl aliquet dui, in
-            </p>
+            <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
+              <p className="mt-2 text-2xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
+                Everything you need to build an amazing website
+              </p>
+            </Fade>
+            <Fade direction="up" triggerOnce cascade damping={1e-1} delay={600}>
+              <p className="mt-3 text-lg leading-8 text-gray-600 dark:text-gray-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                ullamcorper, dui nec blandit feugiat, nunc nisl aliquet dui, in
+              </p>
+            </Fade>
           </div>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl px-8 lg:px-10 xl-px-0 sm:mt-20 lg:mt-24 lg:max-w-4xl overflow-hidden py-5">
+        <div className="mx-auto mt-16 max-w-2xl px-8 lg:px-10 xl-px-0 sm:mt-20 lg:mt-24 lg:max-w-6xl overflow-hidden py-5">
           <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-20 lg:gap-x-20">
             {features.map((feature, key) => (
               <Zoom cascade delay={100} duration={600} triggerOnce key={key}>

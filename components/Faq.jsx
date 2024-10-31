@@ -49,16 +49,18 @@ const faqs = [
 const Faq = () => {
   return (
     <section>
-      <div className="container max-w-[90%] mx-auto pt-[6rem]">
+      <div className="w-full max-w-3xl lg:max-w-[1400px] mx-auto px-8 pt-[6rem]">
         <div className="w-full pt-12 mb-6 xl:mb-24 ">
-          <h2 className="section-title mb-6 xl:mb-12 text-center mx-auto">
-            Frequently Asked Questions
-          </h2>
+          <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
+            <h2 className="section-title mb-6 xl:mb-12 text-center mx-auto">
+              Frequently Asked Questions
+            </h2>
+          </Fade>
           <div>
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <Fade
-                  direction="up"
+                  direction="left"
                   triggerOnce
                   cascade
                   damping={1e-1}

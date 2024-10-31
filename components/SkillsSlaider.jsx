@@ -316,8 +316,8 @@ const skills2 = [
 
 const SkillsSlaider = () => {
   return (
-    <div className="mt-20">
-      <div className="w-full overflow-x-hidden container-skills-1">
+    <div className="pt-[8rem]">
+      <div className="w-full max-w-[1440px] mx-auto overflow-x-hidden container-skills-1">
         <div className="skills-list h-[90px] overflow-hidden lg:overflow-visible lg:h-[150px]">
           {skills1.map((skill, index) => (
             <div
@@ -355,7 +355,7 @@ const SkillsSlaider = () => {
           ))}
         </div>
       </div>
-      <div className="w-full overflow-x-hidden container-skills-2">
+      <div className="w-full max-w-[1440px] mx-auto overflow-x-hidden container-skills-2">
         <div className="skills-list h-[90px] overflow-hidden lg:overflow-visible lg:h-[150px]">
           {skills2.map((skill, index) => (
             <div
