@@ -1,4 +1,11 @@
 {
+  "Nav": {
+    "home": "Home",
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "pricing": "Precios",
+    "contact": "Contacto"
+  },
   "Hero": {
     "greeting": "Hola, Soy Pablo"
   }

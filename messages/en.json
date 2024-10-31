@@ -1,4 +1,11 @@
 {
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
   "Hero": {
     "greeting": "Hi, I'm Pablo"
   }

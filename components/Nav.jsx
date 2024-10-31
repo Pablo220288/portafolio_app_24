@@ -1,7 +1,8 @@
 "use client";
 
-import { Link } from "@/navigation";
 import React from "react";
+import { Link } from "@/navigation";
+import { navLinks } from "@/data/data";
 
 // Next Hooks
 import { usePathname } from "next/navigation";
@@ -12,16 +13,9 @@ import { motion } from "framer-motion";
 //Import React Awesome Reveal
 import { Fade } from "react-awesome-reveal";
 
-const links = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
-  { path: "/pricing", label: "Pricing" },
-  { path: "/contact", label: "Contact" },
-];
-
 const Nav = ({ containerStyles, linksStyles, underlineStyles }) => {
   const path = usePathname();
+  const links = navLinks();
 
   return (
     <nav className={`${containerStyles}`}>

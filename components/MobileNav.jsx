@@ -1,6 +1,9 @@
 "use client";
 
 import React from "react";
+import { Link } from "@/navigation";
+import { navLinks } from "@/data/data";
+
 import {
   Sheet,
   SheetTrigger,
@@ -9,22 +12,20 @@ import {
 } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
 import Logo from "./Logo";
-import Nav from "./Nav";
 import Socials from "./Socials";
 
-import { motion } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
-import { Link } from "@/navigation";
 
-const links = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
-  { path: "/pricing", label: "Pricing" },
-  { path: "/contact", label: "Contact" },
-];
+//Import React Awesome Reveal
+import { Fade } from "react-awesome-reveal";
+
+// Next Hooks
+import { usePathname } from "next/navigation";
+
 
 const MobileNav = () => {
+  const path = usePathname();
+  const links = navLinks();
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -46,6 +47,9 @@ const MobileNav = () => {
                 >
                   <SheetClose asChild>
                     <Link href={link.path} className={`capitalize text-1xl`}>
+                      {link.path === path ? (
+                        <span className="absolute left-0 top-full h-[2px] w-full bg-primary"></span>
+                      ) : null}
                       {link.label}
                     </Link>
                   </SheetClose>
