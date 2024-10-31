@@ -2,17 +2,19 @@
 
 import Link from "next/link";
 import {
-  RiInstagramFill,
   RiGoogleFill,
   RiTwitchFill,
   RiWhatsappFill,
+  RiLinkedinFill,
+  RiYoutubeFill,
 } from "react-icons/ri";
 
 const icons = [
   { path: "/", name: <RiWhatsappFill /> },
-  { path: "/", name: <RiInstagramFill /> },
   { path: "/", name: <RiGoogleFill /> },
   { path: "/", name: <RiTwitchFill /> },
+  { path: "/", name: <RiYoutubeFill /> },
+  { path: "/", name: <RiLinkedinFill /> },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
@@ -20,7 +22,7 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link key={index} href={icon.path}>
+          <Link key={index} href={icon.path} target="_blank">
             <div className={`${iconStyles}`}>{icon.name}</div>
           </Link>
         );

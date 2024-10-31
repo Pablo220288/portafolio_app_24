@@ -7,6 +7,22 @@
     "contact": "Contact"
   },
   "Hero": {
-    "greeting": "Hi, I'm Pablo"
+    "greeting": "Hi, I'm Pablo",
+    "typeAnimation": {
+      "frontendDeveloper": "Frontend Developer",
+      "backendDeveloper": "Backend Developer",
+      "fullStackDeveloper": "Full Stack Developer"
+    },
+    "text": "I am passionate about programming and continuous learning, always eager to expand my knowledge and skills to provide effective solutions for my clients.",
+    "input": {
+      "placeholder": "Enter your email",
+      "submit": "Subscribe"
+    }
+  },
+  "AboutSkills": {
+    "yearOfExperience": "Years of experience",
+    "projects": "Projects",
+    "satisfiedCustomers": "Satisfied customers",
+    "followers": "Followers"
   }
 }

@@ -7,6 +7,22 @@
     "contact": "Contacto"
   },
   "Hero": {
-    "greeting": "Hola, Soy Pablo"
+    "greeting": "Hola, Soy Pablo",
+    "typeAnimation": {
+      "frontendDeveloper": "Desarrollador Frontend",
+      "backendDeveloper": "Desarrollador Backend",
+      "fullStackDeveloper": "Desarrollador Full Stack"
+    },
+    "text": "Soy un apasionado de la programación y el aprendizaje continuo, siempre en busca de expandir mis conocimientos y habilidades para ofrecer soluciones efectivas a mis clientes.",
+    "input": {
+      "placeholder": "Escriba su correo electrónico",
+      "submit": "Suscribirse"
+    }
+  },
+  "AboutSkills": {
+    "yearOfExperience": "Años de experiencia",
+    "projects": "Proyectos",
+    "satisfiedCustomers": "Clientes Satisfechos",
+    "followers": "Seguidores"
   }
 }

@@ -10,9 +10,7 @@ import Socials from "./Socials";
 import AboutSkills from "./AboutSkills";
 
 //Import Icons
-import {
-  RiArrowRightDoubleLine,
-} from "react-icons/ri";
+import { RiArrowRightDoubleLine } from "react-icons/ri";
 
 //Import Images
 import HeroImg from "./HeroImg";
@@ -32,33 +30,27 @@ const Hero = () => {
         <div className="flex justify-evenly xl:gap-x-8 sm:py-12 px-8 xl:px-0">
           <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <Fade direction="up" triggerOnce delay={300} cascade damping={1e-1}>
-              <div className="text-sm uppercase font-semibold tracking-[4px] mb-4 text-primary">
-                Full Stack Developer
-              </div>
+              <TypeAnimation
+                sequence={[
+                  `${t("typeAnimation.frontendDeveloper")}`,
+                  2000,
+                  `${t("typeAnimation.backendDeveloper")}`,
+                  2000,
+                  `${t("typeAnimation.fullStackDeveloper")}`,
+                  2000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                className="text-sm uppercase font-semibold tracking-[4px] mb-4 text-primary"
+              />
             </Fade>
             <Fade direction="up" triggerOnce delay={500} cascade damping={1e-1}>
               <h1 className="h1">{t("greeting")}</h1>
             </Fade>
             <Fade direction="up" triggerOnce delay={700} cascade damping={1e-1}>
               <div className="subtitle max-w-[590px] mt-4 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
-                <span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Neque perspiciatis hic inventore ratione ullam, atque,
-                </span>
-                <TypeAnimation
-                  sequence={[
-                    "Frontend Developer",
-                    2000,
-                    "Backend Developer",
-                    2000,
-                    "Full Stack Developer",
-                    2000,
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  repeat={Infinity}
-                  className="text-base uppercase font-semibold tracking-[2px] text-primary"
-                />
+                <span>{t("text")}</span>
               </div>
             </Fade>
             <Fade direction="up" triggerOnce delay={900} cascade damping={1e-1}>
@@ -70,11 +62,11 @@ const Hero = () => {
                   <Input
                     type="email"
                     id="email"
-                    placeholder="Enter your email"
+                    placeholder={`${t("input.placeholder")}`}
                   />
                   <Link href="/contact">
                     <Button className="gap-x-1">
-                      Get Started <RiArrowRightDoubleLine size={18} />
+                      {t("input.submit")} <RiArrowRightDoubleLine size={18} />
                     </Button>
                   </Link>
                 </div>

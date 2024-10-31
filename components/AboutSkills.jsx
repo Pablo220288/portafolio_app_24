@@ -10,7 +10,11 @@ import {
 import Badge from "./Badge";
 import { Fade } from "react-awesome-reveal";
 
+//Import Next Intl
+import { useTranslations } from "next-intl";
+
 const AboutSkills = () => {
+  const t = useTranslations("AboutSkills");
   return (
     <div className="pt-[8rem]">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-8 overflow-hidden py-24">
@@ -18,7 +22,7 @@ const AboutSkills = () => {
           <Fade direction="up" triggerOnce delay={200} cascade damping={1e-1}>
             <div className="mx-auto flex max-w-xs flex-col items-center gap-y-4">
               <dt className="text-base leading-7 text-muted-foreground">
-                Year of Experience
+                {t("yearOfExperience")}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                 <Badge
@@ -34,7 +38,7 @@ const AboutSkills = () => {
           <Fade direction="up" triggerOnce delay={400} cascade damping={1e-1}>
             <div className="mx-auto flex max-w-xs flex-col items-center gap-y-4">
               <dt className="text-base leading-7 text-muted-foreground">
-                Projects
+                {t("projects")}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                 <Badge
@@ -50,7 +54,7 @@ const AboutSkills = () => {
           <Fade direction="up" triggerOnce delay={400} cascade damping={1e-1}>
             <div className="mx-auto flex max-w-xs flex-col items-center gap-y-4">
               <dt className="text-base leading-7 text-muted-foreground">
-                Satisfied Customers
+                {t("satisfiedCustomers")}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                 <Badge
@@ -66,7 +70,7 @@ const AboutSkills = () => {
           <Fade direction="up" triggerOnce delay={400} cascade damping={1e-1}>
             <div className="mx-auto flex max-w-xs flex-col items-center gap-y-4">
               <dt className="text-base leading-7 text-muted-foreground">
-                Followers
+                {t("followers")}
               </dt>
               <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                 <Badge
