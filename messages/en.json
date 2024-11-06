@@ -24,5 +24,160 @@
     "projects": "Projects",
     "satisfiedCustomers": "Satisfied customers",
     "followers": "Followers"
+  },
+  "Services": {
+    "title": "Services",
+    "subtitle": "Tailored web solutions for your digital success.",
+    "description": "I develop customized and functional web solutions focused on providing an optimized user experience tailored to each client's needs.",
+    "cards": {
+      "webDesign": {
+        "title": "Web Design",
+        "description": "Development of modern and attractive interfaces that combine aesthetics and functionality for an impactful visual experience."
+      },
+      "responsive": {
+        "title": "Fully Responsive",
+        "description": "Implementation of adaptive designs that ensure a seamless user experience on any device."
+      },
+      "mobileApp": {
+        "title": "Mobile Applications",
+        "description": "Development of intuitive and high-performance mobile apps that provide a smooth and satisfying experience."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Creation of solid and scalable backend systems that ensure efficient and secure project operation."
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Some of my most notable projects.",
+    "description": "Explore my latest projects and discover my evolution as a programmer through innovative solutions tailored to each challenge.",
+    "projects": {
+      "mahalo": {
+        "title": "Cabanas Mahalo",
+        "description": "Official website for the Cabañas Mahalo complex located in Villa Rumipal, Córdoba.",
+        "category": "Websites"
+      }
+    },
+    "buttons": {
+      "all": "All",
+      "seeMore": "See more"
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What our clients say.",
+    "description": "Discover the experiences and opinions of our clients, who share how our solutions have exceeded their expectations and contributed to their projects.",
+    "cards": {
+      "card1": {
+        "comment": "The development team created a fast and easy-to-use web app that exceeded all my expectations. Their professionalism was key.",
+        "name": "Oscar Biocca",
+        "profession": "Owner of Cabañas Mahalo"
+      },
+      "card2": {
+        "comment": "The experience was excellent. Our website is visually appealing and offers flawless navigation. Highly recommended.",
+        "name": "Kurt Rubinstein",
+        "profession": "CTO of Starbene"
+      },
+      "card3": {
+        "comment": "The backend solution they provided is solid and secure. The team's attention to detail is impressive. Great job!",
+        "name": "Santino Ruzzante",
+        "profession": "Product Manager at Banndo"
+      },
+      "card4": {
+        "comment": "The team delivered a functional and modern web app that has optimized our processes. Great professionalism and dedication.",
+        "name": "Martín Pascual",
+        "profession": "Operations Manager at Zumaplast"
+      },
+      "card5": {
+        "comment": "They developed an elegant and easy-to-manage website. The result was more than we expected. Very satisfied with their work.",
+        "name": "Yamila Sayag",
+        "profession": "Owner of Yeah Stretching"
+      },
+      "card6": {
+        "comment": "The backend development they provided is scalable and robust. A professional service that met all our expectations.",
+        "name": "Delfin Blaksley",
+        "profession": "Tech Lead at Banndo"
+      },
+      "card7": {
+        "comment": "Thanks to the team, our web app is fast and reliable. Their problem-solving ability is unmatched. We highly recommend them.",
+        "name": "Lucía Hernández",
+        "profession": "Owner of Monamie"
+      }
+    }
+  },
+  "Faqs": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to your most common questions.",
+    "questions": {
+      "1": {
+        "question": "Do you offer maintenance and post-development support services?",
+        "answer": "Yes, I provide ongoing maintenance and support to ensure that the application or website continues to function optimally. This includes security updates, performance improvements, and the implementation of new features."
+      },
+      "2": {
+        "question": "Do you have experience working on large projects and collaborating with teams?",
+        "answer": "I have worked on projects of various sizes, from individual applications to complex enterprise platforms. In teams, I use tools like Git, Jira, and Slack to collaborate efficiently with other developers, designers, and project managers."
+      },
+      "3": {
+        "question": "Can you integrate APIs and third-party services into my applications?",
+        "answer": "Of course, I have experience integrating external APIs such as payment gateways (Stripe, PayPal), authentication services (OAuth, JWT), and other RESTful or GraphQL APIs to enhance the functionality of applications."
+      },
+      "4": {
+        "question": "How long does it take to develop an application or website?",
+        "answer": "The time varies depending on the complexity of the project and its requirements. A basic project can take between 2 to 4 weeks, while a more complex system may require several months. I always provide a detailed plan and estimated timelines after discussing the requirements."
+      },
+      "5": {
+        "question": "Do you offer design services or do you only focus on development?",
+        "answer": "While I specialize in development, I collaborate with professional designers to ensure that the products have an attractive and functional design. I also have basic knowledge of tools like Figma and Adobe XD, which allows me to work directly on simple designs."
+      },
+      "6": {
+        "question": "What are your rates?",
+        "answer": "My rates depend on the type and complexity of the project. I offer hourly rates or fixed-price budgets based on the specific needs of each client. After an initial consultation, I provide a clear cost breakdown."
+      }
+    }
+  },
+  "Website": {
+    "title": "Need a Website?",
+    "subtitle": "Get in touch with me and let's work together on a custom solution that takes your project to the next level.",
+    "input": {
+      "placeholder": "Enter your email",
+      "submit": "Contact Me"
+    },
+    "cards": {
+      "response": {
+        "title": "Immediate Attention",
+        "description": "Get quick and effective solutions for your projects, ensuring agile and efficient response times."
+      },
+      "security": {
+        "title": "Full Security",
+        "description": "Developed with best practices to protect your project and ensure data integrity, keeping security as a priority."
+      }
+    }
+  },
+  "Footer": {
+    "title": "Your custom web development solution.",
+    "linksFooter": {
+      "company": {
+        "title": "Company",
+        "about": "About Me",
+        "projects": "Projects",
+        "pricing": "Pricing",
+        "contact": "Contact"
+      },
+      "support": {
+        "title": "Support",
+        "help": "Help Center",
+        "terms": "Terms of Service",
+        "legal": "Legal",
+        "privacy": "Privacy Policy"
+      }
+    },
+    "stay": {
+      "title": "Stay Updated",
+      "input": {
+        "placeholder": "Enter your email"
+      }
+    },
+    "copyright": "All rights reserved"
   }
 }

@@ -8,45 +8,7 @@ import Slider from "react-slick";
 
 //Import React Awesome Reveal
 import { Fade } from "react-awesome-reveal";
-
-const testimonial = [
-  {
-    comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum deserunt vel quo.",
-    name: "David",
-    profession: "Full Stack Developer",
-  },
-  {
-    comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum deserunt vel quo.",
-    name: "Pablo",
-    profession: "Full Stack Developer",
-  },
-  {
-    comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum deserunt vel quo.",
-    name: "David",
-    profession: "Full Stack Developer",
-  },
-  {
-    comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum deserunt vel quo.",
-    name: "Pablo",
-    profession: "Full Stack Developer",
-  },
-  {
-    comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum deserunt vel quo.",
-    name: "David",
-    profession: "Full Stack Developer",
-  },
-  {
-    comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum deserunt vel quo.",
-    name: "Pablo",
-    profession: "Full Stack Developer",
-  },
-];
+import { dataTestimonial } from "@/data/data";
 
 const SlickSlaider = () => {
   const settings = {
@@ -89,6 +51,8 @@ const SlickSlaider = () => {
     ],
   };
 
+  const testimonial = dataTestimonial();
+
   return (
     <div className="w-full max-w-[1400px] mx-auto px-8">
       <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
@@ -100,7 +64,7 @@ const SlickSlaider = () => {
                 <span className="text-base leading-6">{item.comment}</span>
               </div>
               <div className="flex items-center gap-x-4">
-                <div className="text-[1.1rem] rounded-full flex items-center justify-center w-12 h-12 text-black dark:text-white bg-gray-300 dark:bg-gray-700">
+                <div className="min-w-12 text-[1.1rem] rounded-full flex items-center justify-center w-12 h-12 text-black dark:text-white bg-gray-300 dark:bg-gray-700">
                   {item.name[0]}
                 </div>
                 <div className="flex flex-col">

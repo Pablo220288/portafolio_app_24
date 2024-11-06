@@ -1,69 +1,43 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 import ProjectCard from "./ProjectCard";
+import { Link } from "@/navigation";
+import { Button } from "./ui/button";
+import { dataProjects } from "@/data/data";
 import { Fade } from "react-awesome-reveal";
 
-export const projects = [
-  {
-    title: "Cabanas Mahalo",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/mahalo.png",
-    link: "https://www.google.com",
-    category: "Webside",
-  },
-  {
-    title: "Budget App",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-    tags: ["React", "Next.js", "Tailwind", "MongoDB"],
-    imageUrl: "/image2.png",
-    link: "https://www.google.com",
-    category: "Web App",
-  },
-  {
-    title: "Storage App",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-    tags: ["React", "Next.js", "Tailwind", "MongoDB"],
-    imageUrl: "/image3.png",
-    link: "https://www.google.com",
-    category: "Web App",
-  },
-  {
-    title: "Mission Theme",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-    tags: ["Next.js", "Node.js", "Express", "MongoDB", "Tailwind"],
-    imageUrl: "/image4.png",
-    link: "https://www.google.com",
-    category: "Backend",
-  },
-];
+//Import Icons
+import { CiLocationArrow1 } from "react-icons/ci";
+
+//Import Next Intl
+import { useTranslations } from "next-intl";
 
 const Projects = () => {
+  const t = useTranslations("Projects");
+
+  const [isHovered, setIsHovered] = useState(false);
+  const projects = dataProjects().slice(0, 2);
+
   return (
     <div className="pt-[8rem]">
       <div className="w-full max-w-[1400px] mx-auto px-8 xl:px-0">
         <Fade direction="up" triggerOnce cascade damping={1e-1} delay={200}>
           <h2 className="section-title mb-2 xl:mb-3 text-center mx-auto">
-            Projects
+            {t("title")}
           </h2>
         </Fade>
         <div className="flex flex-col">
           <div className="mx-auto max-w-7xl text-center">
             <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
               <p className="mt-2 text-2xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
-                Everything you need to build an amazing website
+                {t("subtitle")}
               </p>
             </Fade>
             <Fade direction="up" triggerOnce cascade damping={1e-1} delay={600}>
               <p className="mt-3 text-lg leading-8 text-gray-600 dark:text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                ullamcorper, dui nec blandit feugiat, nunc nisl aliquet dui, in
+                {t("description")}
               </p>
             </Fade>
           </div>
@@ -80,7 +54,21 @@ const Projects = () => {
             />
           ))}
         </div>
-        <p className="text-end mt-10 mr-10">View all projects</p>
+        <div className="mt-10 text-center xl:text-end">
+          <Link
+            href="/projects"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Button
+              className={`gap-x-1 text-white bubbly-button ${
+                isHovered ? "animate" : ""
+              }`}
+            >
+              {t("buttons.seeMore")} <CiLocationArrow1 size={18} />
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

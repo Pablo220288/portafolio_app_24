@@ -1,60 +1,92 @@
 "use client";
 
-import React, { useState } from "react";
-import { projects } from "@/components/Projects";
+import React, { useEffect, useState } from "react";
+import { dataProjects } from "@/data/data";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Fade, Zoom } from "react-awesome-reveal";
 
-const uniqueCategories = [
-  "All",
-  ...new Set(projects.map((project) => project.category)),
-];
+//Import Next Intl
+import { useTranslations } from "next-intl";
 
 const Projects = () => {
-  const [catagories, setCatagories] = useState(uniqueCategories);
-  const [activeCategory, setActiveCategory] = useState("All");
+  const t = useTranslations("Projects");
+
+  const [catagories, setCatagories] = useState([]);
+  const [activeCategory, setActiveCategory] = useState(`${t("buttons.all")}`);
+
+  const projects = dataProjects();
 
   const filteredProjects = projects.filter((project) => {
-    return activeCategory === "All"
+    return activeCategory === `${t("buttons.all")}`
       ? project
       : project.category === activeCategory;
   });
 
+  useEffect(() => {
+    setCatagories([
+      `${t("buttons.all")}`,
+      ...new Set(projects.map((project) => project.category)),
+    ]);
+  }, []);
+
   return (
     <section className="pt-12">
       <div className="w-full max-w-[1400px] px-8 mx-auto">
-        <div className="mx-auto text-center">
-          <h2 className="section-title mb-4 lg:mb-8 ">Projects</h2>
-          <p className="text-lg leading-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-            harum dolor libero, eaque.
-          </p>
+        <Fade direction="up" triggerOnce cascade damping={1e-1} delay={200}>
+          <h2 className="section-title mb-2 xl:mb-3 text-center mx-auto">
+            {t("title")}
+          </h2>
+        </Fade>
+        <div className="flex flex-col">
+          <div className="mx-auto max-w-7xl text-center">
+            <Fade direction="up" triggerOnce cascade damping={1e-1} delay={300}>
+              <p className="mt-2 text-2xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
+                {t("subtitle")}
+              </p>
+            </Fade>
+            <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
+              <p className="mt-3 text-lg leading-8 text-gray-600 dark:text-gray-300">
+                {t("description")}
+              </p>
+            </Fade>
+          </div>
         </div>
         <Tabs defaultValue={activeCategory} className="my-24 xl:mb-48">
-          <TabsList className="w-full grid h-full grid-cols-2 sm:grid-cols-4 lg:max-w-[740px] mb-12 mx-auto md:border dark:border-none">
-            {catagories.map((catagory) => (
-              <TabsTrigger
-                key={catagory}
-                value={catagory}
-                onClick={() => setActiveCategory(catagory)}
-                className=" capitalize md:w-[162px] w-auto"
-              >
-                {catagory}
-              </TabsTrigger>
-            ))}
-          </TabsList>
+          <Fade direction="up" triggerOnce cascade damping={1e-1} delay={500}>
+            <TabsList className="w-full grid h-full grid-cols-2 sm:grid-cols-4 lg:max-w-[740px] mb-12 mx-auto md:border dark:border-none">
+              {catagories.map((catagory) => (
+                <TabsTrigger
+                  key={catagory}
+                  value={catagory}
+                  onClick={() => setActiveCategory(catagory)}
+                  className=" capitalize md:w-[162px] w-auto"
+                >
+                  {catagory}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </Fade>
 
-          <div className="flex flex-wrap gap-8 items-center justify-center mt-20">
+          <div className="flex flex-wrap gap-8 items-center justify-center">
             {filteredProjects.map((project, index) => {
               return (
                 <TabsContent key={index} value={activeCategory}>
-                  <ProjectCard
-                    title={project.title}
-                    description={project.description}
-                    tags={project.tags}
-                    imageUrl={project.imageUrl}
-                    link={project.link}
-                  />
+                  <Fade
+                    direction="up"
+                    triggerOnce
+                    cascade
+                    damping={1e-1}
+                    delay={index * 200}
+                  >
+                    <ProjectCard
+                      title={project.title}
+                      description={project.description}
+                      tags={project.tags}
+                      imageUrl={project.imageUrl}
+                      link={project.link}
+                    />
+                  </Fade>
                 </TabsContent>
               );
             })}

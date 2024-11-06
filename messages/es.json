@@ -13,7 +13,7 @@
       "backendDeveloper": "Desarrollador Backend",
       "fullStackDeveloper": "Desarrollador Full Stack"
     },
-    "text": "Soy un apasionado de la programación y el aprendizaje continuo, siempre en busca de expandir mis conocimientos y habilidades para ofrecer soluciones efectivas a mis clientes.",
+    "text": "Un apasionado de la programación y el aprendizaje continuo, siempre en busca de expandir mis conocimientos y habilidades para ofrecer soluciones efectivas a mis clientes.",
     "input": {
       "placeholder": "Escriba su correo electrónico",
       "submit": "Suscribirse"
@@ -24,5 +24,160 @@
     "projects": "Proyectos",
     "satisfiedCustomers": "Clientes Satisfechos",
     "followers": "Seguidores"
+  },
+  "Services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones web a medida para tu éxito digital.",
+    "description": "Desarrollo soluciones web personalizadas y funcionales, enfocadas en brindar una experiencia de usuario optimizada y adaptada a las necesidades de cada cliente.",
+    "cards": {
+      "webDesign": {
+        "title": "Diseño Web",
+        "description": "Desarrollo de interfaces modernas y atractivas que combinan estética y funcionalidad para una experiencia visual impactante."
+      },
+      "responsive": {
+        "title": "Totalmente Adaptable",
+        "description": "Implementación de diseños adaptativos que aseguran una experiencia de usuario perfecta en cualquier dispositivo."
+      },
+      "mobileApp": {
+        "title": "Aplicaciones Móviles",
+        "description": "Desarrollo de aplicaciones móviles intuitivas y de alto rendimiento que brindan una experiencia fluida y satisfactoria."
+      },
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Creación de sistemas backend sólidos y escalables que garantizan un funcionamiento eficiente y seguro de tu proyecto."
+      }
+    }
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de mis proyectos más destacados.",
+    "description": "Explora mis proyectos más recientes y descubre mi evolución como programador a través de soluciones innovadoras y adaptadas a cada desafío.",
+    "projects": {
+      "mahalo": {
+        "title": "Cabanas Mahalo",
+        "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",
+        "category": "Sitios Web"
+      }
+    },
+    "buttons": {
+      "all": "Todo",
+      "seeMore": "Ver más"
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen nuestros clientes.",
+    "description": "Descubre las experiencias y opiniones de nuestros clientes, quienes comparten cómo nuestras soluciones han superado sus expectativas y contribuido a sus proyectos.",
+    "cards": {
+      "card1": {
+        "comment": "El equipo de desarrollo creó una web app rápida y fácil de usar que superó todas mis expectativas. Su profesionalismo fue clave.",
+        "name": "Oscar Biocca",
+        "profession": "Dueño de Cabañas Mahalo"
+      },
+      "card2": {
+        "comment": "La experiencia fue excelente. Nuestro sitio web es visualmente atractivo y ofrece una navegación perfecta. Totalmente recomendados.",
+        "name": "Kurt Rubinstein",
+        "profession": "CTO Starbene"
+      },
+      "card3": {
+        "comment": "La solución backend que nos ofrecieron es sólida y segura. La atención al detalle del equipo es impresionante. ¡Gran trabajo!",
+        "name": "Santino Ruzzante",
+        "profession": "Gerente de Producto Banndo"
+      },
+      "card4": {
+        "comment": "El equipo nos entregó una web app funcional y moderna que ha optimizado nuestros procesos. Gran profesionalismo y dedicación.",
+        "name": "Martín Pascual",
+        "profession": "Gerente de Operaciones Zumaplast"
+      },
+      "card5": {
+        "comment": "Desarrollaron un sitio web elegante y fácil de gestionar. El resultado fue más de lo que esperábamos. Muy satisfechos con su trabajo.",
+        "name": "Yamila Sayag",
+        "profession": "Yeah Stretching"
+      },
+      "card6": {
+        "comment": "El desarrollo backend que nos proporcionaron es escalable y robusto. Un servicio profesional que cumplió con nuestras expectativas.",
+        "name": "Delfin Blaksley",
+        "profession": "Líder tecnológico Banndo"
+      },
+      "card7": {
+        "comment": "Gracias al equipo, nuestra web app es rápida y confiable. Su capacidad de resolver problemas es inigualable. Los recomendamos mucho.",
+        "name": "Lucía Hernández",
+        "profession": "Monamie"
+      }
+    }
+  },
+  "Faqs": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Respuestas a tus dudas más comunes.",
+    "questions": {
+      "1": {
+        "question": "¿Ofreces servicios de mantenimiento y soporte post-desarrollo?",
+        "answer": "Sí, ofrezco mantenimiento y soporte continuo para asegurar que la aplicación o sitio web siga funcionando de manera óptima. Esto incluye actualizaciones de seguridad, mejoras de rendimiento y la implementación de nuevas funcionalidades."
+      },
+      "2": {
+        "question": "¿Tienes experiencia trabajando en proyectos grandes y colaborando con equipos?",
+        "answer": "He trabajado en proyectos de diversos tamaños, desde aplicaciones individuales hasta plataformas empresariales complejas. En equipos, utilizo herramientas como Git, Jira y Slack para colaborar eficientemente con otros desarrolladores, diseñadores y gerentes de proyecto."
+      },
+      "3": {
+        "question": "¿Puedes integrar APIs y servicios de terceros en mis aplicaciones?",
+        "answer": "Claro, tengo experiencia integrando APIs externas, como pasarelas de pago (Stripe, PayPal), servicios de autenticación (OAuth, JWT) y otras API RESTful o GraphQL para mejorar la funcionalidad de las aplicaciones."
+      },
+      "4": {
+        "question": "¿Cuánto tiempo toma desarrollar una aplicación o sitio web?",
+        "answer": "El tiempo varía dependiendo de la complejidad del proyecto y sus requisitos. Un proyecto básico puede tardar entre 2 y 4 semanas, mientras que un sistema más complejo puede requerir varios meses. Siempre ofrezco un plan detallado y plazos estimados después de discutir los requisitos."
+      },
+      "5": {
+        "question": "¿Ofreces servicios de diseño o solo te enfocas en el desarrollo?",
+        "answer": "Aunque me especializo en el desarrollo, colaboro con diseñadores profesionales para asegurar que los productos tengan un diseño atractivo y funcional. También tengo conocimientos básicos de herramientas como Figma y Adobe XD, que me permiten trabajar directamente en diseños simples."
+      },
+      "6": {
+        "question": "¿Cuáles son tus tarifas?",
+        "answer": "Mis tarifas dependen del tipo y la complejidad del proyecto. Ofrezco tarifas por hora o presupuestos cerrados basados en las necesidades específicas de cada cliente. Después de una consulta inicial, proporciono un desglose claro de costos."
+      }
+    }
+  },
+  "Website": {
+    "title": "¿Necesitas un sitio web?",
+    "subtitle": "Ponte en contacto conmigo y trabajemos juntos en una solución personalizada que lleve tu proyecto al siguiente nivel.",
+    "input": {
+      "placeholder": "Escriba su correo electrónico",
+      "submit": "Contactame"
+    },
+    "cards": {
+      "response": {
+        "title": "Atención Inmediata",
+        "description": "Obtén soluciones rápidas y efectivas para tus proyectos, garantizando tiempos de respuesta ágiles y eficientes."
+      },
+      "security": {
+        "title": "Seguridad Total",
+        "description": "Desarrollo con las mejores prácticas para proteger tu proyecto y garantizar la integridad de tus datos, manteniendo la seguridad como prioridad."
+      }
+    }
+  },
+  "Footer": {
+    "title": "Tu solución en desarrollo web personalizada.",
+    "linksFooter": {
+      "company": {
+        "title": "Compania",
+        "about": "Sobre mi",
+        "projects": "Proyectos",
+        "pricing": "Precios",
+        "contact": "Contacto"
+      },
+      "support": {
+        "title": "Soporte",
+        "help": "Centro de ayuda",
+        "terms": "Terminos de servicio",
+        "legal": "Legal",
+        "privacy": "Política de privacidad"
+      }
+    },
+    "stay": {
+      "title": "Manténgase actualizado",
+      "input": {
+        "placeholder": "Escriba su correo electrónico"
+      }
+    },
+    "copyright": "Todos los derechos reservados"
   }
 }

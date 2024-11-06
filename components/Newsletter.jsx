@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import { Input } from "./ui/input";
@@ -14,7 +14,14 @@ import {
 
 import { Fade } from "react-awesome-reveal";
 
+//Import Next Intl
+import { useTranslations } from "next-intl";
+
 const Newsletter = () => {
+  const t = useTranslations("Website");
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section>
       <div className="relative overflow-hidden py-16 sm:py-24 lg:py-32">
@@ -29,7 +36,7 @@ const Newsletter = () => {
                 delay={600}
               >
                 <h2 className="text-3xl font-bold tracking-tight section-title !justify-between sm:text-4xl">
-                  Need a Website?
+                  {t("title")}
                 </h2>
               </Fade>
               <Fade
@@ -40,10 +47,7 @@ const Newsletter = () => {
                 delay={400}
               >
                 <p className="my-4 text-lg leading-8 subtitle">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officiis id excepturi cupiditate quibusdam! Atque quaerat
-                  assumenda nesciunt laborum aliquid, nulla itaque temporibus
-                  incidunt dolore dolorem unde culpa voluptatem ad ratione?
+                  {t("subtitle")}
                 </p>
               </Fade>
               <Fade
@@ -54,18 +58,27 @@ const Newsletter = () => {
                 delay={200}
               >
                 <div className="flex items-center w-full gap-x-4">
-                  <label className="sr-only"> Email Address</label>
+                  <label className="sr-only">Email</label>
                   <Input
                     type="email"
                     id="email-address"
                     name="email"
                     autoComplete="email"
                     requerid="true"
-                    placeholder="Enter your email"
+                    placeholder={t("input.placeholder")}
                   />
-                  <Link href="/contact">
-                    <Button className="gap-x-1">
-                      Send Email <RiArrowRightDoubleLine size={18} />
+                  <Link
+                    href="/contact"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                  >
+                    <Button
+                      className={`gap-x-1 text-white bubbly-button ${
+                        isHovered ? "animate" : ""
+                      }`}
+                    >
+                      {t("input.submit")}
+                      <RiArrowRightDoubleLine size={18} />
                     </Button>
                   </Link>
                 </div>
@@ -84,11 +97,10 @@ const Newsletter = () => {
                     <RiCalendarEventLine className="text-primary" size={24} />
                   </div>
                   <dt className="mt-4 font-semibold text-muted-foreground">
-                    Weekly acticles
+                    {t("cards.response.title")}
                   </dt>
                   <dd className="mt-2 leading-7">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae deleniti, ducimus cum, minima hic totam!
+                    {t("cards.response.description")}
                   </dd>
                 </div>
               </Fade>
@@ -104,11 +116,10 @@ const Newsletter = () => {
                     <RiFingerprintLine className="text-primary" size={24} />
                   </div>
                   <dt className="mt-4 font-semibold text-muted-foreground">
-                    Full Security
+                    {t("cards.security.title")}
                   </dt>
                   <dd className="mt-2 leading-7">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae deleniti, ducimus cum, minima hic totam!
+                    {t("cards.security.description")}
                   </dd>
                 </div>
               </Fade>

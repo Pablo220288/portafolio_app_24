@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 //Import Components
@@ -24,6 +24,9 @@ import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const t = useTranslations("Hero");
+
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
       <div className="w-full max-w-[1400px] mx-auto">
@@ -64,8 +67,16 @@ const Hero = () => {
                     id="email"
                     placeholder={`${t("input.placeholder")}`}
                   />
-                  <Link href="/contact">
-                    <Button className="gap-x-1">
+                  <Link
+                    href="/contact"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                  >
+                    <Button
+                      className={`gap-x-1 text-white bubbly-button ${
+                        isHovered ? "animate" : ""
+                      }`}
+                    >
                       {t("input.submit")} <RiArrowRightDoubleLine size={18} />
                     </Button>
                   </Link>

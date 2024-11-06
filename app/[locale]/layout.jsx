@@ -26,7 +26,7 @@ const OutfitFont = Outfit({
 
 export const metadata = {
   title: "Pablo Hernandez",
-  description: "Portafolio 2024",
+  description: "Un apasionado de la programación y el aprendizaje continuo",
 };
 
 export default async function RootLayout({ children }) {
@@ -36,6 +36,7 @@ export default async function RootLayout({ children }) {
     <NextIntlClientProvider messages={messages}>
       <html lang="es" suppressHydrationWarning>
         <head>
+          <link rel="icon" href="/favicon.png" />
           <link
             rel="stylesheet"
             type="text/css"

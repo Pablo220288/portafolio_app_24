@@ -15,6 +15,7 @@ import { useTranslations } from "next-intl";
 
 const AboutSkills = () => {
   const t = useTranslations("AboutSkills");
+
   return (
     <div className="pt-[8rem]">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-8 overflow-hidden py-24">
