@@ -33,7 +33,7 @@ const template = ({ children }) => {
       </motion.main>
       <span
         style={{ transform: `translateY(${handleScroll - 100}%)` }}
-        className="fixed bg-primary w-1 top-0 right-0 bottom-0 transition-all duration-500 z-50"
+        className="fixed bg-primary w-1.5 top-0 right-0 bottom-0 transition-all duration-500 z-50"
       >
         {/* {handleScroll < 20 ? (
           <BiWinkSmile className="text-2xl absolute bottom-0 right-2" />

@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
       <div className="w-full max-w-[1400px] mx-auto">
-        <div className="flex justify-evenly xl:gap-x-8 sm:py-12 px-8 xl:px-0">
+        <div className="flex justify-evenly xl:gap-x-8 sm:py-12 px-8 xl:px-0 mb-14 ">
           <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <Fade direction="up" triggerOnce delay={300} cascade damping={1e-1}>
               <TypeAnimation

@@ -179,5 +179,20 @@
       }
     },
     "copyright": "Todos los derechos reservados"
+  },
+  "AboutSection": {
+    "head": "Sobre mi",
+    "title": "Pablo Hernández",
+    "description": "Soy un apasionado por la programación y el aprendizaje continuo, siempre busco ampliar mis conocimientos y habilidades. Me esfuerzo por ofrecer soluciones innovadoras y efectivas, superando las expectativas de mis clientes y asegurando un trabajo de alta calidad que marque la diferencia en cada proyecto.",
+    "references": {
+      "head": "Referencias",
+      "title": "Mi Experiencia",
+      "description": "Datos que reflejan mi experiencia, clientes satisfechos y el impacto logrado a lo largo de los años."
+    },
+    "training": {
+      "head": "Formación",
+      "title": "Mi Aprendizaje",
+      "description": "A lo largo de los años, he participado en diversas capacitaciones y estudios que han fortalecido mis conocimientos y habilidades en programación y desarrollo de software. Esta dedicación al aprendizaje me permite ofrecer soluciones actualizadas y eficaces a cada proyecto en el que trabajo."
+    }
   }
 }

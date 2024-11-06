@@ -17,7 +17,7 @@ const AboutSkills = () => {
   const t = useTranslations("AboutSkills");
 
   return (
-    <div className="pt-[8rem]">
+    <div>
       <div className="mx-auto max-w-[1400px] px-6 lg:px-8 overflow-hidden py-24">
         <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-center">
           <Fade direction="up" triggerOnce delay={200} cascade damping={1e-1}>

@@ -5,6 +5,18 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0px;
+  background-color: #2662ec;
+  border-radius: 10px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }

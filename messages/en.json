@@ -179,5 +179,20 @@
       }
     },
     "copyright": "All rights reserved"
+  },
+  "AboutSection": {
+    "head": "About Me",
+    "title": "Pablo Hernández",
+    "description": "I am passionate about programming and continuous learning, always striving to expand my knowledge and skills. I aim to deliver innovative and effective solutions that exceed my clients' expectations, ensuring high-quality work that makes a difference in every project.",
+    "references": {
+      "head": "References",
+      "title": "My Experience",
+      "description": "Key data reflecting my experience, satisfied clients, and the impact achieved over the years."
+    },
+    "training": {
+      "head": "Training",
+      "title": "My Learning Journey",
+      "description": "Over the years, I have engaged in various training programs and studies that have strengthened my knowledge and skills in programming and software development. This dedication to learning allows me to provide updated and efficient solutions for every project I undertake."
+    }
   }
 }
