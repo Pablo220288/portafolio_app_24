@@ -3,8 +3,6 @@
 import Image from "next/image";
 import React from "react";
 
-import { Fade, Zoom } from "react-awesome-reveal";
-
 //Frame Motion
 import { motion } from "framer-motion";
 
@@ -43,6 +41,7 @@ const AboutImg = ({ containerStyles }) => {
           alt="About Image"
           width={2500}
           height={1667}
+          className="mask-gradient"
         />
       </motion.div>
       <motion.div

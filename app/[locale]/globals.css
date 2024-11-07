@@ -131,6 +131,10 @@ body {
   @apply z-10 w-[250px] px-16 h-[90px] bg-primary dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-full flex items-center justify-center gap-x-4;
 }
 
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, black 80%, transparent);
+}
+
 .pablo {
   width: 100%;
   display: flex;
