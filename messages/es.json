@@ -194,5 +194,69 @@
       "title": "Mi Aprendizaje",
       "description": "A lo largo de los años, he participado en diversas capacitaciones y estudios que han fortalecido mis conocimientos y habilidades en programación y desarrollo de software. Esta dedicación al aprendizaje me permite ofrecer soluciones actualizadas y eficaces a cada proyecto en el que trabajo."
     }
+  },
+  "Pricing": {
+    "title": "Precios",
+    "subtitle": "Encuentra el plan perfecto para impulsar tu proyecto",
+    "description": "Elige entre nuestras opciones de desarrollo web adaptadas a tus necesidades. Desde sitios estándar hasta soluciones avanzadas y backend personalizado, cada plan incluye las herramientas esenciales para ayudarte a destacar y lograr resultados efectivos en línea.",
+    "cards": {
+      "standard": {
+        "title": "Web Standard",
+        "description": "Desarrollo de un sitio web atractivo y funcional, ideal para presencia en línea, blogs o portafolios.",
+        "includedFeatures": {
+          "1": "Diseño Responsivo",
+          "2": "Optimización Básica SEO",
+          "3": "Integración de Redes Sociales",
+          "4": "Formulario de Contacto"
+        }
+      },
+      "professional": {
+        "title": "Web Profecional",
+        "description": "Creación de un sitio web dinámico para e-commerce, con funcionalidades interactivas, carrito de compras y optimización SEO.",
+        "includedFeatures": {
+          "1": "E-commerce",
+          "2": "Área de Usuarios",
+          "3": "Animaciones e Interactividad",
+          "4": "Analíticas y Reportes"
+        }
+      },
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Construcción de una infraestructura robusta y segura para gestionar datos, integraciones de API y soporte de aplicaciones en tiempo real.",
+        "includedFeatures": {
+          "1": "API RESTful",
+          "2": "Base de Datos",
+          "3": "Seguridad",
+          "4": "Servicios Externos"
+        }
+      }
+    },
+    "includedFeaturesTitle": "Características Incluidas",
+    "pricing": {
+      "head": "Desarrolla tu Proyencto desde:",
+      "submit": "Contactame",
+      "footer": "Precios sugeridos: todo depende de tu proyecto y la complejidad del mismo."
+    }
+  },
+  "Contact": {
+    "head": "Hola",
+    "title": "Trabajemos juntos..!",
+    "subtitle": "Ponte en contacto con nosotros y descubre cómo podemos potenciar tu sitio web, con soluciones personalizadas que elevarán tu presencia digital y maximizarán tus resultados en línea.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Escribe tu mensaje",
+      "submit": "Contactame"
+    },
+    "toast": {
+      "sending": {
+        "title": "Enviando..!",
+        "description": "Estamos enviando tu mensaje, pronto te contactaremos."
+      },
+      "error": {
+        "title": "Error..!",
+        "description": "Algo salio mal, intenta de nuevo."
+      }
+    }
   }
 }

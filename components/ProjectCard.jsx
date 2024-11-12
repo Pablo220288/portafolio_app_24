@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 //Import Motion
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 
 const ProjectCard = ({ title, description, tags, imageUrl, link }) => {
   const ref = useRef(null);

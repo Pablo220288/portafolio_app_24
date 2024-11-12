@@ -1,7 +1,12 @@
 import Form from "@/components/Form";
 import React from "react";
 
+//Import Next Intl
+import { useTranslations } from "next-intl";
+
 const Contact = () => {
+  const t = useTranslations("Contact");
+
   return (
     <section className="py-12">
       <div className="w-full px-8 lg:px-12 mx-auto max-w-[1400px]">
@@ -9,15 +14,10 @@ const Contact = () => {
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
               <span className="w-[30px] h-[2px] bg-primary"></span>
-              Hello
+              {t("head")}
             </div>
-            <h1 className="h1 max-w-md mb-8">Let's work together.</h1>
-            <p className="subtitle max-w[400px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              laudantium odio autem consectetur reprehenderit libero, dolorem
-              iusto inventore qui voluptatibus amet sapiente adipisci beatae
-              minima pariatur accusamus odit fuga saepe?
-            </p>
+            <h1 className="h1 max-w-md mb-8">{t("title")}</h1>
+            <p className="subtitle max-w[400px]">{t("subtitle")}</p>
           </div>
           <div className="lg:mt-24">
             <Form />

@@ -1,38 +1,53 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { HiCheck } from "react-icons/hi";
-
-import { ToastAction } from "@/components/ui/toast";
-import { useToast } from "@/hooks/use-toast";
 import SectionContent from "@/components/SectionContent";
+import { dataPricing } from "@/data/data";
+import PricingCard from "@/components/PricingCard";
 
-const includedFeatures = [
-  "Unlimited projects",
-  "Unlimited collaborators",
-  "Unlimited API usage",
-  "24/7 support",
-];
+import { Fade } from "react-awesome-reveal";
+
+//Import Next Intl
+import { useTranslations } from "next-intl";
 
 const Pricing = () => {
-  const { toast } = useToast();
+  const t = useTranslations("Pricing");
+
+  const data = dataPricing();
 
   return (
     <SectionContent sectionStyles={"px-8"}>
-      <h2 className="section-title mb-8 lg:mb-16 ">My Pricing</h2>
-      <div className="mx-auto max-w-2xl sm:text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Memories worth love is ours
-        </h2>
-        <p className="mt-4 text-lg leading-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, harum
-          dolor libero, eaque.
-        </p>
+      <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
+        <h2 className="section-title mb-8">{t("title")}</h2>
+      </Fade>
+      <div className="mx-auto max-w-[1400px] text-center">
+        <Fade direction="up" triggerOnce cascade damping={1e-1} delay={400}>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            {t("subtitle")}
+          </h2>
+        </Fade>
+        <Fade direction="up" triggerOnce cascade damping={1e-1} delay={600}>
+          <p className="mt-4 text-lg leading-8">{t("description")}</p>
+        </Fade>
       </div>
-      <div className="mx-auto mt-16 max-w-2xl ring-1 ring-gray-200 dark:ring-gray-700 rounded-lg sm:mt-20 lg:mx-auto lg:flex lg:max-w-4xl">
+      <div className="w-full flex flex-wrap justify-center items-stretch gap-10 relative">
+        {data.map((item) => (
+          <PricingCard
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            description={item.description}
+            includedFeaturesTitle={`${t("includedFeaturesTitle")}`}
+            includedFeatures={item.includedFeatures}
+            price={item.price}
+            priceHead={`${t("pricing.head")}`}
+            button={`${t("pricing.submit")}`}
+            priceFooter={`${t("pricing.footer")}`}
+          />
+        ))}
+      </div>
+      {/* <div className="mx-auto mt-16 max-w-2xl ring-1 ring-gray-200 dark:ring-gray-700 rounded-lg sm:mt-20 lg:mx-auto lg:flex lg:max-w-4xl">
         <div className="p-8 sm:p-10 lg:flex-auto">
           <h3 className="text-2xl font-semibold tracking-tight">
             Liftime Menbreship
@@ -103,7 +118,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </SectionContent>
   );
 };

@@ -187,3 +187,45 @@ export const dataLinksFooter = () => {
     },
   ];
 };
+
+export const dataPricing = () => {
+  const t = useTranslations("Pricing.cards");
+  return [
+    {
+      id: 1,
+      title: `${t("standard.title")}`,
+      description: `${t("standard.description")}`,
+      includedFeatures: [
+        `${t("standard.includedFeatures.1")}`,
+        `${t("standard.includedFeatures.2")}`,
+        `${t("standard.includedFeatures.3")}`,
+        `${t("standard.includedFeatures.4")}`,
+      ],
+      price: "349",
+    },
+    {
+      id: 2,
+      title: `${t("professional.title")}`,
+      description: `${t("professional.description")}`,
+      includedFeatures: [
+        `${t("professional.includedFeatures.1")}`,
+        `${t("professional.includedFeatures.2")}`,
+        `${t("professional.includedFeatures.3")}`,
+        `${t("professional.includedFeatures.4")}`,
+      ],
+      price: "559",
+    },
+    {
+      id: 3,
+      title: `${t("backend.title")}`,
+      description: `${t("backend.description")}`,
+      includedFeatures: [
+        `${t("backend.includedFeatures.1")}`,
+        `${t("backend.includedFeatures.2")}`,
+        `${t("backend.includedFeatures.3")}`,
+        `${t("backend.includedFeatures.4")}`,
+      ],
+      price: "799",
+    },
+  ];
+};

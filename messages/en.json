@@ -194,5 +194,69 @@
       "title": "My Learning Journey",
       "description": "Over the years, I have engaged in various training programs and studies that have strengthened my knowledge and skills in programming and software development. This dedication to learning allows me to provide updated and efficient solutions for every project I undertake."
     }
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "subtitle": "Find the perfect plan to boost your project",
+    "description": "Choose from our web development options tailored to your needs. From standard websites to advanced solutions and custom backends, each plan includes the essential tools to help you stand out and achieve effective online results.",
+    "cards": {
+      "standard": {
+        "title": "Standard Website",
+        "description": "Development of an attractive and functional website, ideal for online presence, blogs, or portfolios.",
+        "includedFeatures": {
+          "1": "Responsive Design",
+          "2": "Basic SEO Optimization",
+          "3": "Social Media Integration",
+          "4": "Contact Form"
+        }
+      },
+      "professional": {
+        "title": "Professional Website",
+        "description": "Creation of a dynamic e-commerce website with interactive features, shopping cart, and SEO optimization.",
+        "includedFeatures": {
+          "1": "E-commerce",
+          "2": "User Area",
+          "3": "Animations and Interactivity",
+          "4": "Analytics and Reporting"
+        }
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Building a robust and secure infrastructure to manage data, API integrations, and real-time app support.",
+        "includedFeatures": {
+          "1": "RESTful API",
+          "2": "Database",
+          "3": "Security",
+          "4": "External Services"
+        }
+      }
+    },
+    "includedFeaturesTitle": "What's included",
+    "pricing": {
+      "head": "Develop your project from:",
+      "submit": "Contact me",
+      "footer": "Suggested prices: it all depends on your project and its complexity."
+    }
+  },
+  "Contact": {
+    "head": "Hello",
+    "title": "Let's work together!",
+    "subtitle": "Contact us and discover how we can enhance your website together with customized solutions that will elevate your digital presence and maximize your online results.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Type you message",
+      "submit": "Contact me"
+    },
+    "toast": {
+      "sending": {
+        "title": "Sending..!",
+        "description": "We're sending your message, and we'll be in touch soon."
+      },
+      "error": {
+        "title": "Error..!",
+        "description": "Something went wrong, please try again."
+      }
+    }
   }
 }
