@@ -46,6 +46,9 @@ const Form = () => {
               </ToastAction>
             ),
           });
+
+          event.target.reset();
+
         } catch (error) {
           toast({
             title: `${t("toast.error.title")}`,

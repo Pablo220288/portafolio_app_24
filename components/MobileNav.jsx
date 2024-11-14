@@ -14,13 +14,11 @@ import { AlignJustify } from "lucide-react";
 import Logo from "./Logo";
 import Socials from "./Socials";
 
-
 //Import React Awesome Reveal
 import { Fade } from "react-awesome-reveal";
 
 // Next Hooks
 import { usePathname } from "next/navigation";
-
 
 const MobileNav = () => {
   const path = usePathname();
@@ -36,25 +34,29 @@ const MobileNav = () => {
           <div className="flex flex-col items-center gap-y-32">
             <Logo />
             <nav className="flex flex-col items-center gap-y-4">
-              {links.map((link, index) => (
-                <Fade
-                  key={index}
-                  direction="right"
-                  triggerOnce
-                  delay={index * 200}
-                  cascade
-                  damping={1e-1}
-                >
-                  <SheetClose asChild>
-                    <Link href={link.path} className={`capitalize text-1xl`}>
-                      {link.path === path ? (
-                        <span className="absolute left-0 top-full h-[2px] w-full bg-primary"></span>
-                      ) : null}
-                      {link.label}
-                    </Link>
-                  </SheetClose>
-                </Fade>
-              ))}
+              {links.map((link, index) => {
+                const isActive =
+                  link.path === "/" ? path === "/" : path.startsWith(link.path);
+                return (
+                  <Fade
+                    key={index}
+                    direction="right"
+                    triggerOnce
+                    delay={index * 200}
+                    cascade
+                    damping={1e-1}
+                  >
+                    <SheetClose asChild>
+                      <Link href={link.path} className={`capitalize text-1xl`}>
+                        {isActive ? (
+                          <span className="absolute left-0 top-full h-[2px] w-full bg-primary"></span>
+                        ) : null}
+                        {link.label}
+                      </Link>
+                    </SheetClose>
+                  </Fade>
+                );
+              })}
             </nav>
           </div>
           <Socials containerStyles={"flex gap-x-4"} iconStyles={"text-2xl"} />

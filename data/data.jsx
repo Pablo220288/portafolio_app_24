@@ -12,6 +12,7 @@ import {
   RiMobileDownloadLine,
   RiFireLine,
 } from "react-icons/ri";
+import { FaCss3, FaHtml5, FaJs } from "react-icons/fa";
 
 export const navLinks = () => {
   const t = useTranslations("Nav");
@@ -54,12 +55,36 @@ export const dataProjects = () => {
   const t = useTranslations("Projects.projects");
   return [
     {
+      id: "mahalo",
       title: `${t("mahalo.title")}`,
       description: `${t("mahalo.description")}`,
       tags: ["HTML", "CSS", "JavaScript"],
       imageUrl: "/mahalo.png",
-      link: "https://www.google.com",
+      link: "/projects/mahalo",
+      website: "https://www.google.com",
       category: `${t("mahalo.category")}`,
+      live_preview: `${t("mahalo.live_preview")}`,
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 80,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 30,
+        },
+      ],
+      imgs: [
+        "/mahalo/mahalo_2.png",
+        "/mahalo/mahalo_3.png",
+        "/mahalo/mahalo_4.png",
+        "/mahalo/mahalo_5.png",
+        "/mahalo/mahalo_6.png",
+      ],
     },
     {
       title: "Budget App",

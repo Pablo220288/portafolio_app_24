@@ -20,6 +20,8 @@ const Nav = ({ containerStyles, linksStyles, underlineStyles }) => {
   return (
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
+        const isActive =
+          link.path === "/" ? path === "/" : path.startsWith(link.path);
         return (
           <Fade
             key={index}
@@ -30,7 +32,7 @@ const Nav = ({ containerStyles, linksStyles, underlineStyles }) => {
             damping={1e-1}
           >
             <Link href={link.path} className={`capilatize ${linksStyles}`}>
-              {link.path === path ? (
+              {isActive ? (
                 <motion.span
                   layoutId="underline"
                   initial={{ y: "-100%" }}

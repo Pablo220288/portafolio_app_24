@@ -54,9 +54,10 @@
     "description": "Explora mis proyectos más recientes y descubre mi evolución como programador a través de soluciones innovadoras y adaptadas a cada desafío.",
     "projects": {
       "mahalo": {
-        "title": "Cabanas Mahalo",
+        "title": "Cabañas Mahalo",
         "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",
-        "category": "Sitios Web"
+        "category": "Sitios Web",
+        "live_preview": "Vista previa"
       }
     },
     "buttons": {

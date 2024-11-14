@@ -56,7 +56,8 @@
       "mahalo": {
         "title": "Cabanas Mahalo",
         "description": "Official website for the Cabañas Mahalo complex located in Villa Rumipal, Córdoba.",
-        "category": "Websites"
+        "category": "Websites",
+        "live_preview": "Live Preview"
       }
     },
     "buttons": {
