@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/navigation";
 
-const ProjectCard = ({ title, description, tags, imageUrl, link }) => {
+const ProjectCard = ({ title, description, tags, imageCard, link }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, tags, imageUrl, link }) => {
             </ul>
           </div>
           <Image
-            src={imageUrl}
+            src={imageCard}
             alt="Project Image"
             quality={95}
             width={400}

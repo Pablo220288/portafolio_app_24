@@ -11,11 +11,12 @@ import { useTranslations } from "next-intl";
 
 const Projects = () => {
   const t = useTranslations("Projects");
+  const t2 = useTranslations("Projects.projects");
 
   const [catagories, setCatagories] = useState([]);
   const [activeCategory, setActiveCategory] = useState(`${t("buttons.all")}`);
 
-  const projects = dataProjects();
+  const projects = dataProjects(t2);
 
   const filteredProjects = projects.filter((project) => {
     return activeCategory === `${t("buttons.all")}`
@@ -83,7 +84,7 @@ const Projects = () => {
                       title={project.title}
                       description={project.description}
                       tags={project.tags}
-                      imageUrl={project.imageUrl}
+                      imageCard={project.imageCard}
                       link={project.link}
                     />
                   </Fade>

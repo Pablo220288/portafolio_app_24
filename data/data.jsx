@@ -51,19 +51,39 @@ export const dataServices = () => {
   ];
 };
 
-export const dataProjects = () => {
-  const t = useTranslations("Projects.projects");
+export const dataProjects = (t) => {
   return [
     {
       id: "mahalo",
       title: `${t("mahalo.title")}`,
       description: `${t("mahalo.description")}`,
       tags: ["HTML", "CSS", "JavaScript"],
-      imageUrl: "/mahalo.png",
+      imageCard: "/mahalo.png",
+      imageUrl: "/mahalo/mahalo_1.png",
       link: "/projects/mahalo",
       website: "https://www.google.com",
       category: `${t("mahalo.category")}`,
       live_preview: `${t("mahalo.live_preview")}`,
+      sectionDescription: {
+        title: `${t("mahalo.sectionDescription.title")}`,
+        description: `${t("mahalo.sectionDescription.description")}`,
+        category: {
+          title: `${t("mahalo.sectionDescription.category.title")}`,
+          description: `${t("mahalo.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("mahalo.sectionDescription.client.title")}`,
+          description: `${t("mahalo.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("mahalo.sectionDescription.date.title")}`,
+          description: `${t("mahalo.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("mahalo.sectionDescription.designer.title")}`,
+          description: `${t("mahalo.sectionDescription.designer.description")}`,
+        },
+      },
       icons: [
         {
           ico: <FaHtml5 className="w-6 h-6" />,
@@ -79,39 +99,228 @@ export const dataProjects = () => {
         },
       ],
       imgs: [
-        "/mahalo/mahalo_2.png",
-        "/mahalo/mahalo_3.png",
-        "/mahalo/mahalo_4.png",
-        "/mahalo/mahalo_5.png",
-        "/mahalo/mahalo_6.png",
+        {
+          id: 1,
+          url: "/mahalo/mahalo_1.png",
+        },
+        {
+          id: 2,
+          url: "/mahalo/mahalo_2.png",
+        },
+        {
+          id: 3,
+          url: "/mahalo/mahalo_3.png",
+        },
+        {
+          id: 4,
+          url: "/mahalo/mahalo_4.png",
+        },
+        {
+          id: 5,
+          url: "/mahalo/mahalo_5.png",
+        },
       ],
     },
     {
+      id: "budgetApp",
       title: "Budget App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
       tags: ["React", "Next.js", "Tailwind", "MongoDB"],
+      imageCard: "/image2.png",
       imageUrl: "/image2.png",
-      link: "https://www.google.com",
+      link: "/projects/budgetApp",
       category: "Web App",
+      sectionDescription: {
+        title: `${t("mahalo.sectionDescription.title")}`,
+        description: `${t("mahalo.sectionDescription.description")}`,
+        category: {
+          title: `${t("mahalo.sectionDescription.category.title")}`,
+          description: `${t("mahalo.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("mahalo.sectionDescription.client.title")}`,
+          description: `${t("mahalo.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("mahalo.sectionDescription.date.title")}`,
+          description: `${t("mahalo.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("mahalo.sectionDescription.designer.title")}`,
+          description: `${t("mahalo.sectionDescription.designer.description")}`,
+        },
+      },
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 80,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 30,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/mahalo/mahalo_1.png",
+        },
+        {
+          id: 2,
+          url: "/mahalo/mahalo_2.png",
+        },
+        {
+          id: 3,
+          url: "/mahalo/mahalo_3.png",
+        },
+        {
+          id: 4,
+          url: "/mahalo/mahalo_4.png",
+        },
+        {
+          id: 5,
+          url: "/mahalo/mahalo_5.png",
+        },
+      ],
     },
     {
+      id: "storageApp",
       title: "Storage App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
       tags: ["React", "Next.js", "Tailwind", "MongoDB"],
+      imageCard: "/image3.png",
       imageUrl: "/image3.png",
-      link: "https://www.google.com",
+      link: "/projects/storageApp",
       category: "Web App",
+      sectionDescription: {
+        title: `${t("mahalo.sectionDescription.title")}`,
+        description: `${t("mahalo.sectionDescription.description")}`,
+        category: {
+          title: `${t("mahalo.sectionDescription.category.title")}`,
+          description: `${t("mahalo.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("mahalo.sectionDescription.client.title")}`,
+          description: `${t("mahalo.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("mahalo.sectionDescription.date.title")}`,
+          description: `${t("mahalo.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("mahalo.sectionDescription.designer.title")}`,
+          description: `${t("mahalo.sectionDescription.designer.description")}`,
+        },
+      },
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 80,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 30,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/mahalo/mahalo_1.png",
+        },
+        {
+          id: 2,
+          url: "/mahalo/mahalo_2.png",
+        },
+        {
+          id: 3,
+          url: "/mahalo/mahalo_3.png",
+        },
+        {
+          id: 4,
+          url: "/mahalo/mahalo_4.png",
+        },
+        {
+          id: 5,
+          url: "/mahalo/mahalo_5.png",
+        },
+      ],
     },
     {
+      id: "missionTheme",
       title: "Mission Theme",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
       tags: ["Next.js", "Node.js", "Express", "MongoDB", "Tailwind"],
+      imageCard: "/image4.png",
       imageUrl: "/image4.png",
-      link: "https://www.google.com",
+      link: "/projects/missionTheme",
       category: "Backend",
+      sectionDescription: {
+        title: `${t("mahalo.sectionDescription.title")}`,
+        description: `${t("mahalo.sectionDescription.description")}`,
+        category: {
+          title: `${t("mahalo.sectionDescription.category.title")}`,
+          description: `${t("mahalo.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("mahalo.sectionDescription.client.title")}`,
+          description: `${t("mahalo.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("mahalo.sectionDescription.date.title")}`,
+          description: `${t("mahalo.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("mahalo.sectionDescription.designer.title")}`,
+          description: `${t("mahalo.sectionDescription.designer.description")}`,
+        },
+      },
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 80,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 30,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/mahalo/mahalo_1.png",
+        },
+        {
+          id: 2,
+          url: "/mahalo/mahalo_2.png",
+        },
+        {
+          id: 3,
+          url: "/mahalo/mahalo_3.png",
+        },
+        {
+          id: 4,
+          url: "/mahalo/mahalo_4.png",
+        },
+        {
+          id: 5,
+          url: "/mahalo/mahalo_5.png",
+        },
+      ],
     },
   ];
 };

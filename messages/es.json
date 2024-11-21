@@ -57,7 +57,27 @@
         "title": "Cabañas Mahalo",
         "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",
         "category": "Sitios Web",
-        "live_preview": "Vista previa"
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Descripción",
+          "description": "El sitio web de Cabañas Mahalo fue diseñado para ofrecer una experiencia informativa y visualmente atractiva a los visitantes. Se implementó una galería de imágenes para resaltar la belleza del complejo, enlaces a videos que muestran el entorno y las instalaciones, así como mapas interactivos para facilitar la ubicación del lugar. Además, se integró un sistema de reservas para que los clientes puedan gestionar sus estadías de manera sencilla. También se incorporaron las calificaciones de Google, permitiendo reflejar en el sitio las opiniones de los huéspedes y reforzar la confianza en el servicio. Este proyecto combina funcionalidad y diseño para potenciar la presencia digital de Cabañas Mahalo.",
+          "category": {
+            "title": "Categoría",
+            "description": "Desarrollo de Sitios Web"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Oscar Biocca"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Junio 22, 2024"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Pablo Hernandez"
+          }
+        }
       }
     },
     "buttons": {

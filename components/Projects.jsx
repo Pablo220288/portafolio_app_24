@@ -16,9 +16,10 @@ import { useTranslations } from "next-intl";
 
 const Projects = () => {
   const t = useTranslations("Projects");
+  const t2 = useTranslations("Projects.projects");
 
   const [isHovered, setIsHovered] = useState(false);
-  const projects = dataProjects().slice(0, 2);
+  const projects = dataProjects(t2).slice(0, 2);
 
   return (
     <div className="pt-[8rem]">
@@ -49,7 +50,7 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               tags={project.tags}
-              imageUrl={project.imageUrl}
+              imageCard={project.imageCard}
               link={project.link}
             />
           ))}

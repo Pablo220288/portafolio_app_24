@@ -442,3 +442,37 @@ body {
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
+
+.loader {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  filter: url("#liquid");
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 20px #204db8;
+    background: linear-gradient(#3d7dfd, #2662ec);
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: calc(0.2s * var(--e));
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: calc(100% - 20px);
+  }
+  50% {
+    left: calc(100% - 20px);
+  }
+  75%,
+  100% {
+    left: 0;
+  }
+}
