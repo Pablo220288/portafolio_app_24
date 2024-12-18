@@ -33,13 +33,13 @@ const Project = () => {
     if (projectData) {
       setData(projectData);
       setTimeout(() => {
-        setLoading(false);
+        setLoading(true);
       }, 2000);
     }
   }, [id]);
 
   if (loading) {
-    return <Loader />; 
+    return <Loader />;
   }
 
   return (
@@ -117,7 +117,7 @@ const Project = () => {
             </Fade>
             <Fade direction="up" triggerOnce delay={600} cascade damping={1e-1}>
               <Link
-                href="https://pablo220288.github.io/Cabanas-Mahalo/"
+                href={data.website}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 target="_blank"
@@ -132,9 +132,9 @@ const Project = () => {
               </Link>
             </Fade>
           </div>
-          <div className="flex w-full max-w-[590px] items-start justify-between mx-auto px-8">
-            <div className="flex flex-col gap-y-4">
-              <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-4 w-full max-w-[590px] items-center justify-center mx-auto md:px-8">
+            <div className="w-full flex gap-x-4">
+              <div className="flex-1 flex-col gap-y-2">
                 <div className="text-muted-foreground text-lg font-light">
                   <span>{data.sectionDescription.category.title}</span>
                 </div>
@@ -142,17 +142,7 @@ const Project = () => {
                   {data.sectionDescription.category.description}
                 </h3>
               </div>
-              <div className="flex flex-col gap-y-2">
-                <div className="text-muted-foreground text-lg font-light">
-                  <span>{data.sectionDescription.date.title}</span>
-                </div>
-                <h3 className="text-black dark:text-white font-bold text-2xl">
-                  {data.sectionDescription.date.description}
-                </h3>
-              </div>
-            </div>
-            <div className="flex flex-col gap-y-4">
-              <div className="flex flex-col gap-y-2">
+              <div className="flex-1 flex-col gap-y-2">
                 <div className="text-muted-foreground text-lg font-light">
                   <span>{data.sectionDescription.client.title}</span>
                 </div>
@@ -160,7 +150,17 @@ const Project = () => {
                   {data.sectionDescription.client.description}
                 </h3>
               </div>
-              <div className="flex flex-col gap-y-2">
+            </div>
+            <div className="w-full flex gap-x-4">
+              <div className="flex-1 flex-col gap-y-2">
+                <div className="text-muted-foreground text-lg font-light">
+                  <span>{data.sectionDescription.date.title}</span>
+                </div>
+                <h3 className="text-black dark:text-white font-bold text-2xl">
+                  {data.sectionDescription.date.description}
+                </h3>
+              </div>
+              <div className="flex-1 flex-col gap-y-2">
                 <div className="text-muted-foreground text-lg font-light">
                   <span>{data.sectionDescription.designer.title}</span>
                 </div>

@@ -59,9 +59,9 @@ export const dataProjects = (t) => {
       description: `${t("mahalo.description")}`,
       tags: ["HTML", "CSS", "JavaScript"],
       imageCard: "/mahalo.png",
-      imageUrl: "/mahalo/mahalo_1.png",
+      imageUrl: "/mahalo/mahalo_2.png",
       link: "/projects/mahalo",
-      website: "https://www.google.com",
+      website: "https://pablo220288.github.io/Cabanas-Mahalo/",
       category: `${t("mahalo.category")}`,
       live_preview: `${t("mahalo.live_preview")}`,
       sectionDescription: {
@@ -122,69 +122,74 @@ export const dataProjects = (t) => {
       ],
     },
     {
-      id: "budgetApp",
-      title: "Budget App",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-      tags: ["React", "Next.js", "Tailwind", "MongoDB"],
-      imageCard: "/image2.png",
-      imageUrl: "/image2.png",
-      link: "/projects/budgetApp",
-      category: "Web App",
+      id: "bouquet",
+      title: `${t("bouquet.title")}`,
+      description: `${t("bouquet.description")}`,
+      tags: ["HTML", "CSS", "JavaScript"],
+      imageCard: "/bouquet.png",
+      imageUrl: "/bouquet/bouquet_1.png",
+      link: "/projects/bouquet",
+      website: "https://pablo220288.github.io/Bouquets/",
+      category: `${t("bouquet.category")}`,
+      live_preview: `${t("bouquet.live_preview")}`,
       sectionDescription: {
-        title: `${t("mahalo.sectionDescription.title")}`,
-        description: `${t("mahalo.sectionDescription.description")}`,
+        title: `${t("bouquet.sectionDescription.title")}`,
+        description: `${t("bouquet.sectionDescription.description")}`,
         category: {
-          title: `${t("mahalo.sectionDescription.category.title")}`,
-          description: `${t("mahalo.sectionDescription.category.description")}`,
+          title: `${t("bouquet.sectionDescription.category.title")}`,
+          description: `${t(
+            "bouquet.sectionDescription.category.description"
+          )}`,
         },
         client: {
-          title: `${t("mahalo.sectionDescription.client.title")}`,
-          description: `${t("mahalo.sectionDescription.client.description")}`,
+          title: `${t("bouquet.sectionDescription.client.title")}`,
+          description: `${t("bouquet.sectionDescription.client.description")}`,
         },
         date: {
-          title: `${t("mahalo.sectionDescription.date.title")}`,
-          description: `${t("mahalo.sectionDescription.date.description")}`,
+          title: `${t("bouquet.sectionDescription.date.title")}`,
+          description: `${t("bouquet.sectionDescription.date.description")}`,
         },
         designer: {
-          title: `${t("mahalo.sectionDescription.designer.title")}`,
-          description: `${t("mahalo.sectionDescription.designer.description")}`,
+          title: `${t("bouquet.sectionDescription.designer.title")}`,
+          description: `${t(
+            "bouquet.sectionDescription.designer.description"
+          )}`,
         },
       },
       icons: [
         {
           ico: <FaHtml5 className="w-6 h-6" />,
-          progress: 80,
+          progress: 90,
         },
         {
           ico: <FaCss3 className="w-5 h-5" />,
-          progress: 65,
+          progress: 85,
         },
         {
           ico: <FaJs className="w-6 h-6" />,
-          progress: 30,
+          progress: 55,
         },
       ],
       imgs: [
         {
           id: 1,
-          url: "/mahalo/mahalo_1.png",
+          url: "/bouquet/bouquet_1.png",
         },
         {
           id: 2,
-          url: "/mahalo/mahalo_2.png",
+          url: "/bouquet/bouquet_2.png",
         },
         {
           id: 3,
-          url: "/mahalo/mahalo_3.png",
+          url: "/bouquet/bouquet_3.png",
         },
         {
           id: 4,
-          url: "/mahalo/mahalo_4.png",
+          url: "/bouquet/bouquet_4.png",
         },
         {
           id: 5,
-          url: "/mahalo/mahalo_5.png",
+          url: "/bouquet/bouquet_5.png",
         },
       ],
     },

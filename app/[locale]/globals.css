@@ -476,3 +476,23 @@ body {
     left: 0;
   }
 }
+
+.card-mask {
+  position: relative;
+}
+
+.card-mask::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: 1;
+  background-image: url("/background-mask.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 2px;
+
+  mask-image: url("/background-mask.gif");
+  mask-size: cover;
+  mask-position: center;
+}

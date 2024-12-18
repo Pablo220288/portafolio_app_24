@@ -55,7 +55,7 @@ const Projects = () => {
         </div>
         <Tabs defaultValue={activeCategory} className="my-24 xl:mb-48">
           <Fade direction="up" triggerOnce cascade damping={1e-1} delay={500}>
-            <TabsList className="w-full grid h-full grid-cols-2 sm:grid-cols-4 lg:max-w-[740px] mb-12 mx-auto md:border dark:border-none">
+            <TabsList className="w-full grid h-full grid-cols-2 sm:grid-cols-5 lg:max-w-[820px] mb-12 mx-auto md:border dark:border-none">
               {catagories.map((catagory) => (
                 <TabsTrigger
                   key={catagory}

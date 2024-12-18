@@ -36,31 +36,8 @@ const PricingCard = ({
           <p className="mt-6 h-[140px] sm:h-[100px] text-base leading-7">
             {description}
           </p>
-          <div className="mt-10 flex items-center gap-x-4">
-            <h4 className="flex-none text-sm font-semibold leading-6 text-primary">
-              {includedFeaturesTitle}
-            </h4>
-            <div className="h-px flex-auto bg-primary"></div>
-          </div>
-          <ul
-            role="list"
-            className="mt-4 h-[120px] grid grid-cols-1 gap-2 sm:gap-4 sm:grid-cols-2 text-sm text-gray-400 "
-          >
-            {includedFeatures.map((feature) => (
-              <li
-                key={feature}
-                className="flex items-start gap-x-3 text-sm leading-6"
-              >
-                <HiCheck
-                  className="h-6 w-5 flex-none text-primary"
-                  aria-hidden="true"
-                />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
         </div>
-        <div className="-mt-2 p-2">
+        <div className="p-2">
           <div className="bg-primary/5 py-10 rounded-lg text-center ring-1 ring-inset">
             <div className="mx-auto max-w-xs px-8">
               <p className="text-base font-semibold leading-7">{priceHead}</p>
@@ -100,6 +77,31 @@ const PricingCard = ({
               <p className="mt-10 text-xs leading-5">{priceFooter}</p>
             </div>
           </div>
+        </div>
+        <div className="-mt-4 p-8 sm:p-10">
+          <div className="flex items-center gap-x-4">
+            <h4 className="flex-none text-sm font-semibold leading-6 text-primary">
+              {includedFeaturesTitle}
+            </h4>
+            <div className="h-px flex-auto bg-primary"></div>
+          </div>
+          <ul
+            role="list"
+            className="mt-4 h-[120px] grid grid-cols-1 gap-2 sm:gap-4 sm:grid-cols-2 text-sm text-gray-400 "
+          >
+            {includedFeatures.map((feature) => (
+              <li
+                key={feature}
+                className="flex items-start gap-x-3 text-sm leading-6"
+              >
+                <HiCheck
+                  className="h-6 w-5 flex-none text-primary"
+                  aria-hidden="true"
+                />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </Fade>

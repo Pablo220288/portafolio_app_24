@@ -78,6 +78,32 @@
             "description": "Pablo Hernandez"
           }
         }
+      },
+      "bouquet": {
+        "title": "Bouquet",
+        "description": "Official website for the Bouquets complex, located in Villa Rumipal, Córdoba.",
+        "category": "Ecommerce",
+        "live_preview": "Live Preview",
+        "sectionDescription": {
+          "title": "Description",
+          "description": "The Cabañas Mahalo website was designed to provide an informative and visually appealing experience for visitors. A photo gallery was implemented to showcase the beauty of the complex, along with video links highlighting the surroundings and facilities, as well as interactive maps to make locating the property easier. Additionally, a booking system was integrated, allowing customers to manage their stays effortlessly. Google ratings were also incorporated, reflecting guest reviews directly on the site to build trust in the service. This project combines functionality and design to enhance Cabañas Mahalo's digital presence.",
+          "category": {
+            "title": "Category",
+            "description": "Ecommerce"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Oscar Biocca"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "June 22, 2024"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Pablo Hernandez"
+          }
+        }
       }
     },
     "buttons": {
