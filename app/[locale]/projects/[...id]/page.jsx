@@ -33,7 +33,7 @@ const Project = () => {
     if (projectData) {
       setData(projectData);
       setTimeout(() => {
-        setLoading(true);
+        setLoading(false);
       }, 2000);
     }
   }, [id]);
