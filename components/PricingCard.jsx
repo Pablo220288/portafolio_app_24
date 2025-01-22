@@ -30,7 +30,7 @@ const PricingCard = ({
       damping={1e-1}
       delay={id === 2 ? 300 : id === 3 ? 700 : 500}
     >
-      <div className="mx-auto mt-16 max-w-[380px] h-auto ring-1 ring-gray-200 dark:ring-gray-700 rounded-lg shadow-xl sm:mt-20 flex flex-col justify-between">
+      <div className="mx-auto mt-16 max-w-[380px] h-auto ring-1 ring-primary/30 bg-gray-200 transition dark:text-white dark:bg-gray-900 rounded-lg shadow-xl sm:mt-20 flex flex-col justify-between">
         <div className="p-8 sm:p-10">
           <h3 className="text-2xl font-semibold tracking-tight">{title}</h3>
           <p className="mt-6 h-[140px] sm:h-[100px] text-base leading-7">
@@ -38,7 +38,7 @@ const PricingCard = ({
           </p>
         </div>
         <div className="p-2">
-          <div className="bg-primary/5 py-10 rounded-lg text-center ring-1 ring-inset">
+          <div className="bg-primary/5 py-10 rounded-lg text-center ring-1 ring-inset dark:ring-primary/10">
             <div className="mx-auto max-w-xs px-8">
               <p className="text-base font-semibold leading-7">{priceHead}</p>
               <p className="mat-6 flex items-baseline justify-center gap-x-2">

@@ -16,7 +16,7 @@ const HexagonGrid = () => {
     };
 
     // Calculate rows and columns
-    const rowsNumber = Math.ceil(wall.height / 80);
+    const rowsNumber = Math.ceil(wall.height / 55);
     const columnsNumber = Math.ceil(wall.width / 50) + 1;
 
     setDimensions({ rows: rowsNumber, columns: columnsNumber });
