@@ -59,7 +59,7 @@ export const dataProjects = (t) => {
       description: `${t("mahalo.description")}`,
       tags: ["HTML", "CSS", "JavaScript"],
       imageCard: "/mahalo.png",
-      imageUrl: "/mahalo/mahalo_2.png",
+      imageUrl: "/mahalo/mahalo_1.png",
       link: "/projects/mahalo",
       website: "https://pablo220288.github.io/Cabanas-Mahalo/",
       category: `${t("mahalo.category")}`,

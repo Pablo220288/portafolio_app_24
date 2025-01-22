@@ -18,7 +18,7 @@ const ProjectCard = ({ title, description, tags, imageCard, link }) => {
   return (
     <Link href={link}>
       <motion.div ref={ref} style={{ scale, opacity }} className="group">
-        <section className="bg-white/60 min-w-full h-[350px] m-auto p-4 sm:w-[38rem] border border-black/5 rounded-lg overflow-hidden sm:p-0 sm:pr-8 relative sm:h-[18rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        <section className="bg-white/60 min-w-full h-[350px] m-auto p-4 sm:w-[38rem] border border-primary/10 rounded-lg overflow-hidden sm:p-0 sm:pr-8 relative sm:h-[18rem] hover:bg-gray-200 transition dark:text-white dark:bg-gray-900 dark:hover:bg-gray-800">
           <div className="pt-4 pb-8 sm:pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col sm:h-full sm:group-even:ml-[18rem]">
             <h3 className="h3">{title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">

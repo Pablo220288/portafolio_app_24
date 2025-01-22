@@ -16,6 +16,7 @@ import { ThemeProvider } from "@/components/ThemesProvider";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Background from "@/components/Background";
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -48,14 +49,19 @@ export default async function RootLayout({ children }) {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+          ></link>
         </head>
-        <body className={OutfitFont.className}>
+        <body>
           <ThemeProvider
             attribute="class"
             defaultTheme="black"
             //enableSystem
             //disableTransitionOnChange
           >
+            <Background />
             <Header />
             {children}
             <Footer />

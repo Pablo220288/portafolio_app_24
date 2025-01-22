@@ -75,33 +75,33 @@
           },
           "designer": {
             "title": "Diseñador",
-            "description": "Pablo Hernandez"
+            "description": "Pablo Hernández"
           }
         }
       },
       "bouquet": {
         "title": "Bouquet",
-        "description": "Official website for the Bouquets complex, located in Villa Rumipal, Córdoba.",
+        "description": "Ecommerce para el Curso de JavaScript de Coderhouse",
         "category": "Ecommerce",
-        "live_preview": "Live Preview",
+        "live_preview": "Vista previa",
         "sectionDescription": {
           "title": "Description",
-          "description": "The Cabañas Mahalo website was designed to provide an informative and visually appealing experience for visitors. A photo gallery was implemented to showcase the beauty of the complex, along with video links highlighting the surroundings and facilities, as well as interactive maps to make locating the property easier. Additionally, a booking system was integrated, allowing customers to manage their stays effortlessly. Google ratings were also incorporated, reflecting guest reviews directly on the site to build trust in the service. This project combines functionality and design to enhance Cabañas Mahalo's digital presence.",
+          "description": "Bouqets es un proyecto que desarrollé como parte del curso de JavaScript en Coderhouse. Decidí crear una tienda de vinos online para combinar mi pasión por el diseño web con una temática elegante y sofisticada. Este proyecto está desarrollado con HTML, CSS, y JavaScript, y representa un ejemplo práctico de cómo se pueden construir interfaces dinámicas e interactivas utilizando estas tecnologías. La tienda permite a los usuarios explorar una selección de vinos y experimentar una navegación intuitiva.",
           "category": {
-            "title": "Category",
+            "title": "Categoría",
             "description": "Ecommerce"
           },
           "client": {
-            "title": "Client",
-            "description": "Oscar Biocca"
+            "title": "Cliente",
+            "description": "Coderhouse"
           },
           "date": {
-            "title": "Start Date",
-            "description": "June 22, 2024"
+            "title": "Fecha de inicio",
+            "description": "Agosto 22, 2022"
           },
           "designer": {
-            "title": "Designer",
-            "description": "Pablo Hernandez"
+            "title": "Diseñador",
+            "description": "Pablo Hernández"
           }
         }
       }
