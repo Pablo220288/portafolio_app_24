@@ -79,6 +79,32 @@
           }
         }
       },
+      "nike": {
+        "title": "Nike Max Play 2024",
+        "description": "Official agenda for the Nike Max Play 2024 event held in Chile and Peru.",
+        "category": "Websites",
+        "live_preview": "Live Preview",
+        "sectionDescription": {
+          "title": "Description",
+          "description": "This project is the official agenda for the Nike Max Play 2024 event held in Chile and Peru. It includes a login system that allows access with the universal password airmax2024 and any username. Once inside, users can explore an interactive menu with two main sections: the complete schedule of event activities and exclusive promotional brochures for Chile and Peru. Developed with HTML, CSS, and JavaScript, this project stands out for its simple and intuitive design, aimed at providing a smooth experience and highlighting Nike's innovative energy.",
+          "category": {
+            "title": "Category",
+            "description": "Website Development"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Nike Chile"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "March 7, 2024"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Pablo Hernández"
+          }
+        }
+      },
       "bouquet": {
         "title": "Bouquet",
         "description": "Official website for the Bouquets complex, located in Villa Rumipal, Córdoba.",

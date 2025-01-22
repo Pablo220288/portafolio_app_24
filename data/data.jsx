@@ -12,7 +12,7 @@ import {
   RiMobileDownloadLine,
   RiFireLine,
 } from "react-icons/ri";
-import { FaCss3, FaHtml5, FaJs } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 
 export const navLinks = () => {
   const t = useTranslations("Nav");
@@ -118,6 +118,78 @@ export const dataProjects = (t) => {
         {
           id: 5,
           url: "/mahalo/mahalo_5.png",
+        },
+      ],
+    },
+    {
+      id: "nike",
+      title: `${t("nike.title")}`,
+      description: `${t("nike.description")}`,
+      tags: ["HTML", "CSS", "JavaScript"],
+      imageCard: "/nike-max-play.png",
+      imageUrl: "/nike/nike-max-play_1.png",
+      link: "/projects/nike",
+      website: "https://nike-masplay-24-izxwhgxkb-pablo-hernandezs-projects.vercel.app/",
+      category: `${t("nike.category")}`,
+      live_preview: `${t("nike.live_preview")}`,
+      sectionDescription: {
+        title: `${t("nike.sectionDescription.title")}`,
+        description: `${t("nike.sectionDescription.description")}`,
+        category: {
+          title: `${t("nike.sectionDescription.category.title")}`,
+          description: `${t("nike.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("nike.sectionDescription.client.title")}`,
+          description: `${t("nike.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("nike.sectionDescription.date.title")}`,
+          description: `${t("nike.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("nike.sectionDescription.designer.title")}`,
+          description: `${t("nike.sectionDescription.designer.description")}`,
+        },
+      },
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 40,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 75,
+        },
+        {
+          ico: <FaReact className="w-6 h-6" />,
+          progress: 60,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/nike/nike-max-play_1.png",
+        },
+        {
+          id: 2,
+          url: "/nike/nike-max-play_2.png",
+        },
+        {
+          id: 3,
+          url: "/nike/nike-max-play_3.png",
+        },
+        {
+          id: 4,
+          url: "/nike/nike-max-play_4.png",
+        },
+        {
+          id: 5,
+          url: "/nike/nike-max-play_5.png",
         },
       ],
     },
