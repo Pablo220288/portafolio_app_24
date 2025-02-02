@@ -86,14 +86,14 @@
         "live_preview": "Live Preview",
         "sectionDescription": {
           "title": "Description",
-          "description": "This project is the official agenda for the Nike Max Play 2024 event held in Chile and Peru. It includes a login system that allows access with the universal password airmax2024 and any username. Once inside, users can explore an interactive menu with two main sections: the complete schedule of event activities and exclusive promotional brochures for Chile and Peru. Developed with HTML, CSS, and JavaScript, this project stands out for its simple and intuitive design, aimed at providing a smooth experience and highlighting Nike's innovative energy.",
+          "description": "This project is the official schedule for the Nike Max Play 2024 event, held in Chile and Peru. Developed for the agency Push and Pull in collaboration with Delfin Blaksley, it features a login system that allows access using the universal password airmax2024 and any username. Once inside, users can explore an interactive menu with two main sections: the full event schedule and exclusive promotional brochures for Chile and Peru. Built with HTML, CSS, and JavaScript, this project stands out for its simple and intuitive design, designed to provide a seamless experience and highlight Nike's innovative energy.",
           "category": {
             "title": "Category",
             "description": "Website Development"
           },
           "client": {
             "title": "Client",
-            "description": "Nike Chile"
+            "description": "Push and Pull"
           },
           "date": {
             "title": "Start Date",

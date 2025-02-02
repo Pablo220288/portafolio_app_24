@@ -27,6 +27,25 @@ const Hero = () => {
 
   const [isHovered, setIsHovered] = useState(false);
 
+  const handleMouseMove = (e) => {
+    const card = e.currentTarget;
+    const x = e.nativeEvent.offsetX;
+    const y = e.nativeEvent.offsetY;
+    const cardWidth = card.clientWidth;
+    const cardHeight = card.clientHeight;
+    const transX = x - cardWidth / 2;
+    const transY = y - cardHeight / 2;
+
+    card.style.transform = `translateX(${transX}px) translateY(${transY}px)`;
+    card.style.boxShadow = `${-transX}px ${-transY}px 0px #0005`;
+  };
+
+  const handleMouseOut = (e) => {
+    const card = e.currentTarget;
+    card.style.transform = ``;
+    card.style.boxShadow = ``;
+  };
+
   return (
     <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
       <div className="w-full max-w-[1400px] mx-auto">
