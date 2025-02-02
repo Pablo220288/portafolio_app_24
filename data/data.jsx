@@ -129,7 +129,7 @@ export const dataProjects = (t) => {
       imageCard: "/nike-max-play.png",
       imageUrl: "/nike/nike-max-play_1.png",
       link: "/projects/nike",
-      website: "https://nike-masplay-24-izxwhgxkb-pablo-hernandezs-projects.vercel.app/",
+      website: "https://nike-masplay-24.vercel.app/",
       category: `${t("nike.category")}`,
       live_preview: `${t("nike.live_preview")}`,
       sectionDescription: {
