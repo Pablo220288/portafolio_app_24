@@ -146,7 +146,9 @@
       "fifteenPuzzle": {
         "head": "Puzzle",
         "title": "Fifteen Puzzle",
-        "description": "Juego de ratas en el laberinto.",
+        "description1": "Fifteen Puzzle es un clásico juego de rompecabezas deslizante que desafía tu lógica y habilidades de resolución de problemas. El objetivo es reorganizar las piezas numeradas del 1 al 15 dentro de un tablero de 4x4, moviéndolas estratégicamente hasta colocarlas en el orden correcto.",
+        "description2": "Inicialmente desarrollado con HTML, CSS y JavaScript, ahora utiliza React, Next.js y Tailwind CSS, lo que mejora su diseño, optimiza su rendimiento y ofrece una experiencia más dinámica y fluida.",
+        "description3": "Pruebalo ahora!",     
         "category": "Puzzle",
         "live_preview": "Vista previa",
         "sectionDescription": {

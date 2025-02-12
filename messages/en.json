@@ -146,7 +146,9 @@
       "fifteenPuzzle": {
         "head": "Puzzle",
         "title": "Fifteen Puzzle",
-        "description": "Game of ratas en el laberinto.",
+        "description1": "Fifteen Puzzle is a classic sliding puzzle game that challenges your logic and problem-solving skills. The goal is to rearrange the numbered tiles from 1 to 15 within a 4x4 grid by strategically moving them until they are in the correct order.",
+        "description2": "Initially developed with HTML, CSS, and JavaScript, now uses React, Next.js, and Tailwind CSS, enhancing its design, optimizing performance, and providing a more dynamic and smooth experience.",
+        "description3": "Try it now!",
         "category": "Puzzle",
         "live_preview": "Live Preview",
         "sectionDescription": {

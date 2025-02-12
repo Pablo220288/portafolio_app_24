@@ -51,17 +51,6 @@ const page = () => {
         <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
           <div className="w-full max-w-[1400px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-start gap-y-8 xl:gap-x-8 sm:py-12 lg:px-8 xl:px-0 mb-14 ">
-              <Fade
-                direction="up"
-                triggerOnce
-                delay={600}
-                cascade
-                damping={1e-1}
-              >
-                <div className="w-[350px] h-[236px] sm:w-[550px] sm:h-[371px] bg-no-repeat relative bg-buttom">
-                  <FifteenPuzzle />
-                </div>
-              </Fade>
               <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left px-8 lg:px-0">
                 <Fade
                   direction="up"
@@ -87,15 +76,37 @@ const page = () => {
                 <Fade
                   direction="up"
                   triggerOnce
+                  delay={600}
+                  cascade
+                  damping={1e-1}
+                >
+                  <div className="text-muted-foreground text-lg font-light max-w-[590px] mb-0 mt-4 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
+                    <span>{fidttenPuzzle.description1}</span>
+                  </div>
+                </Fade>
+                <Fade
+                  direction="up"
+                  triggerOnce
                   delay={700}
                   cascade
                   damping={1e-1}
                 >
-                  <div className="subtitle max-w-[590px] mt-4 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
-                    <span>{fidttenPuzzle.description}</span>
+                  <div className="text-muted-foreground text-lg font-light max-w-[590px] mb-0 mt-2 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
+                    <span>{fidttenPuzzle.description2}</span>
                   </div>
                 </Fade>
-                <div className="flex flex-col gap-y-10 sm:flex-row items-center justify-center sm:justify-start">
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={800}
+                  cascade
+                  damping={1e-1}
+                >
+                  <div className="subtitle max-w-[590px] mt-2 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
+                    <span>{fidttenPuzzle.description3}</span>
+                  </div>
+                </Fade>
+                <div className="flex flex-col gap-y-10 sm:flex-row items-center justify-center xl:justify-start">
                   <Fade
                     direction="up"
                     triggerOnce
@@ -128,6 +139,17 @@ const page = () => {
                   </Fade>
                 </div>
               </div>
+              <Fade
+                direction="up"
+                triggerOnce
+                delay={600}
+                cascade
+                damping={1e-1}
+              >
+                <div className="w-full h-auto sm:w-[550px] sm:h-[371px] bg-no-repeat relative bg-buttom">
+                  <FifteenPuzzle />
+                </div>
+              </Fade>
             </div>
           </div>
         </section>
