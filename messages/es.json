@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "Sobre mi",
     "projects": "Proyectos",
+    "games": "Juegos",
     "pricing": "Precios",
     "contact": "Contacto"
   },
@@ -124,6 +125,44 @@
           "date": {
             "title": "Fecha de inicio",
             "description": "Agosto 22, 2022"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Pablo Hernández"
+          }
+        }
+      }
+    },
+    "buttons": {
+      "all": "Todo",
+      "seeMore": "Ver más"
+    }
+  },
+  "Games": {
+    "title": "Juegos",
+    "subtitle": "Algunos de mis juegos favoritos.",
+    "description": "Explora mis juegos favoritos y descubre mi evolución como programador a través de soluciones innovadoras y adaptadas a cada desafío.",
+    "games": {
+      "fifteenPuzzle": {
+        "head": "Puzzle",
+        "title": "Fifteen Puzzle",
+        "description": "Juego de ratas en el laberinto.",
+        "category": "Puzzle",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Description",
+          "description": "aca va la descripcion",
+          "category": {
+            "title": "Categoría",
+            "description": "Puzzle"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Pablo Hernández"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Febrero 22, 2025"
           },
           "designer": {
             "title": "Diseñador",

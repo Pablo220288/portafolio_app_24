@@ -20,6 +20,7 @@ export const navLinks = () => {
     { path: "/", label: t("home") },
     { path: "/about", label: t("about") },
     { path: "/projects", label: t("projects") },
+    { path: "/games", label: t("games") },
     { path: "/pricing", label: t("pricing") },
     { path: "/contact", label: t("contact") },
   ];
@@ -360,6 +361,80 @@ export const dataProjects = (t) => {
         designer: {
           title: `${t("mahalo.sectionDescription.designer.title")}`,
           description: `${t("mahalo.sectionDescription.designer.description")}`,
+        },
+      },
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 80,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 30,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/mahalo/mahalo_1.png",
+        },
+        {
+          id: 2,
+          url: "/mahalo/mahalo_2.png",
+        },
+        {
+          id: 3,
+          url: "/mahalo/mahalo_3.png",
+        },
+        {
+          id: 4,
+          url: "/mahalo/mahalo_4.png",
+        },
+        {
+          id: 5,
+          url: "/mahalo/mahalo_5.png",
+        },
+      ],
+    },
+  ];
+};
+
+export const dataGames = (t) => {
+  return [
+    {
+      id: "fifteenPuzzle",
+      head: `${t("fifteenPuzzle.head")}`,
+      title: `${t("fifteenPuzzle.title")}`,
+      description: `${t("fifteenPuzzle.description")}`,
+      tags: ["HTML", "CSS", "JavaScript"],
+      imageCard: "/mahalo.png",
+      imageUrl: "/mahalo/mahalo_1.png",
+      link: "/games/fifteenPuzzle",
+      website: "#",
+      category: `${t("fifteenPuzzle.category")}`,
+      live_preview: `${t("fifteenPuzzle.live_preview")}`,
+      sectionDescription: {
+        title: `${t("fifteenPuzzle.sectionDescription.title")}`,
+        description: `${t("fifteenPuzzle.sectionDescription.description")}`,
+        category: {
+          title: `${t("fifteenPuzzle.sectionDescription.category.title")}`,
+          description: `${t("fifteenPuzzle.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("fifteenPuzzle.sectionDescription.client.title")}`,
+          description: `${t("fifteenPuzzle.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("fifteenPuzzle.sectionDescription.date.title")}`,
+          description: `${t("fifteenPuzzle.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("fifteenPuzzle.sectionDescription.designer.title")}`,
+          description: `${t("fifteenPuzzle.sectionDescription.designer.description")}`,
         },
       },
       icons: [

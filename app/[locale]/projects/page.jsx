@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { dataProjects } from "@/data/data";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 //Import Next Intl
 import { useTranslations } from "next-intl";
@@ -53,6 +53,7 @@ const Projects = () => {
             </Fade>
           </div>
         </div>
+
         <Tabs defaultValue={activeCategory} className="my-24 xl:mb-48">
           <Fade direction="up" triggerOnce cascade damping={1e-1} delay={500}>
             <TabsList className="w-full grid h-full grid-cols-2 sm:grid-cols-5 lg:max-w-[820px] mb-12 mx-auto md:border dark:border-none">
