@@ -7,6 +7,22 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+/* Import Font */
+@font-face {
+  font-family: "Smithgroove";
+  src: URL("/fonts/Smithgroove.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hubstone";
+  src: URL("/fonts/Hubstone.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Volante";
+  src: URL("/fonts/Volante-800-ExtraBold.otf") format("truetype");
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background-color: transparent;
@@ -94,6 +110,10 @@ body {
 
     --fillGit: #000000;
   }
+}
+
+.test-text {
+  font-family: "Smithgroove";
 }
 
 @layer base {

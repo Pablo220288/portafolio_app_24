@@ -16,6 +16,11 @@ module.exports = {
         xl: "1400px",
       },
     },
+    fontFamily: {
+      smithgroove: ["Smithgroove"],
+      hubstone: ["Hubstone"],
+      Volante: ["Volante"],
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",

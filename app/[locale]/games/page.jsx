@@ -146,7 +146,8 @@ const page = () => {
                 cascade
                 damping={1e-1}
               >
-                <div className="w-full h-auto sm:w-[550px] sm:h-[371px] bg-no-repeat relative bg-buttom">
+                <div className="w-full h-auto flex flex-col items-center">
+
                   <FifteenPuzzle />
                 </div>
               </Fade>
