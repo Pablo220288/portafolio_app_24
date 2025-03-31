@@ -10,13 +10,19 @@ import { RiSendPlaneLine } from "react-icons/ri";
 import { useTranslations } from "next-intl";
 import { dataLinksFooter } from "@/data/data";
 
+import FooterExplosion from "./FooterExplosion";
+
 const Footer = () => {
   const t = useTranslations("Footer");
 
   const linksFooter = dataLinksFooter();
 
   return (
-    <div className="relative w-full px-10 sm:px-6 bg-gradient-to-b from-transparent to-primary/30 dark:to-transparent" id="first-section">
+    <div
+      className="relative w-full px-10 sm:px-6 bg-gradient-to-b from-transparent to-primary/30 dark:to-transparent"
+      id="first-section"
+    >
+      <FooterExplosion />
       <div className="mx-auto max-w-2xl pt-4 pb-16 sm:px-6 lg:max-w-[1440px] lg:px-8">
         <div className="mt-12 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           <div className="col-span-4">
