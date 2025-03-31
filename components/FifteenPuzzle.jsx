@@ -82,6 +82,10 @@ const FifteenPuzzle = () => {
           y: centerY / window.innerHeight,
         },
       });
+
+      setTimeout(() => {
+        confetti.reset();
+      }, 6000);
     }
   };
 
@@ -110,7 +114,7 @@ const FifteenPuzzle = () => {
               ${
                 tile === null
                   ? "bg-black/15 dark:bg-gray-500"
-                  : "bg-primary/95 text-white dark:hover:bg-white dark:hover:text-primary hover:bg-[#90aee8] hover:text-black cursor-pointer"
+                  : "bg-primary/95 text-white dark:hover:bg-white dark:hover:text-primary hover:bg-gray-400 hover:text-primary cursor-pointer"
               }`}
             style={{
               top: `${Math.floor(index / gridSize) * tileSize + 15}px`,
