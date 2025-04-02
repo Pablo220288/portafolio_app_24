@@ -8,6 +8,19 @@ import FifteenPuzzle from "@/components/FifteenPuzzle";
 import DonutChart from "@/components/DonutChart";
 import SnakeGame from "@/components/SnakeGame";
 
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
 const page = () => {
   //Import Next Intl
   const t = useTranslations("Games");
@@ -153,7 +166,7 @@ const page = () => {
           </div>
         </section>
 
-        {/* <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
+        <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
           <div className="w-full max-w-[1400px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-start gap-y-8 xl:gap-x-8 sm:py-12 lg:px-8 xl:px-0 mb-14 ">
               <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left px-8 lg:px-0">
@@ -252,12 +265,24 @@ const page = () => {
                 damping={1e-1}
               >
                 <div className="w-full h-auto flex flex-col items-center">
-                  <SnakeGame />
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">Edit Profile</Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[480px] h-[650px]">
+                      <iframe
+                        src="/snake/index.html"
+                        width="100%"
+                        height="100%"
+                        className="rounded-lg"
+                      ></iframe>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </Fade>
             </div>
           </div>
-        </section> */}
+        </section>
       </div>
     </section>
   );
