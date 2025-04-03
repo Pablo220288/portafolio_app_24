@@ -8,19 +8,6 @@ import FifteenPuzzle from "@/components/FifteenPuzzle";
 import DonutChart from "@/components/DonutChart";
 import SnakeGame from "@/components/SnakeGame";
 
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-
 const page = () => {
   //Import Next Intl
   const t = useTranslations("Games");
@@ -265,19 +252,7 @@ const page = () => {
                 damping={1e-1}
               >
                 <div className="w-full h-auto flex flex-col items-center">
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button variant="outline">Edit Profile</Button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-[480px] h-[650px]">
-                      <iframe
-                        src="/snake/index.html"
-                        width="100%"
-                        height="100%"
-                        className="rounded-lg"
-                      ></iframe>
-                    </DialogContent>
-                  </Dialog>
+                  <SnakeGame />
                 </div>
               </Fade>
             </div>

@@ -30,7 +30,7 @@ const FooterExplosion = () => {
     gravity: 0.25,
     friction: 0.99,
     size: 100,
-    horizontalForce: 20,
+    horizontalForce: 10,
     verticalForce: 15,
     rotationSpeed: 10,
     resetDelay: 500,
@@ -61,7 +61,7 @@ const FooterExplosion = () => {
       this.rotation = 0;
       this.rotationSpeed = (Math.random() - 0.5) * config.rotationSpeed;
     }
-
+    
     update() {
       this.vy += config.gravity;
       this.vx *= config.friction;

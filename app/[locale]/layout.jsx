@@ -37,6 +37,10 @@ export default async function RootLayout({ children }) {
     <NextIntlClientProvider messages={messages}>
       <html lang="es" suppressHydrationWarning>
         <head>
+          <meta
+            name="google-site-verification"
+            content="j8thmjzyet7lWD7wHYDJvAXubWEvIXtR_PZ11R4Rwg0"
+          />
           <link rel="icon" href="/favicon.png" />
           <link
             rel="stylesheet"

@@ -342,7 +342,7 @@ canvas {
 
 .buttons {
   position: absolute;
-  bottom: -120px;
+  bottom: -140px;
   width: 300px;
   display: flex;
   justify-content: space-between;
