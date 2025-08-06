@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <div
-      className="relative w-full px-10 sm:px-6 bg-gradient-to-b from-transparent to-primary/30 dark:to-transparent"
+      className="relative w-full px-10 sm:px-6 bg-gradient-to-b from-transparent to-primary/30 dark:to-transparent mt-14"
       id="first-section"
     >
       <FooterExplosion />
