@@ -110,6 +110,62 @@
           "button": "Ver sitio web"
         }
       },
+      "eeva": {
+        "title": "EEVA",
+        "description": "Ecommerce para la tienda de ropa EEVA.",
+        "category": "Ecommerce",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Concepto",
+          "description": "EEVA representa la evolución del e-commerce de moda, junto a Agustin Mateos fusionamos diseño minimalista futurista con arquitectura técnica robusta. Desarrollamos una experiencia de compra inmersiva que equilibra elegancia visual con performance, utilizando animaciones custom para destacar los textiles y siluetas de las prendas. El proyecto prioriza la fluidez entre descubrimiento de productos y conversión, con integraciones comerciales clave que eliminan fricciones en el journey del usuario.",
+          "category": {
+            "title": "Categoría",
+            "description": "Ecommerce"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Nicolas Viel"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Junio 2, 2025"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "Next.js App Router",
+              "description": "Arquitectura híbrida (SSR/CSR) para óptimo SEO y rendimiento, con rutas dinámicas para categorías/colecciones."
+            },
+            "technologie_2": {
+              "title": "Animaciones CSS-in-JS",
+              "description": "Sistema custom de micro-interacciones para presentación de productos (hover 3D, transiciones de textiles, parallax en lookbooks)."
+            },
+            "technologie_3": {
+              "title": "Backend Comercial",
+              "description": "Flujo completo con: Checkout Pro de MercadoPago, gestión de códigos promocionales (cupones dinámicos) y newsletter con doble opt-in."
+            },
+            "technologie_4": {
+              "title": "Tailwind CSS + Framer Motion",
+              "description": "Sistema de diseño atomic con utility-first para UI consistente, combinado con animaciones declarativas para interacciones avanzadas."
+            },
+            "technologie_5": {
+              "title": "Notificaciones Transaccionales",
+              "description": "Sistema automatizado de emails (Nodemailer) para confirmaciones de compra, envíos y códigos promocionales."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Plataforma que redujo un 40% el tiempo de checkout versus benchmarks del sector, con tasa de conversión un 28% superior a la media en moda premium. La implementación de MercadoPago permitió aceptar 12 métodos de pago sin aumentar la complejidad técnica. El diseño futurista pero funcional generó un 75% de interacciones con elementos animados por sesión, demostrando cómo la tecnología puede potenciar el engagement en moda digital. El proyecto se destaco en el mercado gracias a su eficiencia en optimización SEO y sus animaciones custom, lo que lo convierte en una herramienta de referencia para el mercado de moda premium.",
+          "button": "Ver sitio web"
+        }
+      },
       "mahalo": {
         "title": "Cabañas Mahalo",
         "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",
@@ -296,6 +352,37 @@
         "description2": "Inicialmente desarrollado con HTML, CSS y JavaScript, ahora utiliza React, Next.js y Tailwind CSS, lo que mejora su diseño, optimiza su rendimiento y ofrece una experiencia más dinámica y fluida.",
         "description3": "Pruebalo ahora!",
         "category": "Puzzle",
+        "live_preview": "Vista previa",
+        "button": "Jugar",
+        "congrats": "Felicidades, ganaste!",
+        "sectionDescription": {
+          "title": "Description",
+          "description": "aca va la descripcion",
+          "category": {
+            "title": "Categoría",
+            "description": "Puzzle"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Pablo Hernández"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Febrero 22, 2025"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Pablo Hernández"
+          }
+        }
+      },
+      "snake": {
+        "head": "Game",
+        "title": "Snake Game",
+        "description1": "Snake es el clásico juego arcade donde controlas una serpiente que crece al comer frutas, evitando chocar contra los bordes del tablero o contra tu propio cuerpo. Desafía tu velocidad y estrategia mientras la serpiente se alarga y el juego se vuelve más difícil.",
+        "description2": "Desarrollado con HTML5 Canvas, CSS para los estilos y JavaScript puro para la lógica del juego. Utiliza una técnica avanzada de SpriteFrame para renderizar gráficos fluidos desde una sola imagen, junto con un sistema dual de controles (teclado y botones táctiles) para máxima accesibilidad. Incluye detección de colisiones, aumento de velocidad progresivo y sistema de puntuación.",
+        "description3": "¿Podrás batir tu récord? ¡Juega ahora!",
+        "category": "Game",
         "live_preview": "Vista previa",
         "button": "Jugar",
         "congrats": "Felicidades, ganaste!",

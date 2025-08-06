@@ -19,7 +19,7 @@ const Projects = () => {
   const t2 = useTranslations("Projects.projects");
 
   const [isHovered, setIsHovered] = useState(false);
-  const projects = dataProjects(t2).slice(0, 2);
+  const projects = dataProjects(t2).slice(0, 4);
 
   return (
     <div className="pt-[8rem]">

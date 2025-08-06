@@ -14,6 +14,7 @@ const page = () => {
   const t2 = useTranslations("Games.games");
 
   const [fidttenPuzzle, setFifteenPuzzle] = useState([]);
+  const [snakeGame, setSnakeGame] = useState([]);
 
   useEffect(() => {
     const fidttenPuzzleData = dataGames(t2).find(
@@ -21,6 +22,11 @@ const page = () => {
     );
     if (fidttenPuzzleData) {
       setFifteenPuzzle(fidttenPuzzleData);
+    }
+
+    const snakeGameData = dataGames(t2).find((item) => item.id === "snake");
+    if (snakeGameData) {
+      setSnakeGame(snakeGameData);
     }
   }, []);
 
@@ -47,7 +53,7 @@ const page = () => {
           </div>
         </div>
 
-        <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
+        <section className="py-12 h-[auto] bg-bottom overflow-x-hidden">
           <div className="w-full max-w-[1400px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-start gap-y-8 xl:gap-x-8 sm:py-12 lg:px-8 xl:px-0 mb-14 ">
               <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left px-8 lg:px-0">
@@ -153,7 +159,7 @@ const page = () => {
           </div>
         </section>
 
-        <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
+        <section className="py-12 h-[auto] bg-bottom overflow-x-hidden">
           <div className="w-full max-w-[1400px] mx-auto">
             <div className="flex flex-wrap justify-evenly items-start gap-y-8 xl:gap-x-8 sm:py-12 lg:px-8 xl:px-0 mb-14 ">
               <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left px-8 lg:px-0">
@@ -166,7 +172,7 @@ const page = () => {
                 >
                   <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
                     <span className="w-[30px] h-[2px] bg-primary"></span>
-                    {fidttenPuzzle.head}
+                    {snakeGame.head}
                   </div>
                 </Fade>
                 <Fade
@@ -176,7 +182,7 @@ const page = () => {
                   cascade
                   damping={1e-1}
                 >
-                  <h1 className="h1">{fidttenPuzzle.title}</h1>
+                  <h1 className="h1">{snakeGame.title}</h1>
                 </Fade>
                 <Fade
                   direction="up"
@@ -186,7 +192,7 @@ const page = () => {
                   damping={1e-1}
                 >
                   <div className="text-muted-foreground text-lg font-light max-w-[590px] mb-0 mt-4 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
-                    <span>{fidttenPuzzle.description1}</span>
+                    <span>{snakeGame.description1}</span>
                   </div>
                 </Fade>
                 <Fade
@@ -197,7 +203,7 @@ const page = () => {
                   damping={1e-1}
                 >
                   <div className="text-muted-foreground text-lg font-light max-w-[590px] mb-0 mt-2 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
-                    <span>{fidttenPuzzle.description2}</span>
+                    <span>{snakeGame.description2}</span>
                   </div>
                 </Fade>
                 <Fade
@@ -208,7 +214,7 @@ const page = () => {
                   damping={1e-1}
                 >
                   <div className="subtitle max-w-[590px] mt-2 mx-auto xl:mx-0 flex flex-col items-center xl:items-start justify-center">
-                    <span>{fidttenPuzzle.description3}</span>
+                    <span>{snakeGame.description3}</span>
                   </div>
                 </Fade>
                 <div className="flex flex-col gap-y-10 sm:flex-row items-center justify-center xl:justify-start">
@@ -220,9 +226,9 @@ const page = () => {
                     damping={1e-1}
                   >
                     <div className={"flex items-end gap-x-4 "}>
-                      {fidttenPuzzle.length === 0
+                      {snakeGame.length === 0
                         ? null
-                        : fidttenPuzzle.icons.map((icon, index) => {
+                        : snakeGame.icons.map((icon, index) => {
                             return (
                               <div className="relative " key={index}>
                                 <DonutChart
@@ -252,7 +258,7 @@ const page = () => {
                 damping={1e-1}
               >
                 <div className="w-full h-auto flex flex-col items-center">
-                  <SnakeGame />
+                  <SnakeGame button={snakeGame.button} />
                 </div>
               </Fade>
             </div>

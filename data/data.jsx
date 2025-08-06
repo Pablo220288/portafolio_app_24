@@ -13,7 +13,7 @@ import {
   RiFireLine,
 } from "react-icons/ri";
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiResend } from "react-icons/si";
+import { SiTailwindcss, SiResend, SiMercadopago  } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
 
 export const navLinks = () => {
@@ -179,6 +179,148 @@ export const dataProjects = (t) => {
         {
           id: 5,
           url: "/projects/lamberti/lamberti_carra_5.webp",
+        },
+      ],
+    },
+    {
+      id: "eeva",
+      title: `${t("eeva.title")}`,
+      description: `${t("eeva.description")}`,
+      tags: ["REACT", "TAILWIND", "NODEMAILER", "MERCADOPAGO", "Framer Motion"],
+      imageCard: "/projects/eeva/eeva_1.webp",
+      imageUrl: "/projects/eeva/eeva_1.webp",
+      link: "/projects/eeva",
+      website: "https://www.eevast.com",
+      category: `${t("eeva.category")}`,
+      live_preview: `${t("eeva.live_preview")}`,
+      sectionDescription: {
+        title: `${t("eeva.sectionDescription.title")}`,
+        description: `${t("eeva.sectionDescription.description")}`,
+        category: {
+          title: `${t("eeva.sectionDescription.category.title")}`,
+          description: `${t("eeva.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("eeva.sectionDescription.client.title")}`,
+          description: `${t("eeva.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("eeva.sectionDescription.date.title")}`,
+          description: `${t("eeva.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("eeva.sectionDescription.designer.title")}`,
+          description: `${t("eeva.sectionDescription.designer.description")}`,
+        },
+      },
+      sectionTechnologies: {
+        title: t("eeva.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "eeva.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "eeva.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "eeva.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "eeva.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "eeva.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "eeva.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("eeva.sectionResult.title"),
+        description: t("eeva.sectionResult.description"),
+        button: t("eeva.sectionResult.button"),
+      },
+      icons: [
+        {
+          ico: <FaReact className="w-6 h-6" />,
+          progress: 90,
+        },
+        {
+          ico: <SiTailwindcss className="w-5 h-5" />,
+          progress: 85,
+        },
+        {
+          ico: <SiMercadopago  className="w-6 h-6" />,
+          progress: 75,
+        },
+        {
+          ico: <TbBrandFramerMotion className="w-6 h-6" />,
+          progress: 50,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/projects/eeva/eeva_1.webp",
+        },
+        {
+          id: 2,
+          url: "/projects/eeva/eeva_2.webp",
+        },
+        {
+          id: 3,
+          url: "/projects/eeva/eeva_3.webp",
+        },
+        {
+          id: 4,
+          url: "/projects/eeva/eeva_4.webp",
+        },
+        {
+          id: 5,
+          url: "/projects/eeva/eeva_5.webp",
+        },
+        {
+          id: 6,
+          url: "/projects/eeva/eeva_6.webp",
+        },
+        {
+          id: 7,
+          url: "/projects/eeva/eeva_7.webp",
+        },
+        {
+          id: 8,
+          url: "/projects/eeva/eeva_8.webp",
+        },
+        {
+          id: 9,
+          url: "/projects/eeva/eeva_9.webp",
+        },
+        {
+          id: 10,
+          url: "/projects/eeva/eeva_10.webp",
         },
       ],
     },
@@ -507,9 +649,9 @@ export const dataProjects = (t) => {
         ],
       },
       sectionResult: {
-        title: t("nike.sectionResult.title"),
-        description: t("nike.sectionResult.description"),
-        button: t("nike.sectionResult.button"),
+        title: t("bouquet.sectionResult.title"),
+        description: t("bouquet.sectionResult.description"),
+        button: t("bouquet.sectionResult.button"),
       },
       icons: [
         {
@@ -633,6 +775,7 @@ export const dataGames = (t) => {
       link: "/games/fifteenPuzzle",
       website: "#",
       category: `${t("fifteenPuzzle.category")}`,
+      button: `${t("fifteenPuzzle.button")}`,
       live_preview: `${t("fifteenPuzzle.live_preview")}`,
       sectionDescription: {
         title: `${t("fifteenPuzzle.sectionDescription.title")}`,
@@ -659,6 +802,86 @@ export const dataGames = (t) => {
           title: `${t("fifteenPuzzle.sectionDescription.designer.title")}`,
           description: `${t(
             "fifteenPuzzle.sectionDescription.designer.description"
+          )}`,
+        },
+      },
+      icons: [
+        {
+          ico: <FaHtml5 className="w-6 h-6" />,
+          progress: 80,
+        },
+        {
+          ico: <FaCss3 className="w-5 h-5" />,
+          progress: 65,
+        },
+        {
+          ico: <FaJs className="w-6 h-6" />,
+          progress: 30,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/mahalo/mahalo_1.png",
+        },
+        {
+          id: 2,
+          url: "/mahalo/mahalo_2.png",
+        },
+        {
+          id: 3,
+          url: "/mahalo/mahalo_3.png",
+        },
+        {
+          id: 4,
+          url: "/mahalo/mahalo_4.png",
+        },
+        {
+          id: 5,
+          url: "/mahalo/mahalo_5.png",
+        },
+      ],
+    },
+     {
+      id: "snake",
+      head: `${t("snake.head")}`,
+      title: `${t("snake.title")}`,
+      description1: `${t("snake.description1")}`,
+      description2: `${t("snake.description2")}`,
+      description3: `${t("snake.description3")}`,
+      tags: ["HTML", "CSS", "JavaScript"],
+      imageCard: "/mahalo.png",
+      imageUrl: "/mahalo/mahalo_1.png",
+      link: "/games/snake",
+      website: "#",
+      category: `${t("snake.category")}`,
+      button: `${t("snake.button")}`,
+      live_preview: `${t("snake.live_preview")}`,
+      sectionDescription: {
+        title: `${t("snake.sectionDescription.title")}`,
+        description: `${t("snake.sectionDescription.description")}`,
+        category: {
+          title: `${t("snake.sectionDescription.category.title")}`,
+          description: `${t(
+            "snake.sectionDescription.category.description"
+          )}`,
+        },
+        client: {
+          title: `${t("snake.sectionDescription.client.title")}`,
+          description: `${t(
+            "snake.sectionDescription.client.description"
+          )}`,
+        },
+        date: {
+          title: `${t("snake.sectionDescription.date.title")}`,
+          description: `${t(
+            "snake.sectionDescription.date.description"
+          )}`,
+        },
+        designer: {
+          title: `${t("snake.sectionDescription.designer.title")}`,
+          description: `${t(
+            "snake.sectionDescription.designer.description"
           )}`,
         },
       },
