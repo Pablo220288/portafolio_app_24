@@ -42,23 +42,55 @@ const Project = () => {
     return <Loader />;
   }
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: (i) => ({
+      opacity: 1,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.5,
+      },
+    }),
+  };
+
   return (
     <section className="py-12 xl:py-24 h-[auto] bg-bottom overflow-x-hidden">
       <div className="w-full max-w-[1400px] mx-auto">
         <div className="flex flex-wrap justify-evenly items-start gap-y-8 xl:gap-x-8 sm:py-12 lg:px-8 xl:px-0 mb-14 ">
           <Fade direction="left" triggerOnce delay={600} cascade damping={1e-1}>
-            <div className="w-[350px] h-[236px] sm:w-[550px] sm:h-[371px] bg-no-repeat relative bg-buttom">
+            <div className="w-[350px] h-[236px] sm:w-[550px] sm:h-[371px] relative flex items-center justify-center">
               <Image
                 src={data.imageUrl}
                 alt={data.title}
-                quality={95}
+                quality={100}
                 fill
                 priority
-                className="drop-shadow-xl rounded-sm"
+                className="object-contain drop-shadow-xl"
+                sizes="(max-width: 640px) 350px, 550px"
               />
             </div>
           </Fade>
-          <div className="flex max-w-[800px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left px-8 lg:px-0">
+          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left px-8 lg:px-0">
             <Fade direction="up" triggerOnce delay={300} cascade damping={1e-1}>
               <div className="flex items-center gap-x-4 text-primary text-lg mb-4">
                 <span className="w-[30px] h-[2px] bg-primary"></span>
@@ -110,68 +142,191 @@ const Project = () => {
             <Fade direction="up" triggerOnce delay={200} cascade damping={1e-1}>
               <h2 className="h2">{data.sectionDescription.title}</h2>
             </Fade>
-            <Fade direction="up" triggerOnce delay={400} cascade damping={1e-1}>
+            <Fade direction="up" triggerOnce delay={300} cascade damping={1e-1}>
               <div className="subtitle mt-4 mx-auto xl:mx-0 text-center lg:text-start">
                 <span>{data.sectionDescription.description}</span>
               </div>
-            </Fade>
-            <Fade direction="up" triggerOnce delay={600} cascade damping={1e-1}>
-              <Link
-                href={data.website}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                target="_blank"
-              >
-                <Button
-                  className={`gap-x-1 text-white bubbly-button ${
-                    isHovered ? "animate" : ""
-                  }`}
-                >
-                  {data.live_preview} <RiArrowRightDoubleLine size={18} />
-                </Button>
-              </Link>
             </Fade>
           </div>
           <div className="flex flex-col gap-y-4 w-full max-w-[590px] items-center justify-center mx-auto md:px-8">
             <div className="w-full flex gap-x-4">
               <div className="flex-1 flex-col gap-y-2">
-                <div className="text-muted-foreground text-lg font-light">
-                  <span>{data.sectionDescription.category.title}</span>
-                </div>
-                <h3 className="text-black dark:text-white font-bold text-2xl">
-                  {data.sectionDescription.category.description}
-                </h3>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={200}
+                  cascade
+                  damping={1e-1}
+                >
+                  <div className="text-muted-foreground text-lg font-light">
+                    <span>{data.sectionDescription.category.title}</span>
+                  </div>
+                </Fade>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={300}
+                  cascade
+                  damping={1e-1}
+                >
+                  <h3 className="text-black dark:text-white font-bold text-2xl">
+                    {data.sectionDescription.category.description}
+                  </h3>
+                </Fade>
               </div>
               <div className="flex-1 flex-col gap-y-2">
-                <div className="text-muted-foreground text-lg font-light">
-                  <span>{data.sectionDescription.client.title}</span>
-                </div>
-                <h3 className="text-black dark:text-white font-bold text-2xl">
-                  {data.sectionDescription.client.description}
-                </h3>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={200}
+                  cascade
+                  damping={1e-1}
+                >
+                  <div className="text-muted-foreground text-lg font-light">
+                    <span>{data.sectionDescription.client.title}</span>
+                  </div>
+                </Fade>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={300}
+                  cascade
+                  damping={1e-1}
+                >
+                  <h3 className="text-black dark:text-white font-bold text-2xl">
+                    {data.sectionDescription.client.description}
+                  </h3>
+                </Fade>
               </div>
             </div>
             <div className="w-full flex gap-x-4">
               <div className="flex-1 flex-col gap-y-2">
-                <div className="text-muted-foreground text-lg font-light">
-                  <span>{data.sectionDescription.date.title}</span>
-                </div>
-                <h3 className="text-black dark:text-white font-bold text-2xl">
-                  {data.sectionDescription.date.description}
-                </h3>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={200}
+                  cascade
+                  damping={1e-1}
+                >
+                  <div className="text-muted-foreground text-lg font-light">
+                    <span>{data.sectionDescription.date.title}</span>
+                  </div>
+                </Fade>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={300}
+                  cascade
+                  damping={1e-1}
+                >
+                  <h3 className="text-black dark:text-white font-bold text-2xl">
+                    {data.sectionDescription.date.description}
+                  </h3>
+                </Fade>
               </div>
               <div className="flex-1 flex-col gap-y-2">
-                <div className="text-muted-foreground text-lg font-light">
-                  <span>{data.sectionDescription.designer.title}</span>
-                </div>
-                <h3 className="text-black dark:text-white font-bold text-2xl">
-                  {data.sectionDescription.designer.description}
-                </h3>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={200}
+                  cascade
+                  damping={1e-1}
+                >
+                  <div className="text-muted-foreground text-lg font-light">
+                    <span>{data.sectionDescription.designer.title}</span>
+                  </div>
+                </Fade>
+                <Fade
+                  direction="up"
+                  triggerOnce
+                  delay={300}
+                  cascade
+                  damping={1e-1}
+                >
+                  <h3 className="text-black dark:text-white font-bold text-2xl">
+                    {data.sectionDescription.designer.description}
+                  </h3>
+                </Fade>
               </div>
             </div>
           </div>
         </div>
         <SlidingProjects imgs={data.imgs} />
+        <div className="flex flex-col gap-y-10 lg:flex-row items-start justify-between px-8 mt-20">
+          <div className="flex flex-col items-center justify-center w-full max-w-[590px] mx-auto lg:items-start">
+            <Fade direction="up" triggerOnce delay={200} cascade damping={1e-1}>
+              <h2 className="h2">{data.sectionTechnologies.title}</h2>
+            </Fade>
+            <div className="subtitle mt-10 mx-auto xl:mx-0 text-start">
+              <ul className="list-disc pl-5 space-y-2">
+                {data.sectionTechnologies.technologies.map((tech, index) => (
+                  <Fade
+                    key={index}
+                    direction="up"
+                    triggerOnce
+                    delay={index * 80}
+                    duration={500}
+                    damping={0.15}
+                  >
+                    <li key={index} className="text-muted-foreground">
+                      <span className="text-black dark:text-white font-bold">
+                        {tech.title}:
+                      </span>{" "}
+                      {tech.description}
+                    </li>
+                  </Fade>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-4 w-full max-w-[590px] items-center justify-center mx-auto md:px-8">
+            <div className="flex flex-col items-center justify-center w-full max-w-[590px] mx-auto lg:items-start">
+              <Fade
+                direction="up"
+                triggerOnce
+                delay={200}
+                cascade
+                damping={1e-1}
+              >
+                <h2 className="h2">{data.sectionResult.title}</h2>
+              </Fade>
+              <Fade
+                direction="up"
+                triggerOnce
+                delay={300}
+                cascade
+                damping={1e-1}
+              >
+                <div className="subtitle mt-4 mx-auto xl:mx-0 text-center lg:text-start">
+                  <span>{data.sectionResult.description}</span>
+                </div>
+              </Fade>
+              <Fade
+                direction="up"
+                triggerOnce
+                delay={500}
+                cascade
+                damping={1e-1}
+              >
+                <Link
+                  href={data.website}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  target="_blank"
+                >
+                  <Button
+                    className={`gap-x-1 text-white bubbly-button ${
+                      isHovered ? "animate" : ""
+                    }`}
+                  >
+                    {data.sectionResult.button}{" "}
+                    <RiArrowRightDoubleLine size={18} />
+                  </Button>
+                </Link>
+              </Fade>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

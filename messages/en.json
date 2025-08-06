@@ -54,14 +54,70 @@
     "subtitle": "Some of my most notable projects.",
     "description": "Explore my latest projects and discover my evolution as a programmer through innovative solutions tailored to each challenge.",
     "projects": {
+      "lamberti": {
+        "title": "Lamberti Carra Architects",
+        "description": "Website for the architecture firm Lamberti Carra.",
+        "category": "Websites",
+        "live_preview": "Preview",
+        "sectionDescription": {
+          "title": "Concept",
+          "description": "I developed a minimalist and elegant website that reflects the studio's philosophy: 'Architecture as a bridge between ideas and real life'. The design prioritizes visual clarity, narrative fluidity, and a harmonious dialogue between spaces, environment, and time.",
+          "category": {
+            "title": "Category",
+            "description": "Website Development"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Push and Pull"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "August 1, 2025"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "Next.js + React",
+              "description": "For optimal performance, fast loading, and modular structure."
+            },
+            "technologie_2": {
+              "title": "Framer Motion",
+              "description": "Subtle and sophisticated animations that guide the user, enhancing the experience without distracting from the content."
+            },
+            "technologie_3": {
+              "title": "Minimalist Design",
+              "description": "Clean typography, neutral color palette, and ample use of white space, highlighting architecture as the protagonist."
+            },
+            "technologie_4": {
+              "title": "Descriptive Images",
+              "description": "High-quality galleries showcasing projects in detail, reinforcing the studio's visual identity."
+            },
+            "technologie_5": {
+              "title": "Delicate Interaction",
+              "description": "Fluid transitions, smooth scroll effects, and microinteractions that add an organic and contemporary touch."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A digital platform that not only presents the studio's portfolio but evokes its essence: architecture designed to integrate with life, environment, and time. Ideal for clients seeking conceptual clarity and elegance in every detail.",
+          "button": "View website"
+        }
+      },
       "mahalo": {
         "title": "Mahalo Cabins",
-        "description": "Official website for the Mahalo Cabins complex, located in Villa Rumipal, Córdoba.",
+        "description": "Official website for Mahalo Cabins, located in Villa Rumipal, Córdoba.",
         "category": "Websites",
-        "live_preview": "Live Preview",
+        "live_preview": "Preview",
         "sectionDescription": {
-          "title": "Description",
-          "description": "The Cabañas Mahalo website was designed to provide an informative and visually appealing experience for visitors. A photo gallery was implemented to showcase the beauty of the complex, along with video links highlighting the surroundings and facilities, as well as interactive maps to make locating the property easier. Additionally, a booking system was integrated, allowing customers to manage their stays effortlessly. Google ratings were also incorporated, reflecting guest reviews directly on the site to build trust in the service. This project combines functionality and design to enhance Cabañas Mahalo's digital presence.",
+          "title": "Concept",
+          "description": "I developed an informative and visually attractive website for Mahalo Cabins, where nature and comfort merge. The design prioritizes immersion in the natural environment, facilitating exploration of the facilities and simplifying the booking process, creating a digital bridge between the lodging experience and potential guests.",
           "category": {
             "title": "Category",
             "description": "Website Development"
@@ -76,18 +132,48 @@
           },
           "designer": {
             "title": "Designer",
-            "description": "Pablo Hernandez"
+            "description": "Pablo Hernández"
           }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "HTML5 + CSS3 + JavaScript",
+              "description": "Fundamental base for semantic structure, custom styles, and essential interactivity."
+            },
+            "technologie_2": {
+              "title": "AOS (Animate On Scroll)",
+              "description": "Discreet animations triggered on scroll, improving engagement without overloading the experience."
+            },
+            "technologie_3": {
+              "title": "Experience-Oriented Design",
+              "description": "Focus on visualizing the natural environment, with clear information hierarchy and direct access to main actions."
+            },
+            "technologie_4": {
+              "title": "Multimedia Integration",
+              "description": "Image galleries, immersive videos, and interactive maps showing the entire complex."
+            },
+            "technologie_5": {
+              "title": "Integrated Systems",
+              "description": "Connectors with booking platform and Google Reviews API to display real-time ratings."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A digital platform that serves as a window to the complex, combining practical information with visually impactful presentation. Visitors can explore the facilities, see real testimonials, and manage bookings in one space, significantly improving conversion and reducing friction in the booking process. The site reflects Mahalo's essence of disconnection and connection with nature.",
+          "button": "View website"
         }
       },
       "nike": {
         "title": "Nike Max Play 2024",
-        "description": "Official agenda for the Nike Max Play 2024 event held in Chile and Peru.",
-        "category": "Websites",
-        "live_preview": "Live Preview",
+        "description": "Official agenda for the Nike Max Play 2024 event in Chile and Peru.",
+        "category": "Web App",
+        "live_preview": "Preview",
         "sectionDescription": {
-          "title": "Description",
-          "description": "This project is the official schedule for the Nike Max Play 2024 event, held in Chile and Peru. Developed for the agency Push and Pull in collaboration with Delfin Blaksley, it features a login system that allows access using the universal password airmax2024 and any username. Once inside, users can explore an interactive menu with two main sections: the full event schedule and exclusive promotional brochures for Chile and Peru. Built with HTML, CSS, and JavaScript, this project stands out for its simple and intuitive design, designed to provide a seamless experience and highlight Nike's innovative energy.",
+          "title": "Concept",
+          "description": "I developed, in collaboration with Delfin Blaksley, the official digital agenda for Nike Max Play 2024, a project that combines essential functionality with Nike's innovative spirit. The design prioritizes immediate access to event information in Chile and Peru, with a simple yet effective authentication system that keeps content exclusive for attendees, reflecting the brand's dynamic energy through a clean interface and intuitive actions.",
           "category": {
             "title": "Category",
             "description": "Website Development"
@@ -104,32 +190,92 @@
             "title": "Designer",
             "description": "Pablo Hernández"
           }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "React + Vite",
+              "description": "Modern architecture for optimal performance and fast loading, essential for event access."
+            },
+            "technologie_2": {
+              "title": "AOS (Animate On Scroll)",
+              "description": "Strategic microanimations that reinforce Nike's dynamic identity without interfering with usability."
+            },
+            "technologie_3": {
+              "title": "Accessibility-Centered Design",
+              "description": "High-contrast interface and intuitive navigation, optimized for mobile use during the event."
+            },
+            "technologie_4": {
+              "title": "Light Authentication System",
+              "description": "Simplified login mechanism (free user + universal password) that balances security and ease of access."
+            },
+            "technologie_5": {
+              "title": "Geo-Specific Content",
+              "description": "Smart presentation of differentiated agendas and brochures for Chile and Peru in a single implementation."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A strategic digital tool that served as the nerve center of information during Nike Max Play 2024. Attendees instantly accessed updated agendas and exclusive materials, while Push and Pull agency and Nike obtained a unified platform for both countries. The project demonstrated how simple technical solutions can enhance large-scale physical experiences, maintaining the brand's vibrant essence.",
+          "button": "View website"
         }
       },
       "bouquet": {
         "title": "Bouquet",
-        "description": "Official website for the Bouquets complex, located in Villa Rumipal, Córdoba.",
+        "description": "Ecommerce for the Coderhouse JavaScript Course",
         "category": "Ecommerce",
-        "live_preview": "Live Preview",
+        "live_preview": "Preview",
         "sectionDescription": {
-          "title": "Description",
-          "description": "The Cabañas Mahalo website was designed to provide an informative and visually appealing experience for visitors. A photo gallery was implemented to showcase the beauty of the complex, along with video links highlighting the surroundings and facilities, as well as interactive maps to make locating the property easier. Additionally, a booking system was integrated, allowing customers to manage their stays effortlessly. Google ratings were also incorporated, reflecting guest reviews directly on the site to build trust in the service. This project combines functionality and design to enhance Cabañas Mahalo's digital presence.",
+          "title": "Concept",
+          "description": "I developed Bouquet as an academic project for the JavaScript course at Coderhouse, merging my passion for web development with the elegance of the wine world. The design prioritizes a refined user experience, where intuitive navigation and visual product presentation recreate the sophistication of a premium winery, demonstrating how dynamic interfaces can elevate the perception of specialized products.",
           "category": {
             "title": "Category",
             "description": "Ecommerce"
           },
           "client": {
             "title": "Client",
-            "description": "Oscar Biocca"
+            "description": "Coderhouse"
           },
           "date": {
             "title": "Start Date",
-            "description": "June 22, 2024"
+            "description": "August 22, 2022"
           },
           "designer": {
             "title": "Designer",
-            "description": "Pablo Hernandez"
+            "description": "Pablo Hernández"
           }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "JavaScript ES6+",
+              "description": "Advanced logic for catalog management, interactive filters, and shopping cart simulation."
+            },
+            "technologie_2": {
+              "title": "Modern CSS3",
+              "description": "Custom styles with fluid animations, CSS variables, and responsive design that adapts elegance to any device."
+            },
+            "technologie_3": {
+              "title": "Semantic HTML5",
+              "description": "Accessible and SEO-friendly structure that hierarchically organizes product information."
+            },
+            "technologie_4": {
+              "title": "Premium Product-Oriented UX",
+              "description": "Navigation patterns that replicate the experience of a physical wine shop, with transitions evoking tasting rituals."
+            },
+            "technologie_5": {
+              "title": "Interactive Mockups",
+              "description": "Complete product presentation system with interactive zoom and technical details organized by categories."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A functional specialized e-commerce prototype that exceeded academic requirements, demonstrating ability to solve complex UI/UX problems in gourmet product environments. The project validated how well-structured code and conscious design can create value perceptions, providing Coderhouse with a tangible case study for future students. The implementation received special mention for its attention to detail in product-user interaction.",
+          "button": "View website"
         }
       }
     },

@@ -54,14 +54,70 @@
     "subtitle": "Algunos de mis proyectos más destacados.",
     "description": "Explora mis proyectos más recientes y descubre mi evolución como programador a través de soluciones innovadoras y adaptadas a cada desafío.",
     "projects": {
+      "lamberti": {
+        "title": "Lamberti Carra Arquitectos",
+        "description": "Sitio web para el estudio de arquitectura Lamberti Carra.",
+        "category": "Sitios Web",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Concepto",
+          "description": "Desarrollé un sitio web minimalista y elegante que refleja la filosofía del estudio: 'La arquitectura como puente entre las ideas y la vida real'. El diseño prioriza la claridad visual, la fluidez narrativa y un diálogo armonioso entre espacios, entorno y tiempo.",
+          "category": {
+            "title": "Categoría",
+            "description": "Desarrollo de Sitios Web"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Push and Pull"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Agosto 1, 2025"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "Next.js + React",
+              "description": "Para un rendimiento óptimo, carga rápida y estructura modular."
+            },
+            "technologie_2": {
+              "title": "Framer Motion",
+              "description": "Animaciones sutiles y sofisticadas que guían al usuario, mejorando la experiencia sin distraer del contenido."
+            },
+            "technologie_3": {
+              "title": "Diseño Minimalista",
+              "description": "Tipografía limpia, paleta de colores neutros y amplio uso de espacios en blanco, resaltando la arquitectura como protagonista."
+            },
+            "technologie_4": {
+              "title": "Imágenes Descriptivas",
+              "description": "Galerías de alta calidad que muestran los proyectos con detalle, reforzando la identidad visual del estudio."
+            },
+            "technologie_5": {
+              "title": "Interacción Delicada",
+              "description": "Transiciones fluidas, efectos de scroll suave y microinteracciones que aportan un toque orgánico y contemporáneo."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Una plataforma digital que no solo presenta el portafolio del estudio, sino que evoca su esencia: arquitectura pensada para integrarse con la vida, el entorno y el tiempo. Ideal para clientes que buscan claridad conceptual y elegancia en cada detalle.",
+          "button": "Ver sitio web"
+        }
+      },
       "mahalo": {
         "title": "Cabañas Mahalo",
         "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",
         "category": "Sitios Web",
         "live_preview": "Vista previa",
         "sectionDescription": {
-          "title": "Descripción",
-          "description": "El sitio web de Cabañas Mahalo fue diseñado para ofrecer una experiencia informativa y visualmente atractiva a los visitantes. Se implementó una galería de imágenes para resaltar la belleza del complejo, enlaces a videos que muestran el entorno y las instalaciones, así como mapas interactivos para facilitar la ubicación del lugar. Además, se integró un sistema de reservas para que los clientes puedan gestionar sus estadías de manera sencilla. También se incorporaron las calificaciones de Google, permitiendo reflejar en el sitio las opiniones de los huéspedes y reforzar la confianza en el servicio. Este proyecto combina funcionalidad y diseño para potenciar la presencia digital de Cabañas Mahalo.",
+          "title": "Concepto",
+          "description": "Desarrollé un sitio web informativo y visualmente atractivo para Cabañas Mahalo, donde la naturaleza y la comodidad se fusionan. El diseño prioriza la inmersión en el entorno natural, facilitando la exploración de las instalaciones y simplificando el proceso de reserva, creando un puente digital entre la experiencia del hospedaje y los potenciales huéspedes.",
           "category": {
             "title": "Categoría",
             "description": "Desarrollo de Sitios Web"
@@ -78,16 +134,46 @@
             "title": "Diseñador",
             "description": "Pablo Hernández"
           }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "HTML5 + CSS3 + JavaScript",
+              "description": "Base fundamental para una estructura semántica, estilos personalizados e interactividad esencial."
+            },
+            "technologie_2": {
+              "title": "AOS (Animate On Scroll)",
+              "description": "Animaciones discretas que se activan al hacer scroll, mejorando el engagement sin sobrecargar la experiencia."
+            },
+            "technologie_3": {
+              "title": "Diseño Orientado a Experiencias",
+              "description": "Enfoque en la visualización del entorno natural, con jerarquía clara de información y accesos directos a las acciones principales."
+            },
+            "technologie_4": {
+              "title": "Integración Multimedia",
+              "description": "Galería de imágenes, videos inmersivos y mapas interactivos que muestran el complejo en su totalidad."
+            },
+            "technologie_5": {
+              "title": "Sistemas Integrados",
+              "description": "Conectores con plataforma de reservas y API de Google Reviews para mostrar calificaciones en tiempo real."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Una plataforma digital que funciona como ventana al complejo, combinando información práctica con una presentación visual impactante. Los visitantes pueden explorar las instalaciones, ver testimonios reales y gestionar reservas en un mismo espacio, mejorando significativamente la conversión y reduciendo la fricción en el proceso de reservación. El sitio refleja la esencia de desconexión y contacto con la naturaleza que ofrece Mahalo.",
+          "button": "Ver sitio web"
         }
       },
       "nike": {
         "title": "Nike Max Play 2024",
-        "description": "Agenda oficial para el evento Nike Max Play 2024 realizado en Chile y Peru.",
-        "category": "Sitios Web",
+        "description": "Agenda oficial para el evento Nike Max Play 2024 Chile y Peru.",
+        "category": "Web App",
         "live_preview": "Vista previa",
         "sectionDescription": {
-          "title": "Description",
-          "description": "Este proyecto es la agenda oficial del evento Nike Max Play 2024, realizado en Chile y Perú. Desarrollado para la agencia Push and Pull en colaboración con Delfin Blaksley, incluye un sistema de login que permite acceder con la contraseña universal airmax2024 y cualquier nombre de usuario. Una vez dentro, los usuarios pueden explorar un menú interactivo con dos secciones principales: la agenda completa de actividades del evento y los folletos promocionales exclusivos para Chile y Perú. Creado con HTML, CSS y JavaScript, este proyecto destaca por su diseño sencillo e intuitivo, pensado para brindar una experiencia fluida y resaltar la energía innovadora de Nike.",
+          "title": "Concepto",
+          "description": "Desarrollé, en colaboración con Delfin Blaksley, la agenda digital oficial para Nike Max Play 2024, un proyecto que combina funcionalidad esencial con el espíritu innovador de Nike. El diseño prioriza el acceso inmediato a la información del evento en Chile y Perú, con un sistema de autenticación sencillo pero efectivo que mantiene el contenido exclusivo para asistentes, reflejando la energía dinámica de la marca a través de una interfaz limpia y acciones intuitivas.",
           "category": {
             "title": "Categoría",
             "description": "Desarrollo de Sitios Web"
@@ -104,6 +190,36 @@
             "title": "Diseñador",
             "description": "Pablo Hernández"
           }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "React + Vite",
+              "description": "Arquitectura moderna para un rendimiento óptimo y rápida carga, esencial para el acceso durante el evento."
+            },
+            "technologie_2": {
+              "title": "AOS (Animate On Scroll)",
+              "description": "Microanimaciones estratégicas que refuerzan la identidad dinámica de Nike sin interferir con la usabilidad."
+            },
+            "technologie_3": {
+              "title": "Diseño Centrado en Accesibilidad",
+              "description": "Interfaz de alto contraste y navegación intuitiva, optimizada para uso en dispositivos móviles durante el evento."
+            },
+            "technologie_4": {
+              "title": "Sistema de Autenticación Light",
+              "description": "Mecanismo de login simplificado (usuario libre + contraseña universal) que equilibra seguridad y facilidad de acceso."
+            },
+            "technologie_5": {
+              "title": "Contenido Geoespecífico",
+              "description": "Presentación inteligente de agendas y folletos diferenciados para Chile y Perú en una sola implementación."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Una herramienta digital estratégica que funcionó como centro neurálgico de información durante el Nike Max Play 2024. Los asistentes accedieron instantáneamente a agendas actualizadas y materiales exclusivos, mientras la agencia Push and Pull y Nike obtuvieron una plataforma unificada para ambos países. El proyecto demostró cómo soluciones técnicas sencillas pueden potenciar experiencias físicas de gran escala, manteniendo la esencia vibrante de la marca.",
+          "button": "Ver sitio web"
         }
       },
       "bouquet": {
@@ -112,8 +228,8 @@
         "category": "Ecommerce",
         "live_preview": "Vista previa",
         "sectionDescription": {
-          "title": "Description",
-          "description": "Bouqets es un proyecto que desarrollé como parte del curso de JavaScript en Coderhouse. Decidí crear una tienda de vinos online para combinar mi pasión por el diseño web con una temática elegante y sofisticada. Este proyecto está desarrollado con HTML, CSS, y JavaScript, y representa un ejemplo práctico de cómo se pueden construir interfaces dinámicas e interactivas utilizando estas tecnologías. La tienda permite a los usuarios explorar una selección de vinos y experimentar una navegación intuitiva.",
+          "title": "Concepto",
+          "description": "Desarrollé Bouqets como proyecto académico para el curso de JavaScript en Coderhouse, fusionando mi pasión por el desarrollo web con la elegancia del mundo vitivinícola. El diseño prioriza una experiencia de usuario refinada, donde la navegación intuitiva y la presentación visual de los productos recrean la sofisticación de una bodega premium, demostrando cómo interfaces dinámicas pueden elevar la percepción de productos especializados.",
           "category": {
             "title": "Categoría",
             "description": "Ecommerce"
@@ -130,6 +246,36 @@
             "title": "Diseñador",
             "description": "Pablo Hernández"
           }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "JavaScript ES6+",
+              "description": "Lógica avanzada para gestión del catálogo, filtros interactivos y simulación de carrito de compras."
+            },
+            "technologie_2": {
+              "title": "CSS3 Moderno",
+              "description": "Estilos personalizados con animaciones fluidas, variables CSS y diseño responsive que adapta la elegancia a cualquier dispositivo."
+            },
+            "technologie_3": {
+              "title": "HTML5 Semántico",
+              "description": "Estructura accesible y SEO-friendly que organiza jerárquicamente la información del producto."
+            },
+            "technologie_4": {
+              "title": "UX Orientado a Productos Premium",
+              "description": "Patrones de navegación que replican la experiencia de una vinoteca física, con transiciones que evocan rituales de degustación."
+            },
+            "technologie_5": {
+              "title": "Mockups Interactivos",
+              "description": "Sistema completo de presentación de productos con zoom interactivo y detalles técnicos organizados por categorías."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Un prototipo funcional de e-commerce especializado que superó los requisitos académicos, demostrando capacidad para resolver problemas complejos de UI/UX en entornos de productos gourmet. El proyecto validó cómo el código bien estructurado y el diseño consciente pueden crear percepciones de valor, ofreciendo a Coderhouse un caso de estudio tangible para futuros estudiantes. La implementación recibió mención especial por su atención al detalle en la interacción producto-usuario.",
+          "button": "Ver sitio web"
         }
       }
     },
@@ -148,7 +294,7 @@
         "title": "Fifteen Puzzle",
         "description1": "Fifteen Puzzle es un clásico juego de rompecabezas deslizante que desafía tu lógica y habilidades de resolución de problemas. El objetivo es reorganizar las piezas numeradas del 1 al 15 dentro de un tablero de 4x4, moviéndolas estratégicamente hasta colocarlas en el orden correcto.",
         "description2": "Inicialmente desarrollado con HTML, CSS y JavaScript, ahora utiliza React, Next.js y Tailwind CSS, lo que mejora su diseño, optimiza su rendimiento y ofrece una experiencia más dinámica y fluida.",
-        "description3": "Pruebalo ahora!",     
+        "description3": "Pruebalo ahora!",
         "category": "Puzzle",
         "live_preview": "Vista previa",
         "button": "Jugar",

@@ -467,16 +467,17 @@ body {
 
 .loader {
   position: relative;
-  width: 200px;
-  height: 20px;
+  width: 120px; /* Reduje de 200px a 120px */
+  height: 12px;  /* Reduje de 20px a 12px */
   filter: url("#liquid");
+  
   span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 0 20px #204db8;
+    width: 12px;  /* Reduje de 20px a 12px */
+    height: 12px; /* Reduje de 20px a 12px */
+    box-shadow: 0 0 12px #204db8; /* Reduje el blur del shadow */
     background: linear-gradient(#3d7dfd, #2662ec);
     animation: animate 5s ease-in-out infinite;
     animation-delay: calc(0.2s * var(--e));

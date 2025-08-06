@@ -14,7 +14,7 @@ const Loader = () => {
       </div>
       <svg className="absolute">
         <filter id="liquid">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
           <feColorMatrix
             values="
             1 0 0 0 0

@@ -13,6 +13,8 @@ import {
   RiFireLine,
 } from "react-icons/ri";
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { SiTailwindcss, SiResend } from "react-icons/si";
+import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
 
 export const navLinks = () => {
   const t = useTranslations("Nav");
@@ -55,12 +57,138 @@ export const dataServices = () => {
 export const dataProjects = (t) => {
   return [
     {
+      id: "lamberti",
+      title: `${t("lamberti.title")}`,
+      description: `${t("lamberti.description")}`,
+      tags: ["REACT", "TAILWIND", "FRAMER MOTION", "RESEND"],
+      imageCard: "/projects/lamberti/lamberti_carra_test.webp",
+      imageUrl: "/projects/lamberti/lamberti_carra_test.webp",
+      link: "/projects/lamberti",
+      website: "https://lamberti-carra.vercel.app",
+      category: `${t("lamberti.category")}`,
+      live_preview: `${t("lamberti.live_preview")}`,
+      sectionDescription: {
+        title: `${t("lamberti.sectionDescription.title")}`,
+        description: `${t("lamberti.sectionDescription.description")}`,
+        category: {
+          title: `${t("lamberti.sectionDescription.category.title")}`,
+          description: `${t(
+            "lamberti.sectionDescription.category.description"
+          )}`,
+        },
+        client: {
+          title: `${t("lamberti.sectionDescription.client.title")}`,
+          description: `${t("lamberti.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("lamberti.sectionDescription.date.title")}`,
+          description: `${t("lamberti.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("lamberti.sectionDescription.designer.title")}`,
+          description: `${t(
+            "lamberti.sectionDescription.designer.description"
+          )}`,
+        },
+      },
+      sectionTechnologies: {
+        title: t("lamberti.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "lamberti.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "lamberti.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "lamberti.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "lamberti.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "lamberti.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "lamberti.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "lamberti.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "lamberti.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "lamberti.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "lamberti.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("lamberti.sectionResult.title"),
+        description: t("lamberti.sectionResult.description"),
+        button: t("lamberti.sectionResult.button"),
+      },
+      icons: [
+        {
+          ico: <FaReact className="w-6 h-6" />,
+          progress: 90,
+        },
+        {
+          ico: <SiTailwindcss className="w-5 h-5" />,
+          progress: 85,
+        },
+        {
+          ico: <TbBrandFramerMotion className="w-6 h-6" />,
+          progress: 60,
+        },
+        {
+          ico: <SiResend className="w-6 h-6" />,
+          progress: 50,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/projects/lamberti/lamberti_carra_1.webp",
+        },
+        {
+          id: 2,
+          url: "/projects/lamberti/lamberti_carra_2.webp",
+        },
+        {
+          id: 3,
+          url: "/projects/lamberti/lamberti_carra_3.webp",
+        },
+        {
+          id: 4,
+          url: "/projects/lamberti/lamberti_carra_4.webp",
+        },
+        {
+          id: 5,
+          url: "/projects/lamberti/lamberti_carra_5.webp",
+        },
+      ],
+    },
+    {
       id: "mahalo",
       title: `${t("mahalo.title")}`,
       description: `${t("mahalo.description")}`,
       tags: ["HTML", "CSS", "JavaScript"],
-      imageCard: "/mahalo.png",
-      imageUrl: "/mahalo/mahalo_1.png",
+      imageCard: "/projects/mahalo/mahalo.png",
+      imageUrl: "/projects/mahalo/mahalo.png",
       link: "/projects/mahalo",
       website: "https://pablo220288.github.io/Cabanas-Mahalo/",
       category: `${t("mahalo.category")}`,
@@ -85,6 +213,56 @@ export const dataProjects = (t) => {
           description: `${t("mahalo.sectionDescription.designer.description")}`,
         },
       },
+      sectionTechnologies: {
+        title: t("lamberti.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "mahalo.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "mahalo.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "mahalo.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "mahalo.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "mahalo.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "mahalo.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "mahalo.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "mahalo.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "mahalo.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "mahalo.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("mahalo.sectionResult.title"),
+        description: t("mahalo.sectionResult.description"),
+        button: t("mahalo.sectionResult.button"),
+      },
       icons: [
         {
           ico: <FaHtml5 className="w-6 h-6" />,
@@ -102,23 +280,23 @@ export const dataProjects = (t) => {
       imgs: [
         {
           id: 1,
-          url: "/mahalo/mahalo_1.png",
+          url: "/projects/mahalo/mahalo_1.png",
         },
         {
           id: 2,
-          url: "/mahalo/mahalo_2.png",
+          url: "/projects/mahalo/mahalo_2.png",
         },
         {
           id: 3,
-          url: "/mahalo/mahalo_3.png",
+          url: "/projects/mahalo/mahalo_3.png",
         },
         {
           id: 4,
-          url: "/mahalo/mahalo_4.png",
+          url: "/projects/mahalo/mahalo_4.png",
         },
         {
           id: 5,
-          url: "/mahalo/mahalo_5.png",
+          url: "/projects/mahalo/mahalo_5.png",
         },
       ],
     },
@@ -126,9 +304,9 @@ export const dataProjects = (t) => {
       id: "nike",
       title: `${t("nike.title")}`,
       description: `${t("nike.description")}`,
-      tags: ["HTML", "CSS", "JavaScript"],
-      imageCard: "/nike-max-play.png",
-      imageUrl: "/nike/nike-max-play_1.png",
+      tags: ["React", "Vite", "AOS"],
+      imageCard: "/projects/nike/nike-max-play.png",
+      imageUrl: "/projects/nike/nike-max-play_1.png",
       link: "/projects/nike",
       website: "https://nike-masplay-24.vercel.app/",
       category: `${t("nike.category")}`,
@@ -153,10 +331,60 @@ export const dataProjects = (t) => {
           description: `${t("nike.sectionDescription.designer.description")}`,
         },
       },
+      sectionTechnologies: {
+        title: t("nike.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "nike.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "nike.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "nike.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "nike.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "nike.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "nike.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "nike.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "nike.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "nike.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "nike.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("nike.sectionResult.title"),
+        description: t("nike.sectionResult.description"),
+        button: t("nike.sectionResult.button"),
+      },
       icons: [
         {
           ico: <FaHtml5 className="w-6 h-6" />,
-          progress: 40,
+          progress: 95,
         },
         {
           ico: <FaCss3 className="w-5 h-5" />,
@@ -168,29 +396,33 @@ export const dataProjects = (t) => {
         },
         {
           ico: <FaReact className="w-6 h-6" />,
-          progress: 60,
+          progress: 70,
+        },
+        {
+          ico: <TbBrandVite className="w-6 h-6" />,
+          progress: 55,
         },
       ],
       imgs: [
         {
           id: 1,
-          url: "/nike/nike-max-play_1.png",
+          url: "/projects/nike/nike-max-play_1.png",
         },
         {
           id: 2,
-          url: "/nike/nike-max-play_2.png",
+          url: "/projects/nike/nike-max-play_2.png",
         },
         {
           id: 3,
-          url: "/nike/nike-max-play_3.png",
+          url: "/projects/nike/nike-max-play_3.png",
         },
         {
           id: 4,
-          url: "/nike/nike-max-play_4.png",
+          url: "/projects/nike/nike-max-play_4.png",
         },
         {
           id: 5,
-          url: "/nike/nike-max-play_5.png",
+          url: "/projects/nike/nike-max-play_5.png",
         },
       ],
     },
@@ -199,8 +431,8 @@ export const dataProjects = (t) => {
       title: `${t("bouquet.title")}`,
       description: `${t("bouquet.description")}`,
       tags: ["HTML", "CSS", "JavaScript"],
-      imageCard: "/bouquet.png",
-      imageUrl: "/bouquet/bouquet_1.png",
+      imageCard: "/projects/bouquet/bouquet.png",
+      imageUrl: "/projects/bouquet/bouquet_1.png",
       link: "/projects/bouquet",
       website: "https://pablo220288.github.io/Bouquets/",
       category: `${t("bouquet.category")}`,
@@ -229,6 +461,56 @@ export const dataProjects = (t) => {
           )}`,
         },
       },
+      sectionTechnologies: {
+        title: t("bouquet.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "bouquet.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "bouquet.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "bouquet.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "bouquet.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "bouquet.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "bouquet.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "bouquet.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "bouquet.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "bouquet.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "bouquet.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("nike.sectionResult.title"),
+        description: t("nike.sectionResult.description"),
+        button: t("nike.sectionResult.button"),
+      },
       icons: [
         {
           ico: <FaHtml5 className="w-6 h-6" />,
@@ -246,90 +528,23 @@ export const dataProjects = (t) => {
       imgs: [
         {
           id: 1,
-          url: "/bouquet/bouquet_1.png",
+          url: "/projects/bouquet/bouquet_1.png",
         },
         {
           id: 2,
-          url: "/bouquet/bouquet_2.png",
+          url: "/projects/bouquet/bouquet_2.png",
         },
         {
           id: 3,
-          url: "/bouquet/bouquet_3.png",
+          url: "/projects/bouquet/bouquet_3.png",
         },
         {
           id: 4,
-          url: "/bouquet/bouquet_4.png",
+          url: "/projects/bouquet/bouquet_4.png",
         },
         {
           id: 5,
-          url: "/bouquet/bouquet_5.png",
-        },
-      ],
-    },
-    {
-      id: "storageApp",
-      title: "Storage App",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-      tags: ["React", "Next.js", "Tailwind", "MongoDB"],
-      imageCard: "/image3.png",
-      imageUrl: "/image3.png",
-      link: "/projects/storageApp",
-      category: "Web App",
-      sectionDescription: {
-        title: `${t("mahalo.sectionDescription.title")}`,
-        description: `${t("mahalo.sectionDescription.description")}`,
-        category: {
-          title: `${t("mahalo.sectionDescription.category.title")}`,
-          description: `${t("mahalo.sectionDescription.category.description")}`,
-        },
-        client: {
-          title: `${t("mahalo.sectionDescription.client.title")}`,
-          description: `${t("mahalo.sectionDescription.client.description")}`,
-        },
-        date: {
-          title: `${t("mahalo.sectionDescription.date.title")}`,
-          description: `${t("mahalo.sectionDescription.date.description")}`,
-        },
-        designer: {
-          title: `${t("mahalo.sectionDescription.designer.title")}`,
-          description: `${t("mahalo.sectionDescription.designer.description")}`,
-        },
-      },
-      icons: [
-        {
-          ico: <FaHtml5 className="w-6 h-6" />,
-          progress: 80,
-        },
-        {
-          ico: <FaCss3 className="w-5 h-5" />,
-          progress: 65,
-        },
-        {
-          ico: <FaJs className="w-6 h-6" />,
-          progress: 30,
-        },
-      ],
-      imgs: [
-        {
-          id: 1,
-          url: "/mahalo/mahalo_1.png",
-        },
-        {
-          id: 2,
-          url: "/mahalo/mahalo_2.png",
-        },
-        {
-          id: 3,
-          url: "/mahalo/mahalo_3.png",
-        },
-        {
-          id: 4,
-          url: "/mahalo/mahalo_4.png",
-        },
-        {
-          id: 5,
-          url: "/mahalo/mahalo_5.png",
+          url: "/projects/bouquet/bouquet_5.png",
         },
       ],
     },
@@ -424,19 +639,27 @@ export const dataGames = (t) => {
         description: `${t("fifteenPuzzle.sectionDescription.description")}`,
         category: {
           title: `${t("fifteenPuzzle.sectionDescription.category.title")}`,
-          description: `${t("fifteenPuzzle.sectionDescription.category.description")}`,
+          description: `${t(
+            "fifteenPuzzle.sectionDescription.category.description"
+          )}`,
         },
         client: {
           title: `${t("fifteenPuzzle.sectionDescription.client.title")}`,
-          description: `${t("fifteenPuzzle.sectionDescription.client.description")}`,
+          description: `${t(
+            "fifteenPuzzle.sectionDescription.client.description"
+          )}`,
         },
         date: {
           title: `${t("fifteenPuzzle.sectionDescription.date.title")}`,
-          description: `${t("fifteenPuzzle.sectionDescription.date.description")}`,
+          description: `${t(
+            "fifteenPuzzle.sectionDescription.date.description"
+          )}`,
         },
         designer: {
           title: `${t("fifteenPuzzle.sectionDescription.designer.title")}`,
-          description: `${t("fifteenPuzzle.sectionDescription.designer.description")}`,
+          description: `${t(
+            "fifteenPuzzle.sectionDescription.designer.description"
+          )}`,
         },
       },
       icons: [
