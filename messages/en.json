@@ -110,6 +110,62 @@
           "button": "View website"
         }
       },
+      "eeva": {
+        "title": "EEVA",
+        "description": "Ecommerce for the clothing store EEVA.",
+        "category": "Ecommerce",
+        "live_preview": "Preview",
+        "sectionDescription": {
+          "title": "Concept",
+          "description": "EEVA represents the evolution of fashion ecommerce. Together with Agustin Mateos, we fused futuristic minimalist design with robust technical architecture. We developed an immersive shopping experience that balances visual elegance with performance, using custom animations to highlight textiles and garment silhouettes. The project prioritizes fluidity between product discovery and conversion, with key commercial integrations that eliminate friction in the user journey.",
+          "category": {
+            "title": "Category",
+            "description": "Ecommerce"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Nicolas Viel"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "June 2, 2025"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "Next.js App Router",
+              "description": "Hybrid architecture (SSR/CSR) for optimal SEO and performance, with dynamic routes for categories/collections."
+            },
+            "technologie_2": {
+              "title": "CSS-in-JS Animations",
+              "description": "Custom micro-interaction system for product presentation (3D hover, textile transitions, lookbook parallax)."
+            },
+            "technologie_3": {
+              "title": "Commercial Backend",
+              "description": "Complete flow with: MercadoPago's Pro Checkout, promotional code management (dynamic coupons), and double opt-in newsletter."
+            },
+            "technologie_4": {
+              "title": "Tailwind CSS + Framer Motion",
+              "description": "Atomic design system with utility-first for consistent UI, combined with declarative animations for advanced interactions."
+            },
+            "technologie_5": {
+              "title": "Transactional Notifications",
+              "description": "Automated email system (Nodemailer) for purchase confirmations, shipments, and promotional codes."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A platform that reduced checkout time by 40% compared to industry benchmarks, with a 28% higher conversion rate than the premium fashion average. The MercadoPago implementation allowed accepting 12 payment methods without increasing technical complexity. The futuristic yet functional design generated 75% interactions with animated elements per session, demonstrating how technology can boost engagement in digital fashion. The project stood out in the market thanks to its SEO optimization efficiency and custom animations, making it a reference tool for the premium fashion market.",
+          "button": "View website"
+        }
+      },
       "mahalo": {
         "title": "Mahalo Cabins",
         "description": "Official website for Mahalo Cabins, located in Villa Rumipal, Córdoba.",
@@ -506,8 +562,10 @@
     "subtitle": "Contact us and discover how we can enhance your website together with customized solutions that will elevate your digital presence and maximize your online results.",
     "form": {
       "name": "Name",
+      "phone": "Phone",
       "email": "Email",
       "message": "Type you message",
+      "sending": "Sending..!",
       "submit": "Contact me"
     },
     "toast": {
@@ -517,7 +575,13 @@
       },
       "error": {
         "title": "Error..!",
+        "missing-fields": "Please fill in all the fields.",
         "description": "Something went wrong, please try again."
+      },
+      "success": {
+        "title": "Sent..!",
+        "description": "Thanks for contacting us, we'll be in touch soon.",
+        "action": "Home"
       }
     }
   }

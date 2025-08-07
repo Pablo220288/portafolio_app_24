@@ -593,8 +593,10 @@
     "subtitle": "Ponte en contacto con nosotros y descubre cómo podemos potenciar tu sitio web, con soluciones personalizadas que elevarán tu presencia digital y maximizarán tus resultados en línea.",
     "form": {
       "name": "Nombre",
+      "phone": "Telefono",
       "email": "Correo",
       "message": "Escribe tu mensaje",
+      "sending": "Enviando..!",
       "submit": "Contactame"
     },
     "toast": {
@@ -604,7 +606,13 @@
       },
       "error": {
         "title": "Error..!",
+        "missing-fields": "Por favor, completa todos los campos.",
         "description": "Algo salio mal, intenta de nuevo."
+      },
+      "success": {
+        "title": "Enviado..!",
+        "description": "Gracias por escribirnos, pronto te contactaremos.",
+        "action": "Home"
       }
     }
   }

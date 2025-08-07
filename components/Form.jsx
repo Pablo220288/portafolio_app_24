@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { UserCheck, MailIcon, MessageSquare } from "lucide-react";
+import { UserCheck, MailIcon, MessageSquare, Smartphone } from "lucide-react";
 
 import { RiSendPlaneLine } from "react-icons/ri";
 
@@ -19,45 +19,84 @@ import { useTranslations } from "next-intl";
 
 const Form = () => {
   const t = useTranslations("Contact");
-
   const [isHovered, setIsHovered] = useState(false);
-
+  const [loading, setLoading] = useState(false);
   const { toast } = useToast();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const formData = new FormData(e.target);
+    const fullName = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    // Validación básica
+    if (!fullName || !email || !message) {
+      toast({
+        title: t("toast.error.title"),
+        description: t("toast.error.missing-fields"),
+        variant: "destructive",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Validación de email simple
+    if (!email.includes("@") || !email.includes(".")) {
+      toast({
+        title: t("toast.error.title"),
+        description: t("toast.error.invalid-email"),
+        variant: "destructive",
+      });
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName,
+          email,
+          phone: formData.get("phone"),
+          message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      toast({
+        title: t("toast.success.title"),
+        description: t("toast.success.description"),
+        action: (
+          <ToastAction altText={t("toast.success.action")}>
+            <Link href="/">{t("toast.success.action")}</Link>
+          </ToastAction>
+        ),
+      });
+
+      e.target.reset();
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: t("toast.error.title"),
+        description: t("toast.error.description"),
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <form
-      className="flex flex-col gap-y-4"
-      action="https://getform.io/f/bjjjommb"
-      method="POST"
-      onSubmit={async (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-
-        try {
-          await fetch("https://getform.io/f/bjjjommb", {
-            method: "POST",
-            body: formData,
-          });
-          toast({
-            title: `${t("toast.sending.title")}`,
-            description: `${t("toast.sending.description")}`,
-            action: (
-              <ToastAction altText="Go to dashboard">
-                <Link href="/">Go to Home</Link>
-              </ToastAction>
-            ),
-          });
-
-          event.target.reset();
-
-        } catch (error) {
-          toast({
-            title: `${t("toast.error.title")}`,
-            description: `${t("toast.error.description")}`,
-            variant: "destructive",
-          });
-        }
-      }}
-    >
+    <form className="flex flex-col gap-y-4" onSubmit={handleSubmit}>
       <div className="relative flex items-center">
         <Input
           type="name"
@@ -65,7 +104,6 @@ const Form = () => {
           placeholder={`${t("form.name")}`}
           id="name"
           autoComplete="name"
-          required
         />
         <UserCheck
           className="absolute right-3 top-1/2 -translate-y-1/2"
@@ -81,6 +119,19 @@ const Form = () => {
           autoComplete="email"
         />
         <MailIcon
+          className="absolute right-3 top-1/2 -translate-y-1/2"
+          size={20}
+        />
+      </div>
+      <div className="relative flex items-center">
+        <Input
+          type="text"
+          name="phone"
+          placeholder={`${t("form.phone")}`}
+          id="email"
+          autoComplete="phone"
+        />
+        <Smartphone
           className="absolute right-3 top-1/2 -translate-y-1/2"
           size={20}
         />
@@ -103,7 +154,7 @@ const Form = () => {
             isHovered ? "animate" : ""
           }`}
         >
-          {t("form.submit")}
+          {loading ? t("form.sending") : t("form.submit")}
           <RiSendPlaneLine size={20} />
         </Button>
       </div>

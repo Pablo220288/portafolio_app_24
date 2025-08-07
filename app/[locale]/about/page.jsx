@@ -21,7 +21,7 @@ import {
   FaPython,
 } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiMongodb, SiHandlebarsdotjs } from "react-icons/si";
+import { SiMongodb, SiHandlebarsdotjs, SiDjango, SiSupabase  } from "react-icons/si";
 
 //Import Next Intl
 import { useTranslations } from "next-intl";
@@ -47,6 +47,20 @@ const About = () => {
               <FaPython className="w-6 h-6 transition duration-300 hover:text-[#3776ab] cursor-pointer" />
             ),
             hover: "hover:text-[#3776ab]",
+          },
+          {
+            name: "Django",
+            icon: (
+              <SiDjango className="w-6 h-6 transition duration-300 hover:text-[#092e20] cursor-pointer" />
+            ),
+            hover: "hover:text-[#092e20]",
+          },
+          {
+            name: "Supabase",
+            icon: (
+              <SiSupabase className="w-6 h-6 transition duration-300 hover:text-[#3ec4dc] cursor-pointer" />
+            ),
+            hover: "hover:text-[#3ec4dc]",
           },
         ],
       },
