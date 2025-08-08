@@ -13,7 +13,7 @@ import {
   RiFireLine,
 } from "react-icons/ri";
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiResend, SiMercadopago  } from "react-icons/si";
+import { SiTailwindcss, SiResend, SiMercadopago } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
 
 export const navLinks = () => {
@@ -183,6 +183,142 @@ export const dataProjects = (t) => {
       ],
     },
     {
+      id: "vlack",
+      title: `${t("vlack.title")}`,
+      description: `${t("vlack.description")}`,
+      tags: ["TIENDA NUBE"],
+      imageCard: "/projects/vlack/vlack_3.webp",
+      imageUrl: "/projects/vlack/vlack_1.webp",
+      link: "/projects/vlack",
+      website: "https://www.vlackhockey.com.ar/",
+      category: `${t("vlack.category")}`,
+      live_preview: `${t("vlack.live_preview")}`,
+      sectionDescription: {
+        title: `${t("vlack.sectionDescription.title")}`,
+        description: `${t("vlack.sectionDescription.description")}`,
+        category: {
+          title: `${t("vlack.sectionDescription.category.title")}`,
+          description: `${t("vlack.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("vlack.sectionDescription.client.title")}`,
+          description: `${t("vlack.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("vlack.sectionDescription.date.title")}`,
+          description: `${t("vlack.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("vlack.sectionDescription.designer.title")}`,
+          description: `${t("vlack.sectionDescription.designer.description")}`,
+        },
+      },
+      sectionTechnologies: {
+        title: t("vlack.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "vlack.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "vlack.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "vlack.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "vlack.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "vlack.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "vlack.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "vlack.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "vlack.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "vlack.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "vlack.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("vlack.sectionResult.title"),
+        description: t("vlack.sectionResult.description"),
+        button: t("vlack.sectionResult.button"),
+      },
+      icons: [
+        {
+          ico: (
+            <svg
+              fill="#000000"
+              width="24px"
+              height="24px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10.25 2.24a5.79 5.79 0 0 0-4 1.63 4.48 4.48 0 1 0 0 8.26 5.76 5.76 0 1 0 4-9.89zm0 10.24A4.49 4.49 0 0 1 5.76 8H4.48a5.74 5.74 0 0 0 .89 3.07 3.29 3.29 0 0 1-.88.13 3.2 3.2 0 0 1 0-6.4A3.2 3.2 0 0 1 7.69 8H9a4.42 4.42 0 0 0-1.63-3.43 4.48 4.48 0 1 1 2.88 7.91z" />
+            </svg>
+          ),
+          progress: 90,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/projects/vlack/vlack_1.webp",
+        },
+        {
+          id: 2,
+          url: "/projects/vlack/vlack_2.webp",
+        },
+        {
+          id: 3,
+          url: "/projects/vlack/vlack_3.webp",
+        },
+        {
+          id: 4,
+          url: "/projects/vlack/vlack_4.webp",
+        },
+        {
+          id: 5,
+          url: "/projects/vlack/vlack_5.webp",
+        },
+        {
+          id: 6,
+          url: "/projects/vlack/vlack_6.webp",
+        },
+        {
+          id: 7,
+          url: "/projects/vlack/vlack_7.webp",
+        },
+        {
+          id: 8,
+          url: "/projects/vlack/vlack_8.webp",
+        },
+        {
+          id: 9,
+          url: "/projects/vlack/vlack_9.webp",
+        },
+      ],
+    },
+    {
       id: "eeva",
       title: `${t("eeva.title")}`,
       description: `${t("eeva.description")}`,
@@ -273,7 +409,7 @@ export const dataProjects = (t) => {
           progress: 85,
         },
         {
-          ico: <SiMercadopago  className="w-6 h-6" />,
+          ico: <SiMercadopago className="w-6 h-6" />,
           progress: 75,
         },
         {
@@ -842,7 +978,7 @@ export const dataGames = (t) => {
         },
       ],
     },
-     {
+    {
       id: "snake",
       head: `${t("snake.head")}`,
       title: `${t("snake.title")}`,
@@ -862,27 +998,19 @@ export const dataGames = (t) => {
         description: `${t("snake.sectionDescription.description")}`,
         category: {
           title: `${t("snake.sectionDescription.category.title")}`,
-          description: `${t(
-            "snake.sectionDescription.category.description"
-          )}`,
+          description: `${t("snake.sectionDescription.category.description")}`,
         },
         client: {
           title: `${t("snake.sectionDescription.client.title")}`,
-          description: `${t(
-            "snake.sectionDescription.client.description"
-          )}`,
+          description: `${t("snake.sectionDescription.client.description")}`,
         },
         date: {
           title: `${t("snake.sectionDescription.date.title")}`,
-          description: `${t(
-            "snake.sectionDescription.date.description"
-          )}`,
+          description: `${t("snake.sectionDescription.date.description")}`,
         },
         designer: {
           title: `${t("snake.sectionDescription.designer.title")}`,
-          description: `${t(
-            "snake.sectionDescription.designer.description"
-          )}`,
+          description: `${t("snake.sectionDescription.designer.description")}`,
         },
       },
       icons: [

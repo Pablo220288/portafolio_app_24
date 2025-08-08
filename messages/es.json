@@ -110,6 +110,62 @@
           "button": "Ver sitio web"
         }
       },
+      "vlack": {
+        "title": "Vlack",
+        "description": "Ecommerce en tiendanube para la marca Vlack.",
+        "category": "Ecommerce",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Concepto",
+          "description": "Desarrollé una tienda online para Vlack, marca reconocida a nivel mundial como líder en el ámbito del hockey. El objetivo fue crear una experiencia de compra fluida y atractiva que reflejara la identidad de la marca, ofreciendo al usuario un recorrido intuitivo por su amplia gama de productos: palos, bolsos, indumentaria, calzado y más. Se trabajó sobre una plantilla base de Tienda Nube, personalizándola completamente mediante CSS avanzado para cumplir con la estética y los requerimientos específicos del cliente.",
+          "category": {
+            "title": "Categoría",
+            "description": "Ecommerce"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Push and Pull"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Agosto 8, 2025"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "Tienda Nube",
+              "description": "Plataforma de e-commerce robusta que garantiza estabilidad, seguridad y facilidad de gestión para el cliente."
+            },
+            "technologie_2": {
+              "title": "CSS Avanzado",
+              "description": "Personalización profunda de la plantilla base, adaptando tipografía, paleta de colores y disposición visual a la identidad de Vlack."
+            },
+            "technologie_3": {
+              "title": "Diseño Orientado a Marca",
+              "description": "Enfoque visual que potencia la estética deportiva y profesional, generando coherencia entre la tienda online y la imagen global de la marca."
+            },
+            "technologie_4": {
+              "title": "Catálogo Amplio",
+              "description": "Organización clara y jerarquizada de categorías para facilitar la búsqueda y exploración de productos."
+            },
+            "technologie_5": {
+              "title": "Experiencia de Usuario Optimizada",
+              "description": "Proceso de compra simplificado, métodos de pago flexibles y opciones de envío eficientes."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Una plataforma de e-commerce que no solo cumple con los estándares de una marca líder, sino que transmite su fuerza e identidad en cada detalle visual y funcional. Un espacio digital pensado para que el usuario viva una experiencia de compra clara, confiable y alineada con el prestigio de Vlack.",
+          "button": "Ver sitio web"
+        }
+      },
       "eeva": {
         "title": "EEVA",
         "description": "Ecommerce para la tienda de ropa EEVA.",
