@@ -222,6 +222,66 @@
           "button": "Ver sitio web"
         }
       },
+      "garantear": {
+        "title": "Garantear",
+        "description": "Gestión de garantias para viviendas y comercios.",
+        "category": "Backend",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Concepto",
+          "description": "Participé en el desarrollo del backend de Garantear, una plataforma que permite generar garantías para viviendas y comercios de forma ágil y segura. El objetivo fue implementar una infraestructura robusta que facilitara la gestión completa de solicitudes, contactos y transacciones, asegurando una integración fluida con el CRM de Zoho para optimizar procesos y centralizar la información.",
+          "category": {
+            "title": "Categoría",
+            "description": "Backend"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Push and Pull"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Julio 2, 2025"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "NestJS + TypeScript",
+              "description": "Desarrollo backend modular, escalable y tipado, garantizando mantenibilidad y alto rendimiento."
+            },
+            "technologie_2": {
+              "title": "Tailwind CSS",
+              "description": "Uso de estilos consistentes y personalizables para las interfaces administrativas y paneles internos."
+            },
+            "technologie_3": {
+              "title": "Integración con Zoho CRM",
+              "description": "Conexión completa para el registro y gestión de solicitudes, contactos, transacciones y aprobaciones."
+            },
+            "technologie_4": {
+              "title": "Automatización de Procesos",
+              "description": "Implementación de envíos de emails y carga de imágenes directamente desde la plataforma al CRM."
+            },
+            "technologie_5": {
+              "title": "Panel con Swagger",
+              "description": "Documentación y prueba de endpoints para facilitar la consulta y gestión por parte del equipo técnico."
+            },
+            "technologie_6": {
+              "title": "Flujo Optimizado",
+              "description": "Comunicación bidireccional limpia con el CRM para reducir errores y mejorar tiempos de respuesta."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Un backend sólido y perfectamente integrado con Zoho CRM, que respalda la operación de Garantear y permite a la plataforma ofrecer un servicio confiable, automatizado y eficiente. La solución implementada no solo cubre la generación de contactos y solicitudes, sino que también habilita la gestión integral de aprobaciones, comunicaciones y archivos, potenciando la productividad y la experiencia de usuario final.",
+          "button": "Ver sitio web"
+        }
+      },
       "mahalo": {
         "title": "Cabañas Mahalo",
         "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",

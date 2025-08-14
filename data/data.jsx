@@ -13,7 +13,14 @@ import {
   RiFireLine,
 } from "react-icons/ri";
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiResend, SiMercadopago } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiResend,
+  SiMercadopago,
+  SiZoho,
+  SiNestjs,
+  SiTypescript,
+} from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
 
 export const navLinks = () => {
@@ -457,6 +464,148 @@ export const dataProjects = (t) => {
         {
           id: 10,
           url: "/projects/eeva/eeva_10.webp",
+        },
+      ],
+    },
+    {
+      id: "garantear",
+      title: `${t("garantear.title")}`,
+      description: `${t("garantear.description")}`,
+      tags: ["NESTJS", "TAILWIND", "TYPESCRIPT", "ZOHO CRM"],
+      imageCard: "/projects/garantear/garantear_1.webp",
+      imageUrl: "/projects/garantear/garantear_1.webp",
+      link: "/projects/garantear",
+      website: "https://www.garantear.com/",
+      category: `${t("garantear.category")}`,
+      live_preview: `${t("garantear.live_preview")}`,
+      sectionDescription: {
+        title: `${t("garantear.sectionDescription.title")}`,
+        description: `${t("garantear.sectionDescription.description")}`,
+        category: {
+          title: `${t("garantear.sectionDescription.category.title")}`,
+          description: `${t("garantear.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("garantear.sectionDescription.client.title")}`,
+          description: `${t("garantear.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("garantear.sectionDescription.date.title")}`,
+          description: `${t("garantear.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("garantear.sectionDescription.designer.title")}`,
+          description: `${t("garantear.sectionDescription.designer.description")}`,
+        },
+      },
+      sectionTechnologies: {
+        title: t("garantear.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "garantear.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "garantear.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "garantear.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "garantear.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "garantear.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "garantear.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "garantear.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "garantear.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "garantear.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "garantear.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+          {
+            title: t(
+              "garantear.sectionTechnologies.technologies.technologie_6.title"
+            ),
+            description: t(
+              "garantear.sectionTechnologies.technologies.technologie_6.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("garantear.sectionResult.title"),
+        description: t("garantear.sectionResult.description"),
+        button: t("garantear.sectionResult.button"),
+      },
+      icons: [
+        {
+          ico: <SiNestjs className="w-6 h-6" />,
+          progress: 90,
+        },
+        {
+          ico: <SiTypescript className="w-5 h-5" />,
+          progress: 85,
+        },
+        {
+          ico: <SiTailwindcss className="w-6 h-6" />,
+          progress: 75,
+        },
+        {
+          ico: <SiZoho className="w-6 h-6" />,
+          progress: 50,
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/projects/garantear/garantear_1.webp",
+        },
+        {
+          id: 2,
+          url: "/projects/garantear/garantear_2.webp",
+        },
+        {
+          id: 3,
+          url: "/projects/garantear/garantear_3.webp",
+        },
+        {
+          id: 4,
+          url: "/projects/garantear/garantear_4.webp",
+        },
+        {
+          id: 5,
+          url: "/projects/garantear/garantear_5.webp",
+        },
+        {
+          id: 6,
+          url: "/projects/garantear/garantear_6.webp",
+        },
+        {
+          id: 7,
+          url: "/projects/garantear/garantear_7.webp",
+        },
+        {
+          id: 8,
+          url: "/projects/garantear/garantear_8.webp",
         },
       ],
     },

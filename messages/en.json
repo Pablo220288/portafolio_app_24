@@ -166,6 +166,66 @@
           "button": "View website"
         }
       },
+      "garantear": {
+        "title": "Garantear",
+        "description": "Warranty management for homes and businesses.",
+        "category": "Backend",
+        "live_preview": "Preview",
+        "sectionDescription": {
+          "title": "Concept",
+          "description": "I participated in the backend development of Garantear, a platform that enables the generation of warranties for homes and businesses quickly and securely. The goal was to implement a robust infrastructure that would facilitate complete management of requests, contacts, and transactions, ensuring seamless integration with Zoho CRM to optimize processes and centralize information.",
+          "category": {
+            "title": "Category",
+            "description": "Backend"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Push and Pull"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "July 2, 2025"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "NestJS + TypeScript",
+              "description": "Modular, scalable, and typed backend development, ensuring maintainability and high performance."
+            },
+            "technologie_2": {
+              "title": "Tailwind CSS",
+              "description": "Use of consistent and customizable styles for administrative interfaces and internal dashboards."
+            },
+            "technologie_3": {
+              "title": "Zoho CRM Integration",
+              "description": "Complete connection for registering and managing requests, contacts, transactions, and approvals."
+            },
+            "technologie_4": {
+              "title": "Process Automation",
+              "description": "Implementation of email notifications and image uploads directly from the platform to the CRM."
+            },
+            "technologie_5": {
+              "title": "Swagger Panel",
+              "description": "Endpoint documentation and testing to facilitate technical team's consultation and management."
+            },
+            "technologie_6": {
+              "title": "Optimized Workflow",
+              "description": "Clean bidirectional communication with the CRM to reduce errors and improve response times."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A solid backend perfectly integrated with Zoho CRM, supporting Garantear's operations and enabling the platform to provide reliable, automated, and efficient service. The implemented solution not only covers contact and request generation but also enables comprehensive management of approvals, communications, and files, enhancing productivity and end-user experience.",
+          "button": "View website"
+        }
+      },
       "mahalo": {
         "title": "Mahalo Cabins",
         "description": "Official website for Mahalo Cabins, located in Villa Rumipal, Córdoba.",
