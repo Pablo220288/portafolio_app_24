@@ -57,7 +57,7 @@ const SlidingProjects = ({ imgs }) => {
           dragConstraints={{ right: 0, left: -width }}
           animate={{ x: -(activeIndex * (itemWidth + gap)) }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className="flex pt-10 pb-5 gap-6"
+          className="flex pt-10 pb-5 gap-6 min-h-[300px]"
         >
           {imgs.map((item, index) => (
             <Fade

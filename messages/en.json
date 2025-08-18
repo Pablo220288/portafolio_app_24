@@ -110,6 +110,62 @@
           "button": "View website"
         }
       },
+      "vlack": {
+        "title": "Vlack",
+        "description": "E-commerce store on Tiendanube for the Vlack brand.",
+        "category": "Ecommerce",
+        "live_preview": "Preview",
+        "sectionDescription": {
+          "title": "Concept",
+          "description": "I developed an online store for Vlack, a globally recognized leader in hockey equipment. The goal was to create a fluid and attractive shopping experience that reflects the brand's identity, offering users an intuitive journey through their wide range of products: sticks, bags, apparel, footwear, and more. The project was built on a base Tiendanube template, completely customized through advanced CSS to meet the client's specific aesthetic requirements.",
+          "category": {
+            "title": "Category",
+            "description": "Ecommerce"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Push and Pull"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "August 8, 2025"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Juan Cruz Luna"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "Tiendanube",
+              "description": "Robust e-commerce platform ensuring stability, security, and easy management for the client."
+            },
+            "technologie_2": {
+              "title": "Advanced CSS",
+              "description": "Deep customization of the base template, adapting typography, color palette, and visual layout to Vlack's identity."
+            },
+            "technologie_3": {
+              "title": "Brand-Oriented Design",
+              "description": "Visual approach that enhances the sporty and professional aesthetic, creating consistency between the online store and the brand's global image."
+            },
+            "technologie_4": {
+              "title": "Comprehensive Catalog",
+              "description": "Clear and hierarchical organization of categories to facilitate product search and exploration."
+            },
+            "technologie_5": {
+              "title": "Optimized User Experience",
+              "description": "Simplified checkout process, flexible payment methods, and efficient shipping options."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "An e-commerce platform that not only meets the standards of a leading brand but conveys its strength and identity in every visual and functional detail. A digital space designed to provide users with a clear, reliable shopping experience aligned with Vlack's prestige.",
+          "button": "View website"
+        }
+      },
       "eeva": {
         "title": "EEVA",
         "description": "Ecommerce for the clothing store EEVA.",
@@ -223,6 +279,78 @@
         "sectionResult": {
           "title": "Result",
           "description": "A solid backend perfectly integrated with Zoho CRM, supporting Garantear's operations and enabling the platform to provide reliable, automated, and efficient service. The implemented solution not only covers contact and request generation but also enables comprehensive management of approvals, communications, and files, enhancing productivity and end-user experience.",
+          "button": "View website"
+        }
+      },
+      "starbene": {
+        "title": "Starbene",
+        "description": "Official website for Starbene, market leader in body aesthetics.",
+        "category": "Websites",
+        "live_preview": "Preview",
+        "sectionDescription": {
+          "title": "Concept",
+          "description": "I developed the web platform for Starbene, a market leader in aesthetics with over 51 years of experience and presence in 49 countries. The goal was to create a modern, functional website that reflected the brand's prestige, offering an intuitive, clean, and visually appealing browsing experience, with special attention to details and animations to convey freshness and professionalism.",
+          "category": {
+            "title": "Category",
+            "description": "Websites"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Starbene"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "February 22, 2022"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Pablo Hernández"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Technologies and Features",
+          "technologies": {
+            "technologie_1": {
+              "title": "React + Next.js",
+              "description": "Modular, high-performance structure for fast loading and optimized SEO."
+            },
+            "technologie_2": {
+              "title": "Tailwind CSS",
+              "description": "Adaptable and consistent design with minimalist style focused on the brand's aesthetics."
+            },
+            "technologie_3": {
+              "title": "PDF Document Downloads",
+              "description": "Integration allowing users to obtain materials and catalogs directly from the website."
+            },
+            "technologie_4": {
+              "title": "Starbot Chatbot",
+              "description": "Virtual assistant to answer inquiries in real-time and improve customer service."
+            },
+            "technologie_5": {
+              "title": "Dynamic Content",
+              "description": "Continuous updates to the blog, courses section, and product catalog."
+            },
+            "technologie_6": {
+              "title": "Gallery and Videos",
+              "description": "High-quality images and audiovisual material to showcase products attractively."
+            },
+            "technologie_7": {
+              "title": "Contact Form",
+              "description": "Direct communication channel with the company."
+            },
+            "technologie_8": {
+              "title": "Testimonials Carousel",
+              "description": "Endorsements from recognized figures who have used their products."
+            },
+            "technologie_9": {
+              "title": "Carefully Crafted Animations",
+              "description": "Micro-interactions and smooth transitions for a pleasant visual experience."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Result",
+          "description": "A modern, functional website that conveys Starbene's leadership and prestige, enhancing its online presence and strengthening connections with current and potential clients. The platform not only presents their wide range of products and services but also integrates interactive tools and updated content to maintain user interest and trust.",
           "button": "View website"
         }
       },

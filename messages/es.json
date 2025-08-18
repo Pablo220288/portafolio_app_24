@@ -282,6 +282,79 @@
           "button": "Ver sitio web"
         }
       },
+      "starbene": {
+        "title": "Starbene",
+        "description": "Web oficial para Starbene, líder en el mercado de la estética corporal.",
+        "category": "Sitios Web",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Concepto",
+          "description": "Desarrollé la plataforma web de Starbene, empresa líder en el mercado de la estética con más de 51 años de trayectoria y presencia en 49 países. El objetivo fue crear un sitio moderno y funcional que reflejara el prestigio de la marca, ofreciendo una experiencia de navegación intuitiva, limpia y visualmente atractiva, con especial cuidado en los detalles y animaciones para transmitir frescura y profesionalismo.",
+          "category": {
+            "title": "Categoría",
+            "description": "Sitios Web"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Starbene"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Febrero 22, 2022"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Pablo Hernández",
+            "link": "https://github.com/Pablo220288"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "React + Next.js",
+              "description": "Estructura modular y de alto rendimiento para una carga rápida y SEO optimizado."
+            },
+            "technologie_2": {
+              "title": "Tailwind CSS",
+              "description": "Diseño adaptable y consistente, con estilo minimalista y enfocado en la estética de la marca."
+            },
+            "technologie_3": {
+              "title": "Descarga de Documentos PDF",
+              "description": "Integración para que los usuarios puedan obtener materiales y catálogos directamente desde la web."
+            },
+            "technologie_4": {
+              "title": "Chatbot Starbot",
+              "description": "Asistente virtual para responder consultas en tiempo real y mejorar la atención al cliente."
+            },
+            "technologie_5": {
+              "title": "Contenido Dinámico",
+              "description": "Actualización constante del blog, sección de cursos y catálogo de productos"
+            },
+            "technologie_6": {
+              "title": "Galería y Videos",
+              "description": "Imágenes de alta calidad y material audiovisual para presentar productos de forma atractiva."
+            },
+            "technologie_7": {
+              "title": "Formulario de Contacto",
+              "description": "Canal de comunicación directo con la empresa."
+            },
+            "technologie_8": {
+              "title": "Carrusel de Opiniones",
+              "description": "Testimonios de figuras reconocidas que han probado sus productos."
+            },
+            "technologie_9": {
+              "title": "Animaciones Cuidadas",
+              "description": "Microinteracciones y transiciones suaves para ofrecer una experiencia visual agradable."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Un sitio web moderno y funcional que transmite el liderazgo y prestigio de Starbene, potenciando su presencia online y fortaleciendo el vínculo con clientes actuales y potenciales. La plataforma no solo presenta su amplia gama de productos y servicios, sino que también integra herramientas interactivas y contenido actualizado para mantener el interés y la confianza del usuario.",
+          "button": "Ver sitio web"
+        }
+      },
       "mahalo": {
         "title": "Cabañas Mahalo",
         "description": "Web oficial para el complejo Cabañas Mahalo, ubicado en Villa Rumipal, Córdoba.",

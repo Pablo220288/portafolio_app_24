@@ -4,6 +4,12 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import DonutChart from "@/components/DonutChart";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider,
+} from "@/components/ui/tooltip";
 import Loader from "@/components/Loader";
 import SlidingProjects from "@/components/SlidingProjects";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
@@ -17,6 +23,16 @@ import { usePathname } from "next/navigation";
 //Import Next Intl
 import { useTranslations } from "next-intl";
 
+import {
+  Glimpse,
+  GlimpseContent,
+  GlimpseDescription,
+  GlimpseImage,
+  GlimpseTitle,
+  GlimpseTrigger,
+} from "@/components/ui/kibo-ui/glimpse";
+import { glimpse } from "@/components/ui/kibo-ui/glimpse/server";
+
 const Project = () => {
   const t = useTranslations("Projects.projects");
 
@@ -27,6 +43,30 @@ const Project = () => {
   const id = path.split("/").pop();
 
   const [data, setData] = useState(null);
+
+  const [info, setInfo] = useState(null);
+
+  useEffect(() => {
+    const fetchGithubData = async () => {
+      try {
+        const response = await fetch(
+          "https://api.github.com/users/Pablo220288"
+        );
+        const data = await response.json();
+        setInfo({
+          image: data.avatar_url,
+          title: data.name || data.login,
+          description: data.bio,
+        });
+      } catch (error) {
+        console.error("Error fetching GitHub data:", error);
+      }
+    };
+
+    fetchGithubData();
+  }, []);
+
+  console.log(info);
 
   useEffect(() => {
     const projectData = dataProjects(t).find((item) => item.id === id);
@@ -116,20 +156,29 @@ const Project = () => {
                 <div className={"flex items-end gap-x-4 "}>
                   {data.icons.map((icon, index) => {
                     return (
-                      <div className="relative " key={index}>
-                        <DonutChart
-                          progress={icon.progress}
-                          size={50}
-                          progressClassName={icon.color}
-                          trackClassName="text-black/10 dark:text-white/10"
-                          circleWidth={5}
-                          progressWidth={5}
-                          rounded={true}
-                        />
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                          {icon.ico}
-                        </div>
-                      </div>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <div className="relative " key={index}>
+                              <DonutChart
+                                progress={icon.progress}
+                                size={50}
+                                progressClassName={icon.color}
+                                trackClassName="text-black/10 dark:text-white/10"
+                                circleWidth={5}
+                                progressWidth={5}
+                                rounded={true}
+                              />
+                              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                {icon.ico}
+                              </div>
+                            </div>
+                          </TooltipTrigger>
+                          <TooltipContent className="my-1">
+                            <p>{icon.tooltip}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
                     );
                   })}
                 </div>
@@ -137,7 +186,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-10 lg:flex-row items-start justify-between px-8">
+        <div className="flex flex-col gap-y-10 lg:flex-row items-start justify-between px-8 mb-24">
           <div className="flex flex-col items-center justify-center w-full max-w-[590px] mx-auto lg:items-start">
             <Fade direction="up" triggerOnce delay={200} cascade damping={1e-1}>
               <h2 className="h2">{data.sectionDescription.title}</h2>
@@ -243,6 +292,36 @@ const Project = () => {
                   cascade
                   damping={1e-1}
                 >
+                  {/* <Glimpse closeDelay={0} openDelay={0}>
+                    <GlimpseTrigger asChild>
+                      <a
+                        className="font-medium text-primary "
+                        href="https://github.com/Pablo220288"
+                      >
+                        <h3 className="text-black dark:text-white font-bold text-2xl">
+                          {data.sectionDescription.designer.description}
+                        </h3>
+                      </a>
+                    </GlimpseTrigger>
+                    <GlimpseContent
+                      side="top"
+                      align="center"
+                      avoidCollisions={false}
+                      collisionPadding={100}
+                      className="w-80 bg-muted z-[999]"
+                    >
+                      <GlimpseImage
+                        className="shadow-lg"
+                        src={info.image ?? ""}
+                      />
+                      <GlimpseTitle className="line-clamp-2 font-semibold text-lg">
+                        {info.title}
+                      </GlimpseTitle>
+                      <GlimpseDescription className="text-sm">
+                        {info.description}
+                      </GlimpseDescription>
+                    </GlimpseContent>
+                  </Glimpse> */}
                   <h3 className="text-black dark:text-white font-bold text-2xl">
                     {data.sectionDescription.designer.description}
                   </h3>
@@ -252,7 +331,7 @@ const Project = () => {
           </div>
         </div>
         <SlidingProjects imgs={data.imgs} />
-        <div className="flex flex-col gap-y-10 lg:flex-row items-start justify-between px-8 mt-20">
+        <div className="flex flex-col gap-y-10 lg:flex-row items-start justify-between px-8 mt-24">
           <div className="flex flex-col items-center justify-center w-full max-w-[590px] mx-auto lg:items-start">
             <Fade direction="up" triggerOnce delay={200} cascade damping={1e-1}>
               <h2 className="h2">{data.sectionTechnologies.title}</h2>

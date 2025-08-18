@@ -12,7 +12,7 @@ import {
   RiMobileDownloadLine,
   RiFireLine,
 } from "react-icons/ri";
-import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaReact, FaFilePdf } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiResend,
@@ -20,8 +20,10 @@ import {
   SiZoho,
   SiNestjs,
   SiTypescript,
+  SiNextdotjs,
 } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
+import { BsRobot } from "react-icons/bs";
 
 export const navLinks = () => {
   const t = useTranslations("Nav");
@@ -152,18 +154,22 @@ export const dataProjects = (t) => {
         {
           ico: <FaReact className="w-6 h-6" />,
           progress: 90,
+          tooltip: "React",
         },
         {
           ico: <SiTailwindcss className="w-5 h-5" />,
           progress: 85,
+          tooltip: "Tailwind",
         },
         {
           ico: <TbBrandFramerMotion className="w-6 h-6" />,
           progress: 60,
+          tooltip: "Framer Motion",
         },
         {
           ico: <SiResend className="w-6 h-6" />,
           progress: 50,
+          tooltip: "Resend",
         },
       ],
       imgs: [
@@ -284,6 +290,7 @@ export const dataProjects = (t) => {
             </svg>
           ),
           progress: 90,
+          tooltip: "Tienda Nube",
         },
       ],
       imgs: [
@@ -410,18 +417,22 @@ export const dataProjects = (t) => {
         {
           ico: <FaReact className="w-6 h-6" />,
           progress: 90,
+          tooltip: "React",
         },
         {
           ico: <SiTailwindcss className="w-5 h-5" />,
           progress: 85,
+          tooltip: "Tailwind",
         },
         {
           ico: <SiMercadopago className="w-6 h-6" />,
           progress: 75,
+          tooltip: "Mercado Pago",
         },
         {
           ico: <TbBrandFramerMotion className="w-6 h-6" />,
           progress: 50,
+          tooltip: "Framer Motion",
         },
       ],
       imgs: [
@@ -560,18 +571,22 @@ export const dataProjects = (t) => {
         {
           ico: <SiNestjs className="w-6 h-6" />,
           progress: 90,
+          tooltip: "NestJS",
         },
         {
           ico: <SiTypescript className="w-5 h-5" />,
           progress: 85,
+          tooltip: "TypeScript",
         },
         {
           ico: <SiTailwindcss className="w-6 h-6" />,
           progress: 75,
+          tooltip: "TailwindCSS",
         },
         {
           ico: <SiZoho className="w-6 h-6" />,
           progress: 50,
+          tooltip: "Zoho CRM",
         },
       ],
       imgs: [
@@ -610,6 +625,190 @@ export const dataProjects = (t) => {
       ],
     },
     {
+      id: "starbene",
+      title: `${t("starbene.title")}`,
+      description: `${t("starbene.description")}`,
+      tags: ["REACT", "NEXT", "TAILWIND", "PDF", "CHATBOT"],
+      imageCard: "/projects/starbene/starbene_1.webp",
+      imageUrl: "/projects/starbene/starbene_1.webp",
+      link: "/projects/starbene",
+      website: "https://www.starbene.com/",
+      category: `${t("starbene.category")}`,
+      live_preview: `${t("starbene.live_preview")}`,
+      sectionDescription: {
+        title: `${t("starbene.sectionDescription.title")}`,
+        description: `${t("starbene.sectionDescription.description")}`,
+        category: {
+          title: `${t("starbene.sectionDescription.category.title")}`,
+          description: `${t("starbene.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("starbene.sectionDescription.client.title")}`,
+          description: `${t("starbene.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("starbene.sectionDescription.date.title")}`,
+          description: `${t("starbene.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("starbene.sectionDescription.designer.title")}`,
+          description: `${t("starbene.sectionDescription.designer.description")}`,
+          link: `${t("starbene.sectionDescription.designer.link")}`,
+        },
+      },
+      sectionTechnologies: {
+        title: t("starbene.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_6.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_6.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_7.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_7.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_8.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_8.description"
+            ),
+          },
+          {
+            title: t(
+              "starbene.sectionTechnologies.technologies.technologie_9.title"
+            ),
+            description: t(
+              "starbene.sectionTechnologies.technologies.technologie_9.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("starbene.sectionResult.title"),
+        description: t("starbene.sectionResult.description"),
+        button: t("starbene.sectionResult.button"),
+      },
+      icons: [
+        {
+          ico: <FaReact className="w-6 h-6" />,
+          progress: 80,
+          tooltip: "React",
+        },
+        {
+          ico: <SiNextdotjs className="w-5 h-5" />,
+          progress: 65,
+          tooltip: "Next.js",
+        },
+        {
+          ico: <SiTailwindcss className="w-6 h-6" />,
+          progress: 30,
+          tooltip: "Tailwind CSS",
+        },
+        {
+          ico: <FaFilePdf className="w-6 h-6" />,
+          progress: 30,
+          tooltip: "PDF",
+        },
+        {
+          ico: <BsRobot className="w-6 h-6" />,
+          progress: 60,
+          tooltip: "Chatbot",
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/projects/starbene/starbene_1.webp",
+        },
+        {
+          id: 2,
+          url: "/projects/starbene/starbene_2.webp",
+        },
+        {
+          id: 3,
+          url: "/projects/starbene/starbene_3.webp",
+        },
+        {
+          id: 4,
+          url: "/projects/starbene/starbene_4.webp",
+        },
+        {
+          id: 5,
+          url: "/projects/starbene/starbene_5.webp",
+        },
+        {
+          id: 6,
+          url: "/projects/starbene/starbene_6.webp",
+        },
+        {
+          id: 7,
+          url: "/projects/starbene/starbene_7.webp",
+        },
+        {
+          id: 8,
+          url: "/projects/starbene/starbene_8.webp",
+        },
+        {
+          id: 9,
+          url: "/projects/starbene/starbene_9.webp",
+        },
+        {
+          id: 10,
+          url: "/projects/starbene/starbene_10.webp",
+        },
+      ],
+    },
+    {
       id: "mahalo",
       title: `${t("mahalo.title")}`,
       description: `${t("mahalo.description")}`,
@@ -641,7 +840,7 @@ export const dataProjects = (t) => {
         },
       },
       sectionTechnologies: {
-        title: t("lamberti.sectionTechnologies.title"),
+        title: t("mahalo.sectionTechnologies.title"),
         technologies: [
           {
             title: t(
@@ -694,14 +893,17 @@ export const dataProjects = (t) => {
         {
           ico: <FaHtml5 className="w-6 h-6" />,
           progress: 80,
+          tooltip: "HTML",
         },
         {
           ico: <FaCss3 className="w-5 h-5" />,
           progress: 65,
+          tooltip: "CSS",
         },
         {
           ico: <FaJs className="w-6 h-6" />,
           progress: 30,
+          tooltip: "JavaScript",
         },
       ],
       imgs: [
@@ -812,22 +1014,27 @@ export const dataProjects = (t) => {
         {
           ico: <FaHtml5 className="w-6 h-6" />,
           progress: 95,
+          tooltip: "HTML",
         },
         {
           ico: <FaCss3 className="w-5 h-5" />,
           progress: 65,
+          tooltip: "CSS",
         },
         {
           ico: <FaJs className="w-6 h-6" />,
           progress: 75,
+          tooltip: "JavaScript",
         },
         {
           ico: <FaReact className="w-6 h-6" />,
           progress: 70,
+          tooltip: "React",
         },
         {
           ico: <TbBrandVite className="w-6 h-6" />,
           progress: 55,
+          tooltip: "Vite",
         },
       ],
       imgs: [
@@ -942,14 +1149,17 @@ export const dataProjects = (t) => {
         {
           ico: <FaHtml5 className="w-6 h-6" />,
           progress: 90,
+          tooltip: "HTML",
         },
         {
           ico: <FaCss3 className="w-5 h-5" />,
           progress: 85,
+          tooltip: "CSS",
         },
         {
           ico: <FaJs className="w-6 h-6" />,
           progress: 55,
+          tooltip: "JavaScript",
         },
       ],
       imgs: [
@@ -972,73 +1182,6 @@ export const dataProjects = (t) => {
         {
           id: 5,
           url: "/projects/bouquet/bouquet_5.png",
-        },
-      ],
-    },
-    {
-      id: "missionTheme",
-      title: "Mission Theme",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, repellendus.",
-      tags: ["Next.js", "Node.js", "Express", "MongoDB", "Tailwind"],
-      imageCard: "/image4.png",
-      imageUrl: "/image4.png",
-      link: "/projects/missionTheme",
-      category: "Backend",
-      sectionDescription: {
-        title: `${t("mahalo.sectionDescription.title")}`,
-        description: `${t("mahalo.sectionDescription.description")}`,
-        category: {
-          title: `${t("mahalo.sectionDescription.category.title")}`,
-          description: `${t("mahalo.sectionDescription.category.description")}`,
-        },
-        client: {
-          title: `${t("mahalo.sectionDescription.client.title")}`,
-          description: `${t("mahalo.sectionDescription.client.description")}`,
-        },
-        date: {
-          title: `${t("mahalo.sectionDescription.date.title")}`,
-          description: `${t("mahalo.sectionDescription.date.description")}`,
-        },
-        designer: {
-          title: `${t("mahalo.sectionDescription.designer.title")}`,
-          description: `${t("mahalo.sectionDescription.designer.description")}`,
-        },
-      },
-      icons: [
-        {
-          ico: <FaHtml5 className="w-6 h-6" />,
-          progress: 80,
-        },
-        {
-          ico: <FaCss3 className="w-5 h-5" />,
-          progress: 65,
-        },
-        {
-          ico: <FaJs className="w-6 h-6" />,
-          progress: 30,
-        },
-      ],
-      imgs: [
-        {
-          id: 1,
-          url: "/mahalo/mahalo_1.png",
-        },
-        {
-          id: 2,
-          url: "/mahalo/mahalo_2.png",
-        },
-        {
-          id: 3,
-          url: "/mahalo/mahalo_3.png",
-        },
-        {
-          id: 4,
-          url: "/mahalo/mahalo_4.png",
-        },
-        {
-          id: 5,
-          url: "/mahalo/mahalo_5.png",
         },
       ],
     },

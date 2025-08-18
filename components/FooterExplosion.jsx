@@ -9,6 +9,7 @@ import {
   FaReact,
   FaAws,
   FaNodeJs,
+  FaFilePdf,
 } from "react-icons/fa";
 import {
   SiNestjs,
@@ -17,7 +18,20 @@ import {
   SiAstro,
   SiPython,
   SiGithub,
+  SiResend,
+  SiMercadopago,
+  SiZoho,
+  SiTypescript,
+  SiNextdotjs,
 } from "react-icons/si";
+import {
+  RiEdit2Line,
+  RiCodeBlock,
+  RiMobileDownloadLine,
+  RiFireLine,
+} from "react-icons/ri";
+import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
+import { BsRobot } from "react-icons/bs";
 import ReactDOMServer from "react-dom/server";
 
 const FooterExplosion = () => {
@@ -49,6 +63,15 @@ const FooterExplosion = () => {
     <SiAstro color="#FF5A03" />,
     <SiPython color="#3776AB" />,
     <SiGithub color="#333333" />,
+    <SiResend color="#E0234E" />,
+    <SiMercadopago color="#00A1E9" />,
+    <SiZoho color="#00A1E9" />,
+    <SiTypescript color="#007ACC" />,
+    <SiNextdotjs color="#000000" />,
+    <TbBrandFramerMotion color="#5E17EB" />,
+    <TbBrandVite color="#A1E656" />,
+    <BsRobot color="#FFD700" />,
+    <FaFilePdf color="#F40F02" />,
   ];
 
   class IconParticle {
@@ -61,7 +84,7 @@ const FooterExplosion = () => {
       this.rotation = 0;
       this.rotationSpeed = (Math.random() - 0.5) * config.rotationSpeed;
     }
-    
+
     update() {
       this.vy += config.gravity;
       this.vx *= config.friction;
