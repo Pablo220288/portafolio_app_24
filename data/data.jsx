@@ -21,6 +21,7 @@ import {
   SiNestjs,
   SiTypescript,
   SiNextdotjs,
+  SiShadcnui 
 } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandVite } from "react-icons/tb";
 import { BsRobot } from "react-icons/bs";
@@ -475,6 +476,152 @@ export const dataProjects = (t) => {
         {
           id: 10,
           url: "/projects/eeva/eeva_10.webp",
+        },
+      ],
+    },
+        {
+      id: "eeva_abm",
+      title: `${t("eeva_abm.title")}`,
+      description: `${t("eeva_abm.description")}`,
+      tags: ["Next", "TAILWIND", "Shandc", "Framer Motion"],
+      imageCard: "/projects/eeva_abm/eeva_abm_1.webp",
+      imageUrl: "/projects/eeva_abm/eeva_abm_1.webp",
+      link: "/projects/eeva_abm",
+      website: "https://www.eevast.com",
+      category: `${t("eeva_abm.category")}`,
+      live_preview: `${t("eeva_abm.live_preview")}`,
+      sectionDescription: {
+        title: `${t("eeva_abm.sectionDescription.title")}`,
+        description: `${t("eeva_abm.sectionDescription.description")}`,
+        category: {
+          title: `${t("eeva_abm.sectionDescription.category.title")}`,
+          description: `${t("eeva_abm.sectionDescription.category.description")}`,
+        },
+        client: {
+          title: `${t("eeva_abm.sectionDescription.client.title")}`,
+          description: `${t("eeva_abm.sectionDescription.client.description")}`,
+        },
+        date: {
+          title: `${t("eeva_abm.sectionDescription.date.title")}`,
+          description: `${t("eeva_abm.sectionDescription.date.description")}`,
+        },
+        designer: {
+          title: `${t("eeva_abm.sectionDescription.designer.title")}`,
+          description: `${t("eeva_abm.sectionDescription.designer.description")}`,
+        },
+      },
+      sectionTechnologies: {
+        title: t("eeva_abm.sectionTechnologies.title"),
+        technologies: [
+          {
+            title: t(
+              "eeeeva_abm.sectionTechnologies.technologies.technologie_1.title"
+            ),
+            description: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_1.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_2.title"
+            ),
+            description: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_2.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_3.title"
+            ),
+            description: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_3.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_4.title"
+            ),
+            description: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_4.description"
+            ),
+          },
+          {
+            title: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_5.title"
+            ),
+            description: t(
+              "eeva_abm.sectionTechnologies.technologies.technologie_5.description"
+            ),
+          },
+        ],
+      },
+      sectionResult: {
+        title: t("eeva_abm.sectionResult.title"),
+        description: t("eeva_abm.sectionResult.description"),
+        button: t("eeva_abm.sectionResult.button"),
+      },
+      icons: [
+        {
+          ico: <FaReact className="w-6 h-6" />,
+          progress: 90,
+          tooltip: "React",
+        },
+        {
+          ico: <SiTailwindcss className="w-5 h-5" />,
+          progress: 85,
+          tooltip: "Tailwind",
+        },
+        {
+          ico: <SiShadcnui  className="w-5 h-5" />,
+          progress: 75,
+          tooltip: "Shandc UI",
+        },
+        {
+          ico: <TbBrandFramerMotion className="w-6 h-6" />,
+          progress: 50,
+          tooltip: "Framer Motion",
+        },
+      ],
+      imgs: [
+        {
+          id: 1,
+          url: "/projects/eeva_abm/eeva_abm_1.webp",
+        },
+        {
+          id: 2,
+          url: "/projects/eeva_abm/eeva_abm_2.webp",
+        },
+        {
+          id: 3,
+          url: "/projects/eeva_abm/eeva_abm_3.webp",
+        },
+        {
+          id: 4,
+          url: "/projects/eeva_abm/eeva_abm_4.webp",
+        },
+        {
+          id: 5,
+          url: "/projects/eeva_abm/eeva_abm_5.webp",
+        },
+        {
+          id: 6,
+          url: "/projects/eeva_abm/eeva_abm_6.webp",
+        },
+        {
+          id: 7,
+          url: "/projects/eeva_abm/eeva_abm_7.webp",
+        },
+        {
+          id: 8,
+          url: "/projects/eeva_abm/eeva_abm_8.webp",
+        },
+        {
+          id: 9,
+          url: "/projects/eeva_abm/eeva_abm_9.webp",
+        },
+        {
+          id: 10,
+          url: "/projects/eeva_abm/eeva_abm_10.webp",
         },
       ],
     },

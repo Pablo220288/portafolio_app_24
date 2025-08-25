@@ -222,6 +222,62 @@
           "button": "Ver sitio web"
         }
       },
+      "eeva_abm": {
+        "title": "ABM Panel - EEVA",
+        "description": "Panel administrativo (ABM) para la tienda de ropa EEVA.",
+        "category": "ABM",
+        "live_preview": "Vista previa",
+        "sectionDescription": {
+          "title": "Concepto",
+          "description": "Se desarrolló un panel administrativo (ABM) para la tienda EEVA, diseñado para gestionar todo el backend de la plataforma de forma centralizada, optimizando la administración de productos, colecciones, usuarios y ventas. El sistema permite al equipo de la tienda controlar, monitorear y editar la información de manera intuitiva, con una interfaz moderna y enfocada en la usabilidad.",
+          "category": {
+            "title": "Categoría",
+            "description": "Ecommerce"
+          },
+          "client": {
+            "title": "Cliente",
+            "description": "Nicolas Viel"
+          },
+          "date": {
+            "title": "Fecha de inicio",
+            "description": "Junio 2, 2025"
+          },
+          "designer": {
+            "title": "Diseñador",
+            "description": "Pablo Hernández"
+          }
+        },
+        "sectionTechnologies": {
+          "title": "Tecnologías y Características",
+          "technologies": {
+            "technologie_1": {
+              "title": "Next.js + React",
+              "description": "Desarrollo de la interfaz y manejo de rutas."
+            },
+            "technologie_2": {
+              "title": "Shadcn UI",
+              "description": "Diseño minimalista, futurista y altamente personalizado."
+            },
+            "technologie_3": {
+              "title": "Context API",
+              "description": "Gestión global de alertas, notificaciones y estados."
+            },
+            "technologie_4": {
+              "title": "Recharts",
+              "description": "Generación de gráficos dinámicos y comparativos."
+            },
+            "technologie_5": {
+              "title": "Next Auth / JWT",
+              "description": "Autenticación segura y control de sesiones."
+            }
+          }
+        },
+        "sectionResult": {
+          "title": "Resultado",
+          "description": "Se obtuvo una plataforma robusta, intuitiva y escalable que centraliza la administración de la tienda EEVA. Gracias al dashboard, el equipo puede analizar métricas de ventas en tiempo real, mientras que el sistema ABM permite gestionar productos, colecciones y usuarios con total control y seguridad. La integración de roles y privilegios asegura un flujo de trabajo ordenado, y la interfaz limpia ofrece una experiencia optimizada para los administradores.",
+          "button": "Visitar ABM"
+        }
+      },
       "garantear": {
         "title": "Garantear",
         "description": "Gestión de garantias para viviendas y comercios.",
