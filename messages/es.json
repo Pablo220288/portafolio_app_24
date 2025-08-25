@@ -225,7 +225,7 @@
       "eeva_abm": {
         "title": "ABM Panel - EEVA",
         "description": "Panel administrativo (ABM) para la tienda de ropa EEVA.",
-        "category": "ABM",
+        "category": "ABM,Backend",
         "live_preview": "Vista previa",
         "sectionDescription": {
           "title": "Concepto",

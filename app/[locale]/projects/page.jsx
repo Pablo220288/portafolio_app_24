@@ -8,6 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 //Import Next Intl
 import { useTranslations } from "next-intl";
+import { parseCategories } from "@/lib/projectUtils";
 
 const Projects = () => {
   const t = useTranslations("Projects");
@@ -19,17 +20,20 @@ const Projects = () => {
   const projects = dataProjects(t2);
 
   const filteredProjects = projects.filter((project) => {
-    return activeCategory === `${t("buttons.all")}`
-      ? project
-      : project.category === activeCategory;
-  });
+    if (activeCategory === `${t("buttons.all")}`) return true;
 
+    const projectCategories = parseCategories(project.category);
+    return projectCategories.includes(activeCategory);
+  });
   useEffect(() => {
-    setCatagories([
-      `${t("buttons.all")}`,
-      ...new Set(projects.map((project) => project.category)),
-    ]);
-  }, []);
+    const allCategories = projects.flatMap((project) => {
+      return parseCategories(project.category);
+    });
+
+    const uniqueCategories = [...new Set(allCategories)];
+
+    setCatagories([`${t("buttons.all")}`, ...uniqueCategories]);
+  }, [projects, t]);
 
   return (
     <section className="pt-12">

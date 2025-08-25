@@ -515,7 +515,7 @@ export const dataProjects = (t) => {
         technologies: [
           {
             title: t(
-              "eeeeva_abm.sectionTechnologies.technologies.technologie_1.title"
+              "eeva_abm.sectionTechnologies.technologies.technologie_1.title"
             ),
             description: t(
               "eeva_abm.sectionTechnologies.technologies.technologie_1.description"
