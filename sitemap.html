@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Sitemap - pablohernandez.com.ar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: #4a6fa5;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .explanation {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .generator {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+        
+        h2 {
+            color: #4a6fa5;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4a6fa5;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #4a6fa5;
+            margin: 15px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            background: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #385d8a;
+        }
+        
+        .result {
+            margin-top: 20px;
+            background: #eee;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        .steps {
+            background: #e8f0fe;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .step-number {
+            background: #4a6fa5;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generador de Sitemap XML</h1>
+            <p class="subtitle">Para pablohernandez.com.ar</p>
+        </header>
+        
+        <div class="content">
+            <div class="explanation">
+                <h2>¿Qué es un Sitemap?</h2>
+                <p>Un sitemap es un archivo XML que lista las URLs de un sitio web. Este archivo permite a los motores de búsqueda descubrir e indexar más fácilmente todo el contenido de tu sitio.</p>
+                
+                <h3>¿Por qué es importante?</h3>
+                <ul>
+                    <li>Ayuda a los buscadores a encontrar todas tus páginas</li>
+                    <li>Mejora la indexación de tu sitio</li>
+                    <li>Es especialmente útil para sitios web nuevos o con contenido actualizado frecuentemente</li>
+                    <li>Puede incluir metadatos sobre cada URL (fecha de modificación, frecuencia de cambio, importancia)</li>
+                </ul>
+                
+                <div class="steps">
+                    <h3>Cómo usar tu sitemap:</h3>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-text">Genera el código XML con esta herramienta</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-text">Guarda el código como "sitemap.xml" en la raíz de tu sitio web</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-text">Envía el sitemap a Google Search Console y Bing Webmaster Tools</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-text">Actualízalo cuando agregues nuevo contenido a tu sitio</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="generator">
+                <h2>Genera tu Sitemap</h2>
+                <p>Completa los datos de las páginas de tu sitio web:</p>
+                
+                <div class="form-group">
+                    <label for="url">URL de la página:</label>
+                    <input type="text" id="url" value="https://pablohernandez.com.ar/" placeholder="https://pablohernandez.com.ar/">
+                </div>
+                
+                <div class="form-group">
+                    <label for="priority">Prioridad (0.0 a 1.0):</label>
+                    <select id="priority">
+                        <option value="1.0">1.0 - Máxima prioridad (página principal)</option>
+                        <option value="0.8">0.8 - Alta prioridad</option>
+                        <option value="0.6" selected>0.6 - Media prioridad</option>
+                        <option value="0.4">0.4 - Baja prioridad</option>
+                        <option value="0.2">0.2 - Mínima prioridad</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="frecuency">Frecuencia de actualización:</label>
+                    <select id="frecuency">
+                        <option value="always">Siempre (contenido que cambia constantemente)</option>
+                        <option value="hourly">Cada hora</option>
+                        <option value="daily">Diariamente</option>
+                        <option value="weekly" selected>Semanalmente</option>
+                        <option value="monthly">Mensualmente</option>
+                        <option value="yearly">Anualmente</option>
+                        <option value="never">Nunca</option>
+                    </select>
+                </div>
+                
+                <button onclick="addUrl()">Añadir URL al Sitemap</button>
+                <button onclick="generateSitemap()" style="background: #2e5f4a;">Generar Sitemap XML</button>
+                <button onclick="clearUrls()" style="background: #a54a4a;">Limpiar Lista</button>
+                
+                <div id="urlList">
+                    <h3>URLs añadidas:</h3>
+                    <ul id="addedUrls"></ul>
+                </div>
+                
+                <div id="result" class="result">
+                    <h3>Tu código de Sitemap:</h3>
+                    <pre id="xmlCode"></pre>
+                    <button onclick="copyToClipboard()">Copiar al Portapapeles</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Generador de Sitemap para pablohernandez.com.ar | Creado para ayudarte con tu sitio web</p>
+        </footer>
+    </div>
+
+    <script>
+        let urls = [];
+        
+        function addUrl() {
+            const url = document.getElementById('url').value;
+            const priority = document.getElementById('priority').value;
+            const frequency = document.getElementById('frecuency').value;
+            
+            if (url) {
+                urls.push({ url, priority, frequency });
+                updateUrlList();
+                document.getElementById('url').value = 'https://pablohernandez.com.ar/';
+            } else {
+                alert('Por favor, ingresa una URL válida');
+            }
+        }
+        
+        function updateUrlList() {
+            const urlList = document.getElementById('addedUrls');
+            urlList.innerHTML = '';
+            
+            urls.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `${item.url} <button onclick="removeUrl(${index})" style="padding: 2px 5px; font-size: 12px; background: #a54a4a;">Eliminar</button>`;
+                urlList.appendChild(li);
+            });
+        }
+        
+        function removeUrl(index) {
+            urls.splice(index, 1);
+            updateUrlList();
+        }
+        
+        function clearUrls() {
+            urls = [];
+            updateUrlList();
+            document.getElementById('result').style.display = 'none';
+        }
+        
+        function generateSitemap() {
+            if (urls.length === 0) {
+                alert('Por favor, añade al menos una URL');
+                return;
+            }
+            
+            let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+            xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+            
+            urls.forEach(item => {
+                xml += '  <url>\n';
+                xml += `    <loc>${item.url}</loc>\n`;
+                xml += `    <priority>${item.priority}</priority>\n`;
+                xml += `    <changefreq>${item.frequency}</changefreq>\n`;
+                xml += '  </url>\n';
+            });
+            
+            xml += '</urlset>';
+            
+            document.getElementById('xmlCode').textContent = xml;
+            document.getElementById('result').style.display = 'block';
+        }
+        
+        function copyToClipboard() {
+            const code = document.getElementById('xmlCode');
+            const textArea = document.createElement('textarea');
+            textArea.value = code.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Código copiado al portapapeles');
+        }
+        
+        // Añadir algunas URLs comunes por defecto
+        window.onload = function() {
+            urls = [
+                { url: 'https://pablohernandez.com.ar/', priority: '1.0', frequency: 'weekly' },
+                { url: 'https://pablohernandez.com.ar/sobre-mi', priority: '0.8', frequency: 'monthly' },
+                { url: 'https://pablohernandez.com.ar/proyectos', priority: '0.8', frequency: 'weekly' },
+                { url: 'https://pablohernandez.com.ar/blog', priority: '0.7', frequency: 'weekly' },
+                { url: 'https://pablohernandez.com.ar/contacto', priority: '0.6', frequency: 'yearly' }
+            ];
+            updateUrlList();
+        };
+    </script>
+</body>
+</html>
