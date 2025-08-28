@@ -44,7 +44,7 @@ const Project = () => {
 
   const [data, setData] = useState(null);
 
-  const [info, setInfo] = useState(null);
+  /*  const [info, setInfo] = useState(null);
 
   useEffect(() => {
     const fetchGithubData = async () => {
@@ -66,7 +66,7 @@ const Project = () => {
     fetchGithubData();
   }, []);
 
-  console.log(info);
+  console.log(info); */
 
   useEffect(() => {
     const projectData = dataProjects(t).find((item) => item.id === id);

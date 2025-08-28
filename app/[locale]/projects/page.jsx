@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { dataProjects } from "@/data/data";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -17,7 +17,7 @@ const Projects = () => {
   const [catagories, setCatagories] = useState([]);
   const [activeCategory, setActiveCategory] = useState(`${t("buttons.all")}`);
 
-  const projects = dataProjects(t2);
+  const projects = useMemo(() => dataProjects(t2), [t2]);
 
   const filteredProjects = projects.filter((project) => {
     if (activeCategory === `${t("buttons.all")}`) return true;
@@ -25,10 +25,11 @@ const Projects = () => {
     const projectCategories = parseCategories(project.category);
     return projectCategories.includes(activeCategory);
   });
+
   useEffect(() => {
-    const allCategories = projects.flatMap((project) => {
-      return parseCategories(project.category);
-    });
+    const allCategories = projects.flatMap((project) =>
+      parseCategories(project.category)
+    );
 
     const uniqueCategories = [...new Set(allCategories)];
 
