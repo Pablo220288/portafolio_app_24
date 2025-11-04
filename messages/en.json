@@ -620,6 +620,37 @@
             "description": "Pablo Hernández"
           }
         }
+      },
+      "snake": {
+        "head": "Game",
+        "title": "Snake Game",
+        "description1": "Snake is the classic arcade game where you control a snake that grows by eating fruits, while avoiding crashing into the edges of the board or your own body. Test your speed and strategy as the snake gets longer and the game becomes more challenging.",
+        "description2": "Developed with HTML5 Canvas, CSS for styling, and pure JavaScript for game logic. It features an advanced SpriteFrame technique to render smooth graphics from a single image, along with a dual control system (keyboard and touch buttons) for maximum accessibility. Includes collision detection, progressive speed increase, and a scoring system.",
+        "description3": "Can you beat your own record? Play now!",
+        "category": "Game",
+        "live_preview": "Live Preview",
+        "button": "Play",
+        "congrats": "Congratulations, you won!",
+        "sectionDescription": {
+          "title": "Description",
+          "description": "here goes the description",
+          "category": {
+            "title": "Category",
+            "description": "Puzzle"
+          },
+          "client": {
+            "title": "Client",
+            "description": "Pablo Hernández"
+          },
+          "date": {
+            "title": "Start Date",
+            "description": "February 22, 2025"
+          },
+          "designer": {
+            "title": "Designer",
+            "description": "Pablo Hernández"
+          }
+        }
       }
     },
     "buttons": {
