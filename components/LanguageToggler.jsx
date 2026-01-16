@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "@/navigation";
+import { useLocale } from "next-intl";
 
 import { Button } from "./ui/button";
 import { Languages, GlobeIcon } from "lucide-react";
@@ -17,23 +18,18 @@ import {
 
 const LanguageToggler = () => {
   const router = useRouter();
-  const [position, setPosition] = useState("en");
+  const pathname = usePathname();
+  const locale = useLocale();
+  const [position, setPosition] = useState(locale);
 
   useEffect(() => {
-    // Obtiene el valor de la cookie NEXT_LOCALE al cargar el componente
-    const locale = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("NEXT_LOCALE="))
-      ?.split("=")[1];
-    if (locale) {
-      setPosition(locale);
-    }
-  }, []);
+    setPosition(locale);
+  }, [locale]);
 
   function handlerLocaleChange(value) {
-    document.cookie = `NEXT_LOCALE=${value}; path=/; max-age=31536000; samesite=lax`;
     setPosition(value);
-    router.refresh();
+    // next-intl maneja automáticamente el cambio de locale y redirige a la URL correcta
+    router.push(pathname, { locale: value });
   }
 
   return (
